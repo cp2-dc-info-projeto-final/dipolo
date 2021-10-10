@@ -4,11 +4,15 @@
 
 ### RF 01
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit nulla vel diam vehicula, eu porttitor nulla aliquam.
+O sistema deverá ser capaz de utilizar senha e email para autenticação do usuário.
 
 ### RF 02
 
-Nullam laoreet, mauris ac tempor vulputate, orci metus aliquet augue, at accumsan odio mi eu sapien. Aliquam tincidunt metus ut aliquet vehicula. Aliquam vitae arcu sed lacus fermentum sagittis.
+O sistema deverá ser capaz de utilizar código de administrador para autenticação do administrador.
+
+### RF 03
+
+
 
 ## Requisitos Não-Funcionais
 
