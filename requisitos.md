@@ -12,7 +12,27 @@ O sistema deverá ser capaz de utilizar código de administrador para autentica�
 
 ### RF 03
 
+O sistema deverá ser capaz de dar acesso, ao usuário autenticado, aos seus dados de usuário.
 
+### RF 04
+
+O sistema deverá ser capaz de armazenar nome, data de nascimento, nickname, email e senha de cada usuário.
+
+### RF 05
+
+O sistema deverá ser capaz de armazenar código de administrador de cada administrador.
+
+### RF 06
+
+O sistema deverá ser capaz de alterar os dados do usuário armazenados no banco de dados.
+
+### RF 07
+
+O sistema deverá ser capaz de excluir um usuário.
+
+### RF 08
+
+O sistema deverá ser capaz de alterar a permissão de consulta dos dados do usuário em relação a outros usuários.
 
 ## Requisitos Não-Funcionais
 
