@@ -38,8 +38,28 @@ O sistema deverá ser capaz de alterar a permissão de consulta dos dados do usu
 
 ### RNF 01
 
-Nulla facilisi. Etiam tempus dolor et odio tincidunt fermentum. Donec pharetra nulla eu euismod maximus. Maecenas eu mauris tincidunt, pulvinar tellus sed, blandit eros.
+O sistema deverá ser desnvolvido como uma pataforma web.
 
 ### RNF 02
 
-Nam id enim ut quam faucibus scelerisque at non diam. Morbi eget eleifend lectus, quis fringilla elit. Morbi iaculis, elit vel accumsan hendrerit, ipsum purus varius lacus, eget facilisis massa mauris ac ipsum.
+O sistema deverá ser desenvolvido nas linguagens HTML, CSS, JavaScript, PHP.
+
+### RNF 03
+
+O sistema deverá armazenar as informações em um banco de dados MySQL.
+
+### RNF 04
+
+O sistema deverá possuir um sistema de confirmação de email e senha.
+
+### RNF 05
+
+O sistema deverá incluir um sistema de curtidas de postagens e comentários.
+
+### RNF 06
+
+O sistema deverá criptografar os dados utilizados para acesso do usuário.
+
+### RNF 07
+
+O sistema deverá exibir as postagens de acordo com a última data de atualização.
