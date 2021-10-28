@@ -2,9 +2,9 @@
     include "autentica.inc";
     include "conecta_mysql.inc";
 
-    $nickname = $_SESSION["nickname"];
+    $cod_usuario = $_GET["cod_usuario"];
 
-    $sql ="SELECT * FROM usuarios WHERE nickname = '$nickname';"; 
+    $sql ="SELECT * FROM usuarios WHERE cod_usuario = $cod_usuario;"; 
     $resposta = mysqli_query($mysqli,$sql);
     $usuario = mysqli_fetch_array($resposta);
 ?>
@@ -19,7 +19,7 @@
         <p><strong>Confirmar Exclusão?</strong></p>
         <form action="recebe_dados.php" method="POST">
             <input type="hidden" name="login" value="excluir">
-            <input type="hidden" name="nick" value="<?php echo $nickname?>">
+            <input type="hidden" name="cod_usuario" value="<?php echo $cod_usuario?>">
             <p><input type="submit" value="Excluir"></p>
         </form>
 
