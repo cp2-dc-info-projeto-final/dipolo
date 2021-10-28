@@ -24,15 +24,19 @@
         $confsenha = htmlspecialchars($confsenha);
         $codadm = htmlspecialchars($codadm);
 
-        if(strlen($nickname) < 3)
+        $sql ="SELECT * FROM usuarios WHERE nickname LIKE '$nickname';"; 
+        $resposta = mysqli_query($mysqli,$sql);
+        $linhas = mysqli_num_rows($resposta);
+
+        if($linhas != 0)
         {
-            echo "O nickname deve possuir no mínimo 3 caracteres.<br>";
+            echo "Nickname já existente.<br>";
             $erro = 1;
         }
 
-        if(strlen($nickname) > 10)
+        if(strlen($nickname) < 3 OR strlen($nickname) > 10)
         {
-            echo "O nickname deve possuir no máximo 10 caracteres.<br>";
+            echo "O nickname deve possuir no mínimo 3 e no máximo 10 caracteres.<br>";
             $erro = 1;
         }
 
@@ -50,7 +54,7 @@
 
         if(strlen($email) > 35 || strstr($email,'@') == FALSE)
         {
-            echo "Favor digitar outro email. Limite de caracteres atingido. <br>";
+            echo "Favor digitar outro email. Limite de 35 caracteres atingido. <br>";
             $erro = 1;
         }
 
@@ -60,15 +64,9 @@
             $erro = 1;
         }
 
-        if(strlen($senha) < 5)
+        if(strlen($senha) < 5 OR strlen($senha) > 12)
         {
-            echo "A senha deve possuir no mínimo 5 caracteres.<br>";
-            $erro = 1;
-        }
-
-        if(strlen($senha) > 12)
-        {
-            echo "A senha deve possuir no mínimo 5 caracteres.<br>";
+            echo "A senha deve possuir no mínimo 5 e no máximo 12 caracteres.<br>";
             $erro = 1;
         }
 
@@ -85,11 +83,13 @@
 
         if($erro == 0) 
         { 
-            $sql ="INSERT INTO usuarios (nickname,nome,datanasc,email,confemail,senha,confsenha,adm)"; 
-            $sql .= "VALUES ('$nickname','$nome','$datanasc','$email','$confemail','$senha','$confsenha','$adm');";
+            $senha_cript = password_hash($senha, PASSWORD_DEFAULT);
+            $sql ="INSERT INTO usuarios (nickname,nome,datanasc,email,senha,adm)"; 
+            $sql .= "VALUES ('$nickname','$nome','$datanasc','$email','$senha_cript','$adm');";
 
             //mysqli_query(<conexão>,<comando>);
             mysqli_query($mysqli,$sql);
+
 
             //como informar ao usuário que o nickname já existe?
 
@@ -98,16 +98,51 @@
         }
     }
 
-    if($login == "alterar")
+    if($login == "exibir")
     {
         $nick = $_POST["nick"];
+        $nick = htmlspecialchars($nick);
+
+        $sql ="SELECT * FROM usuarios WHERE nickname LIKE '$nick';"; 
+        $resposta = mysqli_query($mysqli,$sql);
+        $linhas = mysqli_num_rows($resposta);
+        $usuario = mysqli_fetch_array($resposta);
+
+        echo "Nickname: ". $usuario["nickname"]. "<br>";
+        echo "Nome Completo: ". $usuario["nome"]. "<br>";
+        echo "Data de Nascimento: ". $usuario["datanasc"]. "<br>";
+        echo "Email: ". $usuario["email"]. "<br>";
+        echo "Administrador: ". $usuario['adm']. "<br>";
+
+        //?cod_usuario=".$usuario["cod_usuario"]."
+        echo "<a href='alteracao.php?cod_usuario=".$usuario["cod_usuario"]."'> Alterar Usuário </a> <br>"; 
+        echo "<a href='excluir.php?cod_usuario=".$usuario["cod_usuario"]."'> Excluir Usuário </a> <br>";
+        echo "<br><Br><a href='index.php'> Voltar para tela inicial </a>";
+                
+    }
+
+    if($login == "excluir")
+    {
+        $cod_usuario = $_POST["cod_usuario"];
+
+        $sql ="DELETE FROM usuarios WHERE cod_usuario = $cod_usuario;"; 
+        mysqli_query($mysqli,$sql);
+
+        echo "Usuário deletado com sucesso";
+        echo "<br><Br><a href='login.html'> Voltar para tela inicial </a>";
+    }
+
+    if($login == "alterar")
+    {
+        $cod_usuario = $_POST["cod_usuario"];
         $nickname = $_POST["nickname"];
         $nome = $_POST["nome"];
         $datanasc = $_POST["datanasc"];
         $email = $_POST["email"];
         $confemail = $_POST["confemail"];
-        $senha = $_POST["senha"];
-        $confsenha = $_POST["confsenha"];
+        $senha_atual = $_POST["senha_atual"];
+        $senha_nova = $_POST["senha_nova"];
+        $conf_senhanova = $_POST["conf_senhanova"];
         $codadm = $_POST["codadm"];
         $adm = "NÃO";
         $erro = 0;
@@ -116,19 +151,28 @@
         $nome = htmlspecialchars($nome);
         $email = htmlspecialchars($email);
         $confemail = htmlspecialchars($confemail);
-        $senha = htmlspecialchars($senha);
-        $confsenha = htmlspecialchars($confsenha);
+        $senha_atual = htmlspecialchars($senha_atual);
+        $senha_nova = htmlspecialchars($senha_nova);
+        $conf_senhanova = htmlspecialchars($conf_senhanova);
         $codadm = htmlspecialchars($codadm);
 
-        if(strlen($nickname) < 3)
+        $sql = "SELECT * FROM usuarios WHERE cod_usuario = '$cod_usuario';";
+        $resposta = mysqli_query($mysqli, $sql);
+        $usuario = mysqli_fetch_array($resposta);
+
+        $sql2 ="SELECT * FROM usuarios WHERE nickname LIKE '$nickname';"; 
+        $resposta2 = mysqli_query($mysqli,$sql2);
+        $linhas = mysqli_num_rows($resposta2);
+
+        if($linhas != 0)
         {
-            echo "O nickname deve possuir no mínimo 3 caracteres.<br>";
+            echo "Nickname já existente.<br>";
             $erro = 1;
         }
 
-        if(strlen($nickname) > 10)
+        if(strlen($nickname) < 3 OR strlen($nickname) > 10)
         {
-            echo "O nickname deve possuir no máximo 10 caracteres.<br>";
+            echo "O nickname deve possuir no mínimo 3 e no máximo 10 caracteres.<br>";
             $erro = 1;
         }
 
@@ -146,7 +190,7 @@
 
         if(strlen($email) > 35 || strstr($email,'@') == FALSE)
         {
-            echo "Favor digitar outro email. Limite de caracteres atingido. <br>";
+            echo "Favor digitar outro email. Limite de 35 caracteres atingido. <br>";
             $erro = 1;
         }
 
@@ -156,21 +200,23 @@
             $erro = 1;
         }
 
-        if(strlen($senha) < 5)
+        if(!password_verify($senha_atual, $usuario["senha"]))
         {
-            echo "A senha deve possuir no mínimo 5 caracteres.<br>";
+            echo "A senha atual está errada.<br>";
             $erro = 1;
         }
 
-        if(strlen($senha) > 12)
+        //senha nova ficou obrigatória. Como não ser?
+        
+        if(strlen($senha_nova) < 5 OR strlen($senha_nova) > 12)
         {
-            echo "A senha deve possuir no mínimo 5 caracteres.<br>";
+            echo "A senha nova deve possuir no mínimo 5 e no máximo 12 caracteres.<br>";
             $erro = 1;
         }
 
-        if($confsenha != $senha)
+        if($senha_nova != $conf_senhanova)
         {
-            echo "Favor digitar uma senha igual à anterior.<br>";
+            echo "A senha nova não foi repetida corretamente.<br>";
             $erro = 1;
         }
 
@@ -181,53 +227,17 @@
 
         if($erro == 0) 
         { 
-            $sql ="UPDATE usuarios SET nickname = '$nickname',nome = '$nome',datanasc = '$datanasc', adm = '$adm',"; 
-            $sql .= "email = '$email',confemail = '$confemail',senha = '$senha',confsenha = '$confsenha'";
-            $sql .= "WHERE nickname = '$nick';";
-
+            $senha_cript = password_hash($senha_nova, PASSWORD_DEFAULT);
+            $sql ="UPDATE usuarios SET nickname = '$nickname',nome = '$nome',datanasc = '$datanasc',"; 
+            $sql .= "email = '$email',senha = '$senha_cript',adm = '$adm'";
+            $sql .= "WHERE cod_usuario = '$cod_usuario';";
+            //mysqli_query(<conexão>,<comando>);
             mysqli_query($mysqli,$sql);
 
-            echo "Usuário atualizado com sucesso! <br>"; 
-            echo "Faça login novamente se tiver alterado nickname e/ou senha.";
-            echo "<br><br><a href='login.html'> Tela de Login </a>";
-            echo "<br><a href='index.php'> Voltar para tela inicial </a>";
+            echo "Usuário atualizado com sucesso!<br>"; 
+            echo "Faça login novamente.";
+            echo "<br><Br><a href='login.html'> Fazer Login </a>";
         }
-    }
-
-    if($login == "excluir")
-    {
-        $nick = $_POST["nick"];
-
-        $sql ="DELETE FROM usuarios WHERE nickname = '$nick';"; 
-        mysqli_query($mysqli,$sql);
-
-        echo "Usuário deletado com sucesso";
-        echo "<br><Br><a href='index.php'> Voltar para tela inicial </a>";
-    }
-
-    if($login == "exibir")
-    {
-        $nickname = $_POST["nickname"];
-        $nickname = htmlspecialchars($nickname);
-
-        $sql ="SELECT * FROM usuarios WHERE nickname LIKE '$nickname';"; 
-        $resposta = mysqli_query($mysqli,$sql);
-        $linhas = mysqli_num_rows($resposta);
-        $usuario = mysqli_fetch_array($resposta);
-
-        echo "Nickname: ". $usuario["nickname"]. "<br>";
-        echo "Nome Completo: ". $usuario["nome"]. "<br>";
-        echo "Data de Nascimento: ". $usuario["datanasc"]. "<br>";
-        echo "Email: ". $usuario["email"]. "<br>";
-        echo "Confirmar email: ". $usuario["confemail"]. "<br>";
-        echo "Senha: ". $usuario["senha"]. "<br>";
-        echo "Confirmar senha: ". $usuario["confsenha"]. "<br>";
-        echo "Administrador: ". $usuario['adm']. "<br>";
-
-        echo "<a href='alteracao.php'> Alterar Usuário </a> <br>"; 
-        echo "<a href='excluir.php'> Excluir Usuário </a> <br>";
-        echo "<br><Br><a href='index.php'> Voltar para tela inicial </a>";
-                
     }
 
     mysqli_close($mysqli);
