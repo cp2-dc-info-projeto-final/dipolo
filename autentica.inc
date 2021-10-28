@@ -30,11 +30,11 @@
 
         else{
             $usuario = mysqli_fetch_array($resposta);
-            if($senha != $usuario["senha"]){ // testa se a senha está errada
+            if(!hash_equals($usuario["senha"], $senha)){ // testa se a senha está errada
                 unset($_SESSION["nickname"]);
                 unset($_SESSION["senha"]);
                 echo "Você não fez o login!";
-                echo "<p><a href='Login.html'>Página de login</a></p>";
+                echo "<p><a href='login.html'>Página de login</a></p>";
                 exit;
             }
         }
