@@ -15,14 +15,14 @@
     
     else{
         $usuario = mysqli_fetch_array($resposta);
-        if($senha != $usuario["senha"]){ // testa se a senha está errada
+        if(!password_verify($senha, $usuario["senha"])){ // testa se a senha está errada
             echo "Senha inválida!";
             echo "<p><a href='login.html'>Página de login</a></p>";
         }
         else{ // usuário e senha corretos, abre a sessão
             session_start();
             $_SESSION["nickname"] = $nickname;
-            $_SESSION["senha"] = $senha;
+            $_SESSION["senha"] =  $usuario["senha"];
             // direciona à página inicial
             header("Location: index.php");
         }
