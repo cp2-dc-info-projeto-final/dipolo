@@ -3,6 +3,7 @@
 <html>
     <head>
         <title>Página inicial</title>
+        <meta charset="utf-8">
     </head>
 
     <body>
@@ -13,9 +14,10 @@
         <p><strong>Exibir Meus Dados</strong></p>
         <form action="recebe_dados.php" method="POST">
             <input type="hidden" name="login" value="exibir">
-            <input type="hidden" name="nickname" value="<?php echo $_SESSION["nickname"] ?>">
+            <input type="hidden" name="nick" value="<?php echo $_SESSION["nickname"] ?>">
             <p><input type="submit" value="Exibir"></p>
         </form>
+
 
     </body>
 </html>
