@@ -23,7 +23,7 @@
             <p><input type="submit" value="Excluir"></p>
         </form>
 
-        <br><br><a href='login.html'> Voltar para tela principal </a>
+        <br><br><a href='login.php'> Voltar para tela principal </a>
 
     <body>
 </html>
