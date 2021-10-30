@@ -84,20 +84,20 @@ $usuario = mysqli_fetch_array($resposta);
                 <hr class="clearfix w-100 d-md-none pb-3">
                 <div class="col-md-2 mb-md-0 mb-3 pt-3">
                     <ul class="list-unstyled">
-                        <li>
+                        <li class="mb-2">
                             <a class="text-light text-decoration-none" href="index.php">Página Principal</a>
                         </li>
-                        <li>
+                        <li class="mb-2">
                             <a class="text-light text-decoration-none" href="#!">Ajuda</a>
                         </li>
-                        <li>
+                        <li class="mb-2">
                             <a class="text-light text-decoration-none" href="#!">Sobre</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-2 mb-md-0 mb-3 pt-3">
                     <ul class="list-unstyled">
-                        <li>
+                        <li class="mb-2">
                             <a class="text-light text-decoration-none" href="#!">Enviar Feedback</a>
                         </li>
                     </ul>
