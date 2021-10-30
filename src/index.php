@@ -1,4 +1,4 @@
-<?php include "autentica.inc"; ?>
+<?php include "autentica.php"; ?>
 
 <html>
     <head>
