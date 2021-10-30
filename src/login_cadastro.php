@@ -23,6 +23,9 @@
 
     <div class="container-flex p-5 py-5">
         <div class="row justify-content-evenly">
+
+            <!-- Coluna com formulário de cadastro -->
+
             <div class="col-5">
                 <h1 class="text-center mb-4">Cadastrar</h1>
                 <form action="recebe_dados.php" method="POST">
@@ -72,6 +75,9 @@
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
             </div>
+
+            <!-- Coluna com formulário de autenticação -->
+
             <div class="col-3">
                 <h1 class="text-center mb-4">Entrar</h1>
                 <form action="efetuar_login.php" method="POST">
