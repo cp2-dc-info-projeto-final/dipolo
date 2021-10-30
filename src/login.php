@@ -23,6 +23,7 @@
             session_start();
             $_SESSION["nickname"] = $nickname;
             $_SESSION["senha"] =  $usuario["senha"];
+            $_SESSION["fez_login"] = true;
             // direciona à página inicial
             header("Location: index.php");
         }

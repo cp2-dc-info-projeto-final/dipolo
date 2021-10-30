@@ -39,7 +39,7 @@
 
     <div class="container-flex p-5 py-5">
         <div class="container-flex pb-2">
-            <?php if (empty($nickname) or empty($senha)) : ?>
+            <?php if (!$_SESSION["fez_login"]) : ?>
                 <div class="row">
                     <div class="col">
                         <h1 class="fw-boldest mb-4 display-3">Dipolo</h1>
