@@ -33,7 +33,37 @@
                             e evolua!
                         </p>
                         <div class="my-5">
-                            <a class="btn btn-outline-primary btn-lg" href="login.php" role="button">Entrar</a>
+                            <!-- Botão de entrar que ativa um modal -->
+                            <button type="button" class="btn btn-outline-primary btn-lg" data-bs-toggle="modal" data-bs-target="#entrarModal">
+                                Entrar
+                            </button>
+
+                            <!-- Modal de autenticação -->
+                            <div class="modal fade" id="entrarModal" tabindex="-1" aria-labelledby="entrarModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="entrarModalLabel">Entrar</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form action="efetuar_login.php" method="POST">
+                                                <div class="mb-3">
+                                                    <label for="entrarModalInputNickname" class="form-label">Nickname</label>
+                                                    <input type="text" class="form-control" id="entrarModalInputNickname" name="nickname" size="11" maxlength="10" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="entrarModalInputPassword" class="form-label">Senha</label>
+                                                    <input type="password" class="form-control" id="entrarModalInputPassword" name="senha" size="15" maxlength="12" required>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Enviar</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Botão de cadastro que leva a uma outra página -->
                             <a class="btn btn-primary btn-lg ms-3" href="cadastro.php" role="button">Cadastrar</a>
                         </div>
                     </div>
