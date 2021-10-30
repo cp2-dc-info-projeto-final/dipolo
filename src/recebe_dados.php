@@ -129,7 +129,7 @@
         mysqli_query($mysqli,$sql);
 
         echo "Usuário deletado com sucesso";
-        echo "<br><Br><a href='login_cadastro.php'> Voltar para tela inicial </a>";
+        echo "<br><Br><a href='index.php'> Voltar para tela inicial </a>";
     }
 
     if($login == "alterar")
