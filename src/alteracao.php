@@ -38,8 +38,8 @@ $usuario = mysqli_fetch_array($resposta);
             </ul>
             <a class="navbar-brand ms-2" style="font-weight: 500;" href="#">Dipolo</a>
             <form class="d-flex ms-auto my-2 my-lg-0 me-4">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Pesquisar</button>
             </form>
         </div>
     </nav>
