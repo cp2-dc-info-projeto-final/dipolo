@@ -1,6 +1,6 @@
 <?php
-    include "autentica.inc";
-    include "conecta_mysql.inc";
+    include "autentica.php";
+    include "conecta_mysql.php";
 
     $cod_usuario = $_GET["cod_usuario"];
 

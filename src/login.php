@@ -4,7 +4,7 @@
     $senha = $_POST["senha"];
 
     // Realiza a consulta no banco de dados
-    include "conecta_mysql.inc";
+    include "conecta_mysql.php";
     $sql = "SELECT * FROM usuarios WHERE nickname = '$nickname';";
     $resposta = mysqli_query($mysqli, $sql);
 

@@ -16,7 +16,7 @@
     }
 
     else{
-        include "conecta_mysql.inc";
+        include "conecta_mysql.php";
         $sql = "SELECT * FROM usuarios WHERE nickname = '$nickname';";
         $resposta = mysqli_query($mysqli, $sql);
 
