@@ -13,7 +13,7 @@
             </li>
             <li><a class="dropdown-item" href="#">Sobre</a></li>
         </ul>
-        <a class="navbar-brand ms-2" style="font-weight: 500;" href="#">Dipolo</a>
+        <a class="navbar-brand ms-2" style="font-weight: 500;" href="index.php">Dipolo</a>
         <form class="d-flex ms-auto my-2 my-lg-0 me-4">
             <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Pesquisar</button>
