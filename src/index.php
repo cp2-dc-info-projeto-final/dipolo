@@ -39,28 +39,33 @@
 
     <div class="container-flex p-5 py-5">
         <div class="container-flex pb-2">
-            <div class="row">
-                <div class="col">
-                    <h1 class="fw-bold mb-4 display-4">Dipolo</h1>
-                    <p class="fs-5">
-                        Entre, debata, socialize,<br>
-                        e evolua!
-                    </p>
-                    <div class="my-5">
-                        <a class="btn btn-outline-primary btn-lg" href="login.html" role="button">Entrar</a>
-                        <a class="btn btn-primary btn-lg ms-3" href="cadastro.html" role="button">Cadastrar</a>
+            <?php if (empty($nickname) or empty($senha)) : ?>
+                <div class="row">
+                    <div class="col">
+                        <h1 class="fw-bold mb-4 display-4">Dipolo</h1>
+                        <p class="fs-5">
+                            Entre, debata, socialize,<br>
+                            e evolua!
+                        </p>
+                        <div class="my-5">
+                            <a class="btn btn-outline-primary btn-lg" href="login.html" role="button">Entrar</a>
+                            <a class="btn btn-primary btn-lg ms-3" href="cadastro.html" role="button">Cadastrar</a>
+                        </div>
                     </div>
+                    <div class="col"></div>
                 </div>
-                <div class="col"></div>
-            </div>
-            <!-- <p><strong>Exibir Meus Dados</strong></p>
-            <form action="recebe_dados.php" method="POST">
-                <input type="hidden" name="login" value="exibir">
-                <input type="hidden" name="nick" value="<?php echo $_SESSION["nickname"] ?>">
-                <p><input type="submit" value="Exibir"></p>
-            </form>
-            <p><a href="logout.php">LOGOUT</a></p>
-            <br><br> -->
+            <?php else : ?>
+                <div>
+                    <strong>Exibir Meus Dados</strong></p>
+                    <form action="recebe_dados.php" method="POST">
+                        <input type="hidden" name="login" value="exibir">
+                        <input type="hidden" name="nick" value="<?php echo $_SESSION["nickname"] ?>">
+                        <p><input type="submit" value="Exibir"></p>
+                    </form>
+                    <p><a href="logout.php">LOGOUT</a></p>
+                    <br><br> -->
+                </div>
+            <?php endif; ?>
         </div>
     </div>
 
