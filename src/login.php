@@ -50,7 +50,7 @@
 
     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;OU</p>
-    <a href="cadastro.html"><strong>CADASTRAR-SE</strong></a>
+    <a href="cadastro.php"><strong>CADASTRAR-SE</strong></a>
 
     <!-- Footer -->
 

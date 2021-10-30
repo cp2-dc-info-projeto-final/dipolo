@@ -49,7 +49,7 @@
                         </p>
                         <div class="my-5">
                             <a class="btn btn-outline-primary btn-lg" href="login.php" role="button">Entrar</a>
-                            <a class="btn btn-primary btn-lg ms-3" href="cadastro.html" role="button">Cadastrar</a>
+                            <a class="btn btn-primary btn-lg ms-3" href="cadastro.php" role="button">Cadastrar</a>
                         </div>
                     </div>
                     <div class="col"></div>
