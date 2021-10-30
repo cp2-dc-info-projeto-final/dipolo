@@ -5,7 +5,7 @@
         </button>
         <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="index.php">Página principal</a></li>
-            <li><a class="dropdown-item" href="#">Entrar / Cadastrar</a></li>
+            <li><a class="dropdown-item" href="login_cadastro.php">Entrar / Cadastrar</a></li>
             <li><a class="dropdown-item" href="#">Ajuda</a></li>
             <li><a class="dropdown-item" href="#">Enviar feedback</a></li>
             <li>

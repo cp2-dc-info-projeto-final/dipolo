@@ -94,7 +94,7 @@
             //como informar ao usuário que o nickname já existe?
 
             echo "Usuário cadastrado com sucesso!"; 
-            echo "<br><Br><a href='login.php'> Fazer Login </a>";
+            echo "<br><Br><a href='login_cadastro.php'> Fazer Login </a>";
         }
     }
 
@@ -129,7 +129,7 @@
         mysqli_query($mysqli,$sql);
 
         echo "Usuário deletado com sucesso";
-        echo "<br><Br><a href='login.php'> Voltar para tela inicial </a>";
+        echo "<br><Br><a href='login_cadastro.php'> Voltar para tela inicial </a>";
     }
 
     if($login == "alterar")
@@ -236,7 +236,7 @@
 
             echo "Usuário atualizado com sucesso!<br>"; 
             echo "Faça login novamente.";
-            echo "<br><Br><a href='login.php'> Fazer Login </a>";
+            echo "<br><Br><a href='login_cadastro.php'> Fazer Login </a>";
         }
     }
 
