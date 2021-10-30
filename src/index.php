@@ -42,8 +42,8 @@
             <?php if (empty($nickname) or empty($senha)) : ?>
                 <div class="row">
                     <div class="col">
-                        <h1 class="fw-bold mb-4 display-4">Dipolo</h1>
-                        <p class="fs-5">
+                        <h1 class="fw-boldest mb-4 display-3">Dipolo</h1>
+                        <p class="fs-4">
                             Entre, debata, socialize,<br>
                             e evolua!
                         </p>
@@ -63,7 +63,7 @@
                         <p><input type="submit" value="Exibir"></p>
                     </form>
                     <p><a href="logout.php">LOGOUT</a></p>
-                    <br><br> -->
+                    <br><br>
                 </div>
             <?php endif; ?>
         </div>
