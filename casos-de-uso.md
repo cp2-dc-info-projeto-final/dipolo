@@ -10,8 +10,7 @@
 
 ## Lista dos Atores
 
- - Cras tempor
- - Donec a lorem
+ - Usuário
 
 ## Diagrama de Casos de Uso
 
