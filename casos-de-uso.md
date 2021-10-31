@@ -2,9 +2,10 @@
 
 ## Lista dos Casos de Uso
 
- - [CDU 01](#CDU-01): Quisque id neque a erat imperdiet dictum et ut mauris.
- - [CDU 02](#CDU-02): Morbi fringilla dolor at mattis vestibulum.
- - [CDU 03](#CDU-03): Duis nec orci quis velit faucibus hendrerit tempus vel libero.
+ - [CDU 01](#CDU-01): Cadastro de usuários
+ - [CDU 02](#CDU-02): Login
+ - [CDU 03](#CDU-03): Editar usuários
+ - [CDU 04](#CDU-04): Logout
 
 
 ## Lista dos Atores
@@ -20,32 +21,51 @@
 
 ### CDU 01
 
-Quisque id neque a erat imperdiet dictum et ut mauris.
+Cadastro de usuários
 
 **Fluxo Principal**
 
-1. Vivamus nec velit id risus sodales fermentum ut a mi.
-2. Nunc a ligula ac libero pellentesque auctor ornare at sem.
-3. In quis ante scelerisque felis luctus malesuada.
-4. Pellentesque mattis dui quis eleifend accumsan.
+ 1. O sistema apresenta um botão "Cadastrar-se"
+	2. O usuário clica no botão "Cadastrar-se"
+	3. O sistema encaminha o usuário para a página de cadastro
+	4. O sistema apresenta um formulário com os campos a serem preenchidos
+	5. O usuário insere nickname, nome completo, data de nascimento, email, confirmar email, senha, confirmar senha
+	6. O usuário insere o código de administrador se for um administrador
+	7. O usuário clica no botão "Enviar"
+	8. O sistema valida os campos
+	9. O sistema armazena o perfil e informa ao usuário que a operação foi concluída com sucesso
+10. O sistema encaminha o usuário para a tela principal
 
 **Fluxo Alternativo A**
 
-1. Pellentesque id mauris id ex fringilla iaculis.
-2. Maecenas ut dui at sapien rhoncus porttitor in sed turpis.
-3. Maecenas fringilla augue id sodales volutpat.
-4. Nulla vehicula lectus eu eros faucibus porta.
-5. Morbi non sem in diam dictum aliquet sit amet at metus.
-6. Aenean dictum diam in tempus ornare.
+ 1. O sistema apresenta um botão "Cadastrar-se"
+	2. O usuário clica no botão "Cadastrar-se"
+	3. O sistema encaminha o usuário para a página de cadastro
+	4. O sistema apresenta um formulário com os campos a serem preenchidos
+	5. O usuário insere nickname, nome completo, data de nascimento, email, confirmar email, senha, confirmar senha
+	6. O usuário insere o código de administrador se for um administrador
+	7. O usuário clica no botão "Enviar"
+	8. O sistema informa que existem campos inválidos
+	9. O usuário corrige os campos inválidos e clica no botão "Enviar"
+10. O sistema valida os campos
+11. O sistema armazena o perfil e informa ao usuário que a operação foi concluída com sucesso
+12. O sistema encaminha o usuário para a tela principal
 
 **Fluxo Alternativo B**
 
-1. Ut elementum dolor id lorem elementum, et condimentum eros laoreet.
-2. Nulla sollicitudin arcu nec suscipit volutpat.
-3. Aliquam mattis sapien nec ornare faucibus.
-4. Sed eu massa nec enim condimentum commodo at eget ligula.
-5. Nam ultricies velit nec erat feugiat condimentum.
-6. Nam vitae lacus porttitor, sodales orci vel, lobortis arcu.
+ 1. O sistema apresenta um botão "Cadastrar-se"
+	2. O usuário clica no botão "Cadastrar-se"
+	3. O sistema encaminha o usuário para a página de cadastro
+	4. O sistema apresenta um formulário com os campos a serem preenchidos
+	5. O usuário insere nickname, nome completo, data de nascimento, email, confirmar email, senha, confirmar senha
+	6. O usuário insere o código de administrador, se for um administrador
+	7. O usuário clica no botão "Enviar"
+	8. O sistema informa que o campo código de administrador não é válido
+	9. O usuário corrige o código de administrador e clica no botão "Enviar"
+10. O sistema valida os campos
+11. O sistema armazena o perfil e informa ao usuário que a operação foi concluída com sucesso
+12. O sistema encaminha o usuário para a tela principal
+
 
 
 ### CDU 02
