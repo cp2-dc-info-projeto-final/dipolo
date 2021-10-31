@@ -38,7 +38,7 @@ Cadastro de usuários
 
 **Fluxo Alternativo A**
 
- 1. O sistema apresenta um botão "Cadastrar-se"
+	1. O sistema apresenta um botão "Cadastrar-se"
 	2. O usuário clica no botão "Cadastrar-se"
 	3. O sistema encaminha o usuário para a página de cadastro
 	4. O sistema apresenta um formulário com os campos a serem preenchidos
@@ -47,13 +47,13 @@ Cadastro de usuários
 	7. O usuário clica no botão "Enviar"
 	8. O sistema informa que existem campos inválidos
 	9. O usuário corrige os campos inválidos e clica no botão "Enviar"
-10. O sistema valida os campos
-11. O sistema armazena o perfil e informa ao usuário que a operação foi concluída com sucesso
-12. O sistema encaminha o usuário para a tela principal
+	10. O sistema valida os campos
+	11. O sistema armazena o perfil e informa ao usuário que a operação foi concluída com sucesso
+	12. O sistema encaminha o usuário para a tela principal
 
 **Fluxo Alternativo B**
 
- 1. O sistema apresenta um botão "Cadastrar-se"
+	1. O sistema apresenta um botão "Cadastrar-se"
 	2. O usuário clica no botão "Cadastrar-se"
 	3. O sistema encaminha o usuário para a página de cadastro
 	4. O sistema apresenta um formulário com os campos a serem preenchidos
@@ -62,9 +62,9 @@ Cadastro de usuários
 	7. O usuário clica no botão "Enviar"
 	8. O sistema informa que o campo código de administrador não é válido
 	9. O usuário corrige o código de administrador e clica no botão "Enviar"
-10. O sistema valida os campos
-11. O sistema armazena o perfil e informa ao usuário que a operação foi concluída com sucesso
-12. O sistema encaminha o usuário para a tela principal
+	10. O sistema valida os campos
+	11. O sistema armazena o perfil e informa ao usuário que a operação foi concluída com sucesso
+	12. O sistema encaminha o usuário para a tela principal
 
 
 
