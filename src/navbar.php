@@ -8,6 +8,9 @@
             <li><a class="dropdown-item" href="login_cadastro.php">Entrar / Cadastrar</a></li>
             <li><a class="dropdown-item disabled" href="#">Ajuda</a></li>
             <li><a class="dropdown-item disabled" href="#">Enviar feedback</a></li>
+            <?php if($_SESSION["fez_login"]) : ?>
+            <li><a class="dropdown-item" href="logout.php">Sair</a></li>
+            <?php endif; ?>
             <li>
                 <hr class="dropdown-divider">
             </li>
