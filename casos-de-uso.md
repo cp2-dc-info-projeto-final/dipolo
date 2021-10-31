@@ -134,41 +134,14 @@ Editar Usuário
        11. O sistema armazena as alterações e informa ao usuário que a operação foi concluída com sucesso
        12. O sistema encaminha o usuário para a tela principal 
 
-### CDU 02
+### CDU 04
 
-Morbi fringilla dolor at mattis vestibulum.
-
-**Fluxo Principal**
-
-1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-2. Mauris varius massa ac fermentum scelerisque.
-3. Morbi in tortor dignissim, bibendum tellus et, varius odio.
-4. Mauris egestas leo a suscipit feugiat.
-
-**Fluxo Alternativo A**
-
-1. Nulla elementum diam eu elementum rutrum.
-2. Aenean scelerisque est at nunc ornare, ac condimentum justo sollicitudin.
-3. Quisque eget risus ut est lacinia sollicitudin ac non diam.
-4. Quisque ac nulla convallis, lobortis nibh ac, tristique enim.
-5. Nulla ultricies metus nec risus mollis, interdum ultrices justo malesuada.
-
-### CDU 02
-
-Morbi fringilla dolor at mattis vestibulum.
+Logout
 
 **Fluxo Principal**
 
-1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-2. Mauris varius massa ac fermentum scelerisque.
-3. Morbi in tortor dignissim, bibendum tellus et, varius odio.
-4. Mauris egestas leo a suscipit feugiat.
-
-**Fluxo Alternativo A**
-
-1. Nulla elementum diam eu elementum rutrum.
-2. Aenean scelerisque est at nunc ornare, ac condimentum justo sollicitudin.
-3. Quisque eget risus ut est lacinia sollicitudin ac non diam.
-4. Quisque ac nulla convallis, lobortis nibh ac, tristique enim.
-5. Nulla ultricies metus nec risus mollis, interdum ultrices justo malesuada.
-
+	1. O sistema apresenta um botão "Logout"
+	2. O usuário clica no botão "Logout"
+	3. O sistema encerra a sessão
+	4. O sistema encaminha o usuário pra tela principal
+	
