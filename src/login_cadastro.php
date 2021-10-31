@@ -66,7 +66,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="cadastrarInputAdm" class="form-label">Código de administrador</label>
-                        <input type="password" class="form-control" id="cadastrarInputAdm" name="codadm" aria-describedby="passwordHelpBlock">
+                        <input type="password" class="form-control" id="cadastrarInputAdm" name="codadm" aria-describedby="senhaAviso">
                         <div id="senhaAviso" class="form-text">
                             Se for um administrador, insira seu código
                         </div>
