@@ -25,7 +25,7 @@ Cadastro de usuários
 
 **Fluxo Principal**
 
- 1. O sistema apresenta um botão "Cadastrar-se"
+ 	1. O sistema apresenta um botão "Cadastrar-se"
 	2. O usuário clica no botão "Cadastrar-se"
 	3. O sistema encaminha o usuário para a página de cadastro
 	4. O sistema apresenta um formulário com os campos a serem preenchidos
@@ -34,7 +34,7 @@ Cadastro de usuários
 	7. O usuário clica no botão "Enviar"
 	8. O sistema valida os campos
 	9. O sistema armazena o perfil e informa ao usuário que a operação foi concluída com sucesso
-10. O sistema encaminha o usuário para a tela principal
+	10. O sistema encaminha o usuário para a tela principal
 
 **Fluxo Alternativo A**
 
