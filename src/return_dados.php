@@ -7,7 +7,6 @@ function return_dados($dado){
 
     $sql ="SELECT * FROM usuarios WHERE nickname LIKE '$nick';"; 
     $resposta = mysqli_query($mysqli,$sql);
-    $linhas = mysqli_num_rows($resposta);
     $usuario = mysqli_fetch_array($resposta);
 
     if($dado == "nickname"){
