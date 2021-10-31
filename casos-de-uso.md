@@ -90,21 +90,49 @@ Login
 
 ### CDU 03
 
-Duis nec orci quis velit faucibus hendrerit tempus vel libero.
+Editar Usuário
 
 **Fluxo Principal**
 
-1. Praesent interdum lectus sit amet augue tincidunt imperdiet.
-2. Duis ac dolor vel nisi imperdiet vehicula et non sem.
-3. Nunc imperdiet tortor consequat, lobortis purus non, interdum risus.
+	1. O sistema apresenta um botão "Editar"
+	2. O usuário clica no botão "Editar"
+	3. O sistema encaminha o usuário para a página de editar dados
+	4. O sistema apresenta um formulário com os campos do usuário
+	5. O usuário altera os campos desejados
+	6. O usuário preenche os campos obrigatórios
+	7. O sistema valida os campos
+	8. O sistema armazena as alterações e informa ao usuário que que a operação foi concluída com sucesso
+        9. O sistema encaminha o usuário para a tela inicial
 
 **Fluxo Alternativo A**
 
-1. Aliquam efficitur arcu ac fermentum egestas.
-2. Pellentesque ac diam vitae erat bibendum hendrerit.
-3. Mauris sed purus sit amet lectus efficitur placerat et eu diam.
-4. Aenean ullamcorper tellus quis nibh porttitor congue.
-5. Phasellus laoreet erat eget condimentum dictum.
+	1. O sistema apresenta um botão "Editar"
+	2. O usuário clica no botão "Editar"
+	3. O sistema encaminha o usuário para a página de editar dados
+	4. O sistema apresenta um formulário com os campos do usuário
+	5. O usuário altera os campos desejados
+	6. O usuário preenche os campos obrigatórios
+	7. O sistema informa que existem campos inválidos
+	8. O usuário corrige os campos inválidos 
+	9. O usuário preenche os campos obrigatórios e clica no botão "Enviar"
+       10. O sistema valida os campos
+       11. O sistema armazena as alterações e informa ao usuário que a operação foi concluída com sucesso
+       12. O sistema encaminha o usuário para a tela principal
+
+**Fluxo Alternativo B**
+
+	1. O sistema apresenta um botão "Editar"
+	2. O usuário clica no botão "Editar"
+	3. O sistema encaminha o usuário para a página de editar dados
+	4. O sistema apresenta um formulário com os campos do usuário
+	5. O usuário altera os campos desejados
+	6. O usuário preenche os campos obrigatórios
+	7. O sistema informa que a senha atual não correspode à senha cadastrada 
+	8. O usuário corrige a senha atual 
+	9. O usuário preenche os campos obrigatórios e clica no botão "Enviar"
+       10. O sistema valida os campos
+       11. O sistema armazena as alterações e informa ao usuário que a operação foi concluída com sucesso
+       12. O sistema encaminha o usuário para a tela principal 
 
 ### CDU 02
 
