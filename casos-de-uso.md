@@ -115,9 +115,9 @@ Editar Usuário
 	7. O sistema informa que existem campos inválidos
 	8. O usuário corrige os campos inválidos 
 	9. O usuário preenche os campos obrigatórios e clica no botão "Enviar"
-       10. O sistema valida os campos
-       11. O sistema armazena as alterações e informa ao usuário que a operação foi concluída com sucesso
-       12. O sistema encaminha o usuário para a tela principal
+	10. O sistema valida os campos
+	11. O sistema armazena as alterações e informa ao usuário que a operação foi concluída com sucesso
+	12. O sistema encaminha o usuário para a tela principal
 
 **Fluxo Alternativo B**
 
@@ -130,9 +130,9 @@ Editar Usuário
 	7. O sistema informa que a senha atual não correspode à senha cadastrada 
 	8. O usuário corrige a senha atual 
 	9. O usuário preenche os campos obrigatórios e clica no botão "Enviar"
-       10. O sistema valida os campos
-       11. O sistema armazena as alterações e informa ao usuário que a operação foi concluída com sucesso
-       12. O sistema encaminha o usuário para a tela principal 
+	10. O sistema valida os campos
+	11. O sistema armazena as alterações e informa ao usuário que a operação foi concluída com sucesso
+	12. O sistema encaminha o usuário para a tela principal 
 
 ### CDU 04
 
