@@ -70,22 +70,23 @@ Cadastro de usuários
 
 ### CDU 02
 
-Morbi fringilla dolor at mattis vestibulum.
+Login
 
 **Fluxo Principal**
 
-1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-2. Mauris varius massa ac fermentum scelerisque.
-3. Morbi in tortor dignissim, bibendum tellus et, varius odio.
-4. Mauris egestas leo a suscipit feugiat.
-
+	1. O sistema apresenta um formulário com os campos nickname e senha
+	2. O usuário insere seu nickname e sua senha e clica no botão "Entrar"
+	3. O sistema valida o nickname e a senha do usuário
+	4. O sistema encaminha o usuário para a tela inicial
+	
 **Fluxo Alternativo A**
 
-1. Nulla elementum diam eu elementum rutrum.
-2. Aenean scelerisque est at nunc ornare, ac condimentum justo sollicitudin.
-3. Quisque eget risus ut est lacinia sollicitudin ac non diam.
-4. Quisque ac nulla convallis, lobortis nibh ac, tristique enim.
-5. Nulla ultricies metus nec risus mollis, interdum ultrices justo malesuada.
+	1. O sistema apresenta um formulário com os campos nickname e senha
+	2. O usuário insere seu nickname e sua senha e clica no botão "Entrar"
+	3. O sistema informa que o nickname e/ou a senha são inválidos
+	4. O usuário corrige as informações de nickname e senha e clica no botão "Entrar"
+	5. O sistema valida o nickname e a senha do usuário
+	6. O sistema encaminha o usuário para a tela inicial
 
 ### CDU 03
 
@@ -104,3 +105,42 @@ Duis nec orci quis velit faucibus hendrerit tempus vel libero.
 3. Mauris sed purus sit amet lectus efficitur placerat et eu diam.
 4. Aenean ullamcorper tellus quis nibh porttitor congue.
 5. Phasellus laoreet erat eget condimentum dictum.
+
+### CDU 02
+
+Morbi fringilla dolor at mattis vestibulum.
+
+**Fluxo Principal**
+
+1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+2. Mauris varius massa ac fermentum scelerisque.
+3. Morbi in tortor dignissim, bibendum tellus et, varius odio.
+4. Mauris egestas leo a suscipit feugiat.
+
+**Fluxo Alternativo A**
+
+1. Nulla elementum diam eu elementum rutrum.
+2. Aenean scelerisque est at nunc ornare, ac condimentum justo sollicitudin.
+3. Quisque eget risus ut est lacinia sollicitudin ac non diam.
+4. Quisque ac nulla convallis, lobortis nibh ac, tristique enim.
+5. Nulla ultricies metus nec risus mollis, interdum ultrices justo malesuada.
+
+### CDU 02
+
+Morbi fringilla dolor at mattis vestibulum.
+
+**Fluxo Principal**
+
+1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+2. Mauris varius massa ac fermentum scelerisque.
+3. Morbi in tortor dignissim, bibendum tellus et, varius odio.
+4. Mauris egestas leo a suscipit feugiat.
+
+**Fluxo Alternativo A**
+
+1. Nulla elementum diam eu elementum rutrum.
+2. Aenean scelerisque est at nunc ornare, ac condimentum justo sollicitudin.
+3. Quisque eget risus ut est lacinia sollicitudin ac non diam.
+4. Quisque ac nulla convallis, lobortis nibh ac, tristique enim.
+5. Nulla ultricies metus nec risus mollis, interdum ultrices justo malesuada.
+
