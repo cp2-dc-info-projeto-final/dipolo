@@ -1,4 +1,5 @@
 <?php include "autentica.php"; ?>
+<?php include "return_dados.php"; ?>
 
 <html>
 
@@ -70,15 +71,34 @@
                     <div class="col"></div>
                 </div>
             <?php else : ?>
-                <div>
-                    <strong>Exibir Meus Dados</strong></p>
-                    <form action="recebe_dados.php" method="POST">
-                        <input type="hidden" name="login" value="exibir">
-                        <input type="hidden" name="nick" value="<?php echo $_SESSION["nickname"] ?>">
-                        <p><input type="submit" value="Exibir"></p>
-                    </form>
-                    <p><a href="logout.php">LOGOUT</a></p>
-                    <br><br>
+                <div class="row justify-content-between px-4">
+                    <div class="col-7">
+                        <form action="#" method="POST">
+                            <textarea class="form-control mb-3" rows="5" placeholder="A ser implementada..." disabled></textarea>
+                            <button type="submit" class="btn btn-outline-primary btn-lg" disabled>Criar postagem</button>
+                        </form>
+                    </div>
+                    <div class="col-2">
+                        <div class="figure-img img-fluid rounded px-5 py-5 bg-azul text-light">Imagem de perfil (A ser implementada)</div>
+                        <p class="text-center fs-4 mb-0">
+                            <?php echo return_dados("nickname"); ?> <a class="text-decoration-none fw-bold" href="alteracao.php">(Editar)</a>
+                        </p>
+                        <p class="text-center fw-light text-muted"><?php echo return_dados("nome"); ?></p>
+                        <p class="">Bio (A ser implementada)</p>
+                        <div class="pb-5"></div>
+                        <div class="pb-1 my-3 bg-azul"></div>
+                        <p class="mb-1">Local (WIP)</p>
+                        <p>Interesses (WIP)</p>
+                        <!--
+                        <form action="recebe_dados.php" method="POST">
+                            <input type="hidden" name="login" value="exibir">
+                            <input type="hidden" name="nick" value="<?php echo $_SESSION["nickname"] ?>">
+                            <p><input type="submit" value="Exibir"></p>
+                        </form>
+                        <p><a href="logout.php">Logout</a></p>
+                        <br><br>
+                        -->
+                    </div>
                 </div>
             <?php endif; ?>
         </div>

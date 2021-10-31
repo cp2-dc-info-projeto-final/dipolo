@@ -108,7 +108,7 @@
         $linhas = mysqli_num_rows($resposta);
         $usuario = mysqli_fetch_array($resposta);
 
-        echo "Nickname: ". $usuario["nickname"]. "<br>";
+        /*echo "Nickname: ". $usuario["nickname"]. "<br>";
         echo "Nome Completo: ". $usuario["nome"]. "<br>";
         echo "Data de Nascimento: ". $usuario["datanasc"]. "<br>";
         echo "Email: ". $usuario["email"]. "<br>";
@@ -117,7 +117,7 @@
         //?cod_usuario=".$usuario["cod_usuario"]."
         echo "<a href='alteracao.php?cod_usuario=".$usuario["cod_usuario"]."'> Alterar Usuário </a> <br>"; 
         echo "<a href='excluir.php?cod_usuario=".$usuario["cod_usuario"]."'> Excluir Usuário </a> <br>";
-        echo "<br><Br><a href='index.php'> Voltar para tela inicial </a>";
+        echo "<br><Br><a href='index.php'> Voltar para tela inicial </a>";*/
                 
     }
 
