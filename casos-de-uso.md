@@ -102,7 +102,7 @@ Editar Usuário
 	6. O usuário preenche os campos obrigatórios
 	7. O sistema valida os campos
 	8. O sistema armazena as alterações e informa ao usuário que que a operação foi concluída com sucesso
-        9. O sistema encaminha o usuário para a tela inicial
+	9. O sistema encaminha o usuário para a tela inicial
 
 **Fluxo Alternativo A**
 
