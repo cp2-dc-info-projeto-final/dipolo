@@ -27,7 +27,7 @@
         <div class="container-flex pb-2">
             <?php if (!$_SESSION["fez_login"]) : ?>
                 <div class="row">
-                    <div class="col">
+                    <div class="col pt-4">
                         <h1 class="fw-boldest mb-4 display-3">Dipolo</h1>
                         <p class="fs-4">
                             Entre, debata, socialize,<br>
