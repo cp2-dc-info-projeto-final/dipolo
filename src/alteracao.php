@@ -14,7 +14,7 @@ include "return_dados.php"
 
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 
     <!-- Navbar -->
 
