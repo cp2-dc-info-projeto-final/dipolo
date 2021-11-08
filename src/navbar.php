@@ -18,6 +18,7 @@
         </ul>
         <a class="navbar-brand ms-2" style="font-weight: 500;" href="index.php">Dipolo</a>
         <form class="d-flex ms-auto my-2 my-lg-0 me-4">
+            <input type="hidden" name="login" value="buscar_usuarios">
             <input class="form-control me-2" type="search" placeholder="A ser implementada" aria-label="Search">
             <button class="btn btn-outline-success" type="submit" disabled>Pesquisar</button>
         </form>
