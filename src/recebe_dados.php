@@ -13,7 +13,7 @@
         $senha = $_POST["senha"];
         $confsenha = $_POST["confsenha"];
         $codadm = $_POST["codadm"];
-        $adm = "NÃO";
+        $adm = FALSE;
         $erro = 0;
 
         $nickname = htmlspecialchars($nickname);
@@ -78,7 +78,7 @@
         
         if($codadm == "adm@dipolo")
         {
-            $adm = "SIM";
+            $adm = TRUE;
         }
 
         if($erro == 0) 
