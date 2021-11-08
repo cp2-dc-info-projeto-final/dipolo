@@ -12,8 +12,6 @@
         $confemail = $_POST["confemail"];
         $senha = $_POST["senha"];
         $confsenha = $_POST["confsenha"];
-        $codadm = $_POST["codadm"];
-        $adm = "NÃO";
         $erro = 0;
 
         $nickname = htmlspecialchars($nickname);
@@ -22,16 +20,18 @@
         $confemail = htmlspecialchars($confemail);
         $senha = htmlspecialchars($senha);
         $confsenha = htmlspecialchars($confsenha);
-        $codadm = htmlspecialchars($codadm);
 
         $sql ="SELECT * FROM usuarios WHERE nickname LIKE '$nickname';"; 
         $resposta = mysqli_query($mysqli,$sql);
         $linhas = mysqli_num_rows($resposta);
 
-        if($linhas != 0)
+        if($nickname != $usuario["nickname"])
         {
-            echo "Nickname já existente.<br>";
-            $erro = 1;
+            if($linhas != 0)
+            {
+                echo "Nickname já existente.<br>";
+                $erro = 1;
+            }
         }
 
         if(strlen($nickname) < 3 OR strlen($nickname) > 10)
