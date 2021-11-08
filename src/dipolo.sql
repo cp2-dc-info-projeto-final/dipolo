@@ -14,3 +14,4 @@ CREATE TABLE usuarios (
 CREATE USER 'person'@'localhost' IDENTIFIED BY '1010';
 GRANT ALL PRIVILEGES ON tccfinal3.* TO 'person'@'localhost';
 
+ALTER TABLE 'usuarios' CHANGE 'adm' 'adm' BOOLEAN NOT NULL;
