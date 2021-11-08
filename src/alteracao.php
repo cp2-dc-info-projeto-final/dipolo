@@ -98,16 +98,6 @@ include "return_dados.php"
                                 </div>
                             </div>
 
-                            <div class="mb-3">
-                                <label for="alteracaoInputAdm" class="form-label">
-                                    <span class="text-danger">*</span>Código de administrador
-                                </label>
-                                <input type="password" class="form-control" id="alteracaoInputAdm" name="codadm" aria-describedby="passwordHelpBlock">
-                                <div id="senhaAviso" class="form-text">
-                                    Se for um administrador, insira seu código
-                                </div>
-                            </div>
-
                             <div class="text-danger mb-3">(*Campos Obrigatórios)</div>
 
                             <button type="submit" class="btn btn-primary">Confirmar Alterações</button>
