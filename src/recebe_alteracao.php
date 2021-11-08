@@ -96,7 +96,7 @@
         { 
             $senha_cript = password_hash($senha_nova, PASSWORD_DEFAULT);
             $sql ="UPDATE usuarios SET nickname = '$nickname',nome = '$nome',datanasc = '$datanasc',"; 
-            $sql .= "email = '$email',senha = '$senha_cript',adm = '$adm'";
+            $sql .= "email = '$email',senha = '$senha_cript'";
             $sql .= "WHERE cod_usuario = '$cod_usuario';";
             //mysqli_query(<conexão>,<comando>);
             mysqli_query($mysqli,$sql);
