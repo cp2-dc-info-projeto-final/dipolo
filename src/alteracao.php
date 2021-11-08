@@ -1,6 +1,8 @@
 <?php
 include "autentica.php";
-include "return_dados.php"
+include "return_dados.php";
+
+$cod_usuario = $_GET["cod_usuario"];
 ?>
 
 <html>

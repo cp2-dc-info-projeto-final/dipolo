@@ -24,5 +24,9 @@ function return_dados($dado){
     elseif($dado == "adm"){
         return $usuario["adm"];
     }
+    elseif($dado == "cod_usuario")
+    {
+        return $usuario["cod_usuario"];
+    }
 }
 ?>
