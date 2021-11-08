@@ -76,11 +76,6 @@
             $erro = 1;
         }
 
-        if($codadm == "adm@dipolo")
-        {
-            $adm = "SIM";
-        }
-
         if($erro == 0) 
         { 
             $senha_cript = password_hash($senha, PASSWORD_DEFAULT);
