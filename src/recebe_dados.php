@@ -12,6 +12,8 @@
         $confemail = $_POST["confemail"];
         $senha = $_POST["senha"];
         $confsenha = $_POST["confsenha"];
+        $codadm = $_POST["codadm"];
+        $adm = "NÃO";
         $erro = 0;
 
         $nickname = htmlspecialchars($nickname);
@@ -20,18 +22,16 @@
         $confemail = htmlspecialchars($confemail);
         $senha = htmlspecialchars($senha);
         $confsenha = htmlspecialchars($confsenha);
+        $codadm = htmlspecialchars($codadm);
 
         $sql ="SELECT * FROM usuarios WHERE nickname LIKE '$nickname';"; 
         $resposta = mysqli_query($mysqli,$sql);
         $linhas = mysqli_num_rows($resposta);
 
-        if($nickname != $usuario["nickname"])
+        if($linhas != 0)
         {
-            if($linhas != 0)
-            {
-                echo "Nickname já existente.<br>";
-                $erro = 1;
-            }
+            echo "Nickname já existente.<br>";
+            $erro = 1;
         }
 
         if(strlen($nickname) < 3 OR strlen($nickname) > 10)
@@ -74,6 +74,11 @@
         {
             echo "Favor digitar uma senha igual à anterior.<br>";
             $erro = 1;
+        }
+        
+        if($codadm == "adm@dipolo")
+        {
+            $adm = "SIM";
         }
 
         if($erro == 0) 
@@ -138,8 +143,6 @@
         $senha_atual = $_POST["senha_atual"];
         $senha_nova = $_POST["senha_nova"];
         $conf_senhanova = $_POST["conf_senhanova"];
-        $codadm = $_POST["codadm"];
-        $adm = "NÃO";
         $erro = 0;
 
         $nickname = htmlspecialchars($nickname);
@@ -149,7 +152,6 @@
         $senha_atual = htmlspecialchars($senha_atual);
         $senha_nova = htmlspecialchars($senha_nova);
         $conf_senhanova = htmlspecialchars($conf_senhanova);
-        $codadm = htmlspecialchars($codadm);
 
         $sql = "SELECT * FROM usuarios WHERE cod_usuario = '$cod_usuario';";
         $resposta = mysqli_query($mysqli, $sql);
@@ -159,10 +161,13 @@
         $resposta2 = mysqli_query($mysqli,$sql2);
         $linhas = mysqli_num_rows($resposta2);
 
-        if($linhas != 0)
+        if($nickname != $usuario["nickname"])
         {
-            echo "Nickname já existente.<br>";
-            $erro = 1;
+            if($linhas != 0)
+            {
+                echo "Nickname já existente.<br>";
+                $erro = 1;
+            }
         }
 
         if(strlen($nickname) < 3 OR strlen($nickname) > 10)
@@ -213,11 +218,6 @@
         {
             echo "A senha nova não foi repetida corretamente.<br>";
             $erro = 1;
-        }
-
-        if($codadm == "adm@dipolo")
-        {
-            $adm = "SIM";
         }
 
         if($erro == 0) 
