@@ -98,7 +98,7 @@
         }
     }
 
-    if($login == "exibir")
+    /*if($login == "exibir")
     {
         $nick = $_POST["nick"];
         $nick = htmlspecialchars($nick);
@@ -117,9 +117,9 @@
         //?cod_usuario=".$usuario["cod_usuario"]."
         echo "<a href='alteracao.php?cod_usuario=".$usuario["cod_usuario"]."'> Alterar Usuário </a> <br>"; 
         echo "<a href='excluir.php?cod_usuario=".$usuario["cod_usuario"]."'> Excluir Usuário </a> <br>";
-        echo "<br><Br><a href='index.php'> Voltar para tela inicial </a>";*/
+        echo "<br><Br><a href='index.php'> Voltar para tela inicial </a>";/*
                 
-    }
+    }*/
 
     if($login == "excluir")
     {
@@ -231,7 +231,7 @@
 
             echo "Usuário atualizado com sucesso!<br>"; 
             echo "Faça login novamente.";
-            echo "<br><Br><a href='login_cadastro.php'> Fazer Login </a>";
+            echo "<br><Br><a href='index.php'> Fazer Login </a>";
         }
     }
 
