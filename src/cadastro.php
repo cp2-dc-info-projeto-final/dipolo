@@ -10,7 +10,7 @@
 
 <body>
     <p><strong>FORMUÁRIO DE CADASTRO</strong></p>
-    <form action="recebe_dados.php" method="POST">
+    <form action="recebe_cadastro.php" method="POST">
         <input type="hidden" name="login" value="cadastrar">
 
         <p>Nickname: <input type="text" name="nickname" size="10" maxlength="10" required></p>
