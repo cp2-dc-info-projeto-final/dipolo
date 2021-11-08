@@ -28,7 +28,7 @@
 
             <div class="col-5">
                 <h1 class="text-center mb-4">Cadastrar</h1>
-                <form action="recebe_dados.php" method="POST">
+                <form action="recebe_cadastro.php" method="POST">
                     <input type="hidden" name="login" value="cadastrar">
                     <div class="row mb-3">
                         <div class="col-3">
