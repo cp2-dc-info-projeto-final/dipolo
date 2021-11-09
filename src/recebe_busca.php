@@ -36,7 +36,6 @@
                 //aparecer as opções de usuários em um dropdown?
             }
         }
-        
           
         echo "<br><Br><a href='index.php'> Voltar para tela inicial </a>";
     }
