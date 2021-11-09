@@ -19,8 +19,10 @@
         <a class="navbar-brand ms-2" style="font-weight: 500;" href="index.php">Dipolo</a>
         <form action="recebe_busca.php" method="POST" class="d-flex ms-auto my-2 my-lg-0 me-4">
             <input type="hidden" name="login" value="buscar_usuarios">
+            <?php if($_SESSION["fez_login"]) : ?>
             <input class="form-control me-2" name="nick" type="search" placeholder="Nickname" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+            <?php endif; ?>
         </form>
     </div>
 </nav>
