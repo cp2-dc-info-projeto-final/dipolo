@@ -83,26 +83,13 @@ $cod_usuario = $_GET["cod_usuario"];
                                     <input type="text" id="alteracaoInputConfEmail" class="form-control" name="confemail" size="30" maxlength="35" required>
                                 </div>
                             </div>
-                            <div class="mb-3">
-                                <label for="alteracaoInputSenhaAtual" class="form-label">
-                                    <span class="text-danger">*</span>Senha Atual
-                                </label>
-                                <input type="password" id="alteracaoInputSenhaAtual" class="form-control" name="senha_atual" maxlength="12">
-                            </div>
-                            <div class="row mb-4">
-                                <div class="col">
-                                    <label for="alteracaoInputSenhaNova" class="form-label">Nova Senha</label>
-                                    <input type="password" id="alteracaoInputSenhaNova" class="form-control" name="senha_nova" maxlength="12">
-                                </div>
-                                <div class="col">
-                                    <label for="alteracaoInputConfSenhaNova" class="form-label">Confirmar Senha Nova</label>
-                                    <input type="password" id="alteracaoInputConfSenhaNova" class="form-control" name="conf_senhanova" maxlength="12">
-                                </div>
-                            </div>
-
+                            
                             <div class="text-danger mb-3">(*Campos Obrigatórios)</div>
 
                             <button type="submit" class="btn btn-primary">Confirmar Alterações</button>
+                            <a class="text-decoration-none fw-bold" href="altera_senha.php?cod_usuario=<?php echo return_dados("cod_usuario"); ?>">
+                            &nbsp;&nbsp;&nbsp; <!--Colocar alinhada na direita, no limite das caixas de texto-->(Alterar senha)</a>
+
                         </form>
                     </div>
                 </div>
