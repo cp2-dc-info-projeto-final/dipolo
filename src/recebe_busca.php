@@ -8,24 +8,35 @@
     {
         $nick = $_POST["nick"];
         $nick = htmlspecialchars($nick);
+        $erro = 0;
                 
         $sql ="SELECT * FROM usuarios WHERE nickname LIKE '%$nick%';"; 
         $resposta = mysqli_query($mysqli,$sql);
         $linhas = mysqli_num_rows($resposta);
 
-        if($linhas == 0)
+        if(empty($nick))
         {
-            echo "Nenhum usuário foi encontrado";
+            echo "Insira um nickname válido";
+            $erro = 1;
         }
 
-        for($i = 0; $i < $linhas; $i++)
+        if($erro == 0)
         {
-            $usuario = mysqli_fetch_array($resposta);
-            echo $usuario["nickname"]."<br><br>";
-            //echo "<a href='index.php'>". $usuario["nickname"] . "</a> <br>";
-            //colocar nickname já como link para a página do usuário buscado?
-            //aparecer as opções de usuários em um dropdown?
+            if($linhas == 0)
+            {
+                echo "Nenhum usuário foi encontrado";
+            }
+
+            for($i = 0; $i < $linhas; $i++)
+            {
+                $usuario = mysqli_fetch_array($resposta);
+                echo $usuario["nickname"]."<br><br>";
+                //echo "<a href='#pagina_do_respectivo_usuario'>". $usuario["nickname"] . "</a> <br>";
+                //colocar nickname já como link para a página do usuário buscado?
+                //aparecer as opções de usuários em um dropdown?
+            }
         }
+        
           
         echo "<br><Br><a href='index.php'> Voltar para tela inicial </a>";
     }
