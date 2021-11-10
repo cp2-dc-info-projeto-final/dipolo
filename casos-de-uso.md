@@ -6,6 +6,7 @@
  - [CDU 02](#CDU-02): Login
  - [CDU 03](#CDU-03): Editar usuários
  - [CDU 04](#CDU-04): Logout
+ - [CDU 05](#CDU-05): Busca de Usuário por Palavra Chave
 
 
 ## Lista dos Atores
