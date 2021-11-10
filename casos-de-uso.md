@@ -144,3 +144,31 @@ Logout
 	3. O sistema encerra a sessão
 	4. O sistema encaminha o usuário pra tela principal
 	
+### CDU 05
+
+Busca de Usuário por Palavra Chave
+
+**Fluxo Principal**
+
+	1. O sistema apresenta uma barra de pesquisa com um campo de texto
+	2. O usuário insere o nickname que deseja encontrar
+	3. O usuário clica no botão "Pesquisar"
+	4. O sistema valida o texto
+	5. O sistema exibe o resultado da busca 
+
+**Fluxo Alternativo A**
+
+	1. O sistema apresenta uma barra de pesquisa com um campo de texto
+	2. O usuário insere o nickname que deseja encontrar
+	3. O usuário clica no botão "Pesquisar"
+	4. O sistema valida o texto
+	5. O sistema informa ao usuário que o nickname não existe
+
+**Fluxo Alternativo B**
+
+	1. O sistema apresenta uma barra de pesquisa com um campo de texto
+	2. O usuário clica no botão "Pesquisar"
+	3. O sistema informa que o usuário deve inserir um texto para busca
+	4. O usuário insere o nickname que deseja encontrar
+	5. O sistema valida o texto
+	6. O sistema exibe o resultado da busca 
