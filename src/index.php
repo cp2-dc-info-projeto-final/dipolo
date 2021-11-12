@@ -65,7 +65,7 @@
                             </div>
 
                             <!-- Botão de cadastro que leva a uma outra página -->
-                            <a class="btn btn-primary btn-lg ms-3" href="login_cadastro.php" role="button">Cadastrar</a>
+                            <a class="btn btn-primary btn-lg ms-3" href="cadastro.php" role="button">Cadastrar</a>
                         </div>
                     </div>
                     <div class="col"></div>
