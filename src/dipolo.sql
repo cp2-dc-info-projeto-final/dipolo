@@ -1,5 +1,7 @@
 CREATE DATABASE dipolotcc;
 
+USE dipolotcc;
+
 CREATE TABLE usuarios (
  cod_usuario int NOT NULL AUTO_INCREMENT, 
  nickname varchar(10) NOT NULL,
