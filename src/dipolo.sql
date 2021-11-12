@@ -1,4 +1,4 @@
-CREATE DATABASE tccfinal3;
+CREATE DATABASE dipolotcc;
 
 CREATE TABLE usuarios (
  cod_usuario int NOT NULL AUTO_INCREMENT, 
@@ -12,6 +12,6 @@ CREATE TABLE usuarios (
 );
 
 CREATE USER 'person'@'localhost' IDENTIFIED BY '1010';
-GRANT ALL PRIVILEGES ON tccfinal3.* TO 'person'@'localhost';
+GRANT ALL PRIVILEGES ON dipolotcc.* TO 'person'@'localhost';
 
 ALTER TABLE 'usuarios' CHANGE 'adm' 'adm' BOOLEAN NOT NULL;
