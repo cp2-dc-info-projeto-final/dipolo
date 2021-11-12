@@ -6,7 +6,35 @@
         <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="index.php">Página principal</a></li>
             <?php if($_SESSION["fez_login"] == false) : ?>
-            <li><a class="dropdown-item" href="index.php">Entrar</a></li>
+            <!--<li><a class="dropdown-item" href="index.php">Entrar</a></li>-->
+
+            <li><a href="#" class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#entrarModalNav">Entrar</a>
+                <div class="modal fade" id="entrarModalNav" tabindex="-1" aria-labelledby="entrarModalLabelNav" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="entrarModalLabelNav">Entrar</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="efetuar_login.php" method="POST">
+                                    <div class="mb-3">
+                                        <label for="entrarModalInputNicknameNav" class="form-label">Nickname</label>
+                                        <input type="text" class="form-control" id="entrarModalInputNicknameNav" name="nickname" size="11" maxlength="10" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="entrarModalInputPasswordNav" class="form-label">Senha</label>
+                                        <input type="password" class="form-control" id="entrarModalInputPasswordNav" name="senha" size="15" maxlength="12" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+
             <li><a class="dropdown-item" href="cadastro.php">Cadastrar</a></li>
             <?php endif; ?>
             <li><a class="dropdown-item disabled" href="#">Ajuda</a></li>
