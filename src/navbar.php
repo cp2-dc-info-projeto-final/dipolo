@@ -5,7 +5,9 @@
         </button>
         <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="index.php">Página principal</a></li>
-            <li><a class="dropdown-item" href="login_cadastro.php">Entrar / Cadastrar</a></li>
+            <?php if($_SESSION["fez_login"] == false) : ?>
+            <li><a class="dropdown-item" href="index.php">Entrar / Cadastrar</a></li>
+            <?php endif; ?>
             <li><a class="dropdown-item disabled" href="#">Ajuda</a></li>
             <li><a class="dropdown-item disabled" href="#">Enviar feedback</a></li>
             <?php if($_SESSION["fez_login"]) : ?>
@@ -19,7 +21,7 @@
         <a class="navbar-brand ms-2" style="font-weight: 500;" href="index.php">Dipolo</a>
         <?php if($_SESSION["fez_login"]) : ?>
         <form action="recebe_busca.php" method="POST" class="d-flex ms-auto my-2 my-lg-0 me-4">
-            <input type="hidden" name="login" value="buscar_usuarios">
+            <input type="hidden" name="login" value="buscar_nickname">
             <input class="form-control me-2" name="nick" type="search" placeholder="Nickname" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Pesquisar</button>
         </form>
