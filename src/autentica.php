@@ -11,7 +11,7 @@
 
     if(empty($nickname) OR empty($senha)){
         //echo "Você não fez o login!";
-        //echo "<p><a href='login.html'>Página de login</a></p>";
+        //echo "<p><a href='index.php'>Página de login</a></p>";
         $_SESSION["fez_login"] = false;
     }
 
@@ -24,7 +24,7 @@
             unset($_SESSION["nickname"]);
             unset($_SESSION["senha"]);
             // echo "Você não fez o login!";
-            // echo "<p><a href='login.html'>Página de login</a></p>";
+            // echo "<p><a href='index.php'>Página de login</a></p>";
             $_SESSION["fez_login"] = false;
         }
 
@@ -34,7 +34,7 @@
                 unset($_SESSION["nickname"]);
                 unset($_SESSION["senha"]);
                 // echo "Você não fez o login!";
-                // echo "<p><a href='login.html'>Página de login</a></p>";
+                // echo "<p><a href='index.php'>Página de login</a></p>";
                 $_SESSION["fez_login"] = false;
             }
         }
