@@ -102,7 +102,7 @@ $cod_usuario = $_GET["cod_usuario"];
 
     <!-- Footer -->
 
-    <?php echo file_get_contents('footer.html') ?>
+    <?php include 'footer.html'; ?>
 
     <body>
 

@@ -35,7 +35,7 @@
 
     <!-- Footer -->
 
-    <?php echo file_get_contents('footer.html') ?>
+    <?php include 'footer.html'; ?>
 
 </body>
 
