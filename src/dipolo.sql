@@ -7,11 +7,9 @@ CREATE TABLE usuarios (
  datanasc date NOT NULL,
  email varchar(35) NOT NULL,
  senha varchar(255) NOT NULL,
- adm char(3) NOT NULL,
+ adm boolean NOT NULL,
  primary key(cod_usuario)
 );
 
 CREATE USER 'person'@'localhost' IDENTIFIED BY '1010';
 GRANT ALL PRIVILEGES ON dipolotcc.* TO 'person'@'localhost';
-
-ALTER TABLE 'usuarios' CHANGE 'adm' 'adm' BOOLEAN NOT NULL;
