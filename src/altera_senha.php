@@ -63,16 +63,16 @@ $cod_usuario = $_GET["cod_usuario"];
                                 <label for="alteracaoInputSenhaAtual" class="form-label">
                                     <span class="text-danger">*</span>Senha Atual
                                 </label>
-                                <input type="password" id="alteracaoInputSenhaAtual" class="form-control" name="senha_atual" maxlength="12">
+                                <input type="password" id="alteracaoInputSenhaAtual" class="form-control" name="senha_atual" maxlength="12" required>
                             </div>
                             <div class="row mb-4">
                                 <div class="col">
                                     <span class="text-danger">*</span>Nova Senha
-                                    <input type="password" id="alteracaoInputSenhaNova" class="form-control" name="senha_nova" maxlength="12">
+                                    <input type="password" id="alteracaoInputSenhaNova" class="form-control" name="senha_nova" maxlength="12" required>
                                 </div>
                                 <div class="col">
                                     <span class="text-danger">*</span>Confirmar Nova Senha
-                                    <input type="password" id="alteracaoInputConfSenhaNova" class="form-control" name="conf_senhanova" maxlength="12">
+                                    <input type="password" id="alteracaoInputConfSenhaNova" class="form-control" name="conf_senhanova" maxlength="12" required>
                                 </div>
                             </div>
 
