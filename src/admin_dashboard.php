@@ -5,7 +5,7 @@
 <html>
 
 <head>
-    <title>Página inicial</title>
+    <title>Página do administrador - Dipolo</title>
     <meta charset="utf-8">
     <link href="css/main.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -30,7 +30,7 @@
         <div class="container-flex p-5 py-5">
             <div class="container-flex pb-2">
                 <div class="row justify-content-evenly px-4">
-                    <h1 class="text-center mb-5 fw-bold">Dashboard</h1>
+                    <h1 class="text-center mb-5 fw-bold">Página do administrador</h1>
                     <div class="row justify-content-evenly px-4">
                         <div class="col-3 border border-dark rounded p-4">
                             <div class="border-bottom border-dark">
