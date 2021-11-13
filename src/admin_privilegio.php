@@ -12,8 +12,8 @@ if ($_SESSION['fez_login'] && return_dados("adm", "")) {
             $sql = "UPDATE usuarios SET adm = 1 WHERE nickname LIKE \"" . $_POST['usuario_alvo'] . "\";";
             mysqli_query($mysqli, $sql);
         }
-        header("Location: admin_dashboard.php");
     }
+    header("Location: admin_dashboard.php");
 } else {
     header("Location: index.php");
 }
