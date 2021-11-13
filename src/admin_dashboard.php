@@ -1,5 +1,6 @@
 <?php include "autentica.php"; ?>
 <?php include "return_dados.php"; ?>
+<?php include "admin_listar.php"; ?>
 
 <html>
 
@@ -14,7 +15,7 @@
 
 <body class="d-flex flex-column min-vh-100">
 
-    <?php if (return_dados("adm")) : ?>
+    <?php if (return_dados("adm", "")) : ?>
 
         <!-- Navbar -->
 
@@ -52,6 +53,7 @@
                                 <h4>Usuários</h4>
                             </div>
                             <div>
+                                <?php admin_listar_usuarios(); ?>
                             </div>
                         </div>
                     </div>

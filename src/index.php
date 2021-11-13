@@ -82,17 +82,17 @@
                     <div class="col-2">
                         <div class="figure-img img-fluid rounded px-5 py-5 bg-azul text-light">Imagem de perfil (A ser implementada)</div>
                         <p class="text-center fs-4 mb-0">
-                            <?php echo return_dados("nickname"); ?>
-                            <a class="text-decoration-none text-dark" href="alteracao.php?cod_usuario=<?php echo return_dados("cod_usuario"); ?>">
+                            <?php echo return_dados("nickname", ""); ?>
+                            <a class="text-decoration-none text-dark" href="alteracao.php?cod_usuario=<?php echo return_dados("cod_usuario", ""); ?>">
                                 <i class="bi bi-gear" role="img" aria-label="Editar dados"></i>
                             </a>
-                            <?php if (return_dados("adm")) : ?>
+                            <?php if (return_dados("adm", "")) : ?>
                                 <a class="text-decoration-none text-dark" href="admin_dashboard.php">
                                     <i class="bi bi-tools" role="img" aria-label="Ferramentas de administrador"></i>
                                 </a>
                             <?php endif; ?>
                         </p>
-                        <p class="text-center fw-light text-muted"><?php echo return_dados("nome"); ?></p>
+                        <p class="text-center fw-light text-muted"><?php echo return_dados("nome", ""); ?></p>
                         <p class="">Bio (A ser implementada)</p>
                         <div class="pb-5"></div>
                         <div class="pb-1 my-3 bg-azul"></div>

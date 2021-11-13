@@ -35,9 +35,9 @@ $cod_usuario = $_GET["cod_usuario"];
                     <div class="col-2 py-4">
                         <div class="figure-img img-fluid rounded px-5 py-5 bg-azul text-light">Imagem de perfil (A ser implementada)</div>
                         <p class="text-center fs-4 mb-0">
-                            <?php echo return_dados("nickname"); ?>
+                            <?php echo return_dados("nickname", ""); ?>
                         </p>
-                        <p class="text-center fw-light text-muted"><?php echo return_dados("nome"); ?></p>
+                        <p class="text-center fw-light text-muted"><?php echo return_dados("nome", ""); ?></p>
                         <p class="">Bio (A ser implementada)</p>
                         <div class="pb-5"></div>
                         <div class="pb-1 my-3 bg-azul"></div>
@@ -61,20 +61,20 @@ $cod_usuario = $_GET["cod_usuario"];
 
                             <div class="mb-3">
                                 <label for="alteracaoInputNickname" class="form-label">Nickname</label>
-                                <input type="text" id="alteracaoInputNickname" class="form-control" name="nickname" size="10" maxlength="10" value="<?php echo return_dados("nickname"); ?>" required>
+                                <input type="text" id="alteracaoInputNickname" class="form-control" name="nickname" size="10" maxlength="10" value="<?php echo return_dados("nickname", ""); ?>" required>
                             </div>
                             <div class="mb-3">
                                 <label for="alteracaoInputNome" class="form-label">Nome Completo</label>
-                                <input type="text" class="form-control" id="alteracaoInputNome" name="nome" size="30" maxlength="100" value="<?php echo return_dados("nome"); ?>" required>
+                                <input type="text" class="form-control" id="alteracaoInputNome" name="nome" size="30" maxlength="100" value="<?php echo return_dados("nome", ""); ?>" required>
                             </div>
                             <div class="mb-3">
                                 <label for="alteracaoInputDataNasc" class="form-label">Data de Nascimento</label>
-                                <input type="date" id="alteracaoInputDataNasc" class="form-control" name="datanasc" value="<?php echo return_dados("datanasc"); ?>" required>
+                                <input type="date" id="alteracaoInputDataNasc" class="form-control" name="datanasc" value="<?php echo return_dados("datanasc", ""); ?>" required>
                             </div>
                             <div class="row mb-3">
                                 <div class="col">
                                     <label for="alteracaoInputEmail" class="form-label">Email</label>
-                                    <input type="text" id="alteracaoInputEmail" class="form-control" name="email" size="30" maxlength="35" value="<?php echo return_dados("email"); ?>" required>
+                                    <input type="text" id="alteracaoInputEmail" class="form-control" name="email" size="30" maxlength="35" value="<?php echo return_dados("email", ""); ?>" required>
                                 </div>
                                 <div class="col">
                                     <label for="alteracaoInputConfEmail" class="form-label">
@@ -91,7 +91,7 @@ $cod_usuario = $_GET["cod_usuario"];
                                     <button type="submit" class="btn btn-primary">Confirmar Alterações</button>
                                 </div>
                                 <div class="col-auto">
-                                    <a class="text-decoration-none fw-bold" href="altera_senha.php?cod_usuario=<?php echo return_dados("cod_usuario"); ?>">
+                                    <a class="text-decoration-none fw-bold" href="altera_senha.php?cod_usuario=<?php echo return_dados("cod_usuario", ""); ?>">
                                         (Alterar senha)
                                     </a>
                                 </div>
