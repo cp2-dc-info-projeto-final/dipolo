@@ -14,7 +14,8 @@
         $senha = $_POST["senha"];
         $confsenha = $_POST["confsenha"];
         $codadm = $_POST["codadm"];
-        $adm = FALSE;
+        // Quando for 0, é falso
+        $adm = 0;
         $erro = 0;
 
         $nickname = htmlspecialchars($nickname);
