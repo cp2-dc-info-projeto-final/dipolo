@@ -29,8 +29,29 @@
         <div class="container-flex p-5 py-5">
             <div class="container-flex pb-2">
                 <div class="row justify-content-evenly px-4">
-                    <h1 class="text-center mb-4 fw-bold">Dashboard</h1>
+                    <h1 class="text-center mb-5 fw-bold">Dashboard</h1>
                     <div class="row justify-content-evenly px-4">
+                        <div class="col-3 border border-dark rounded p-4">
+                            <div class="border-bottom border-dark mb-2">
+                                <h4>Postagens</h4>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                        <div class="col-3 border border-dark rounded p-4">
+                            <div class="border-bottom border-dark">
+                                <h4>Comentários</h4>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                        <div class="col-3 border border-dark rounded p-4">
+                            <div class="border-bottom border-dark">
+                                <h4>Usuários</h4>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
