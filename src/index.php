@@ -89,15 +89,6 @@
                         <div class="pb-1 my-3 bg-azul"></div>
                         <p class="mb-1">Local (WIP)</p>
                         <p>Interesses (WIP)</p>
-                        <!--
-                        <form action="recebe_dados.php" method="POST">
-                            <input type="hidden" name="login" value="exibir">
-                            <input type="hidden" name="nick" value="<?php echo $_SESSION["nickname"] ?>">
-                            <p><input type="submit" value="Exibir"></p>
-                        </form>
-                        <p><a href="logout.php">Logout</a></p>
-                        <br><br>
-                        -->
                     </div>
                 </div>
             <?php endif; ?>
