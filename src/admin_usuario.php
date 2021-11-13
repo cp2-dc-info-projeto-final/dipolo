@@ -11,19 +11,21 @@
                 <ul class="dropdown-menu">
                     <li>
                         <form action="excluir_conta.php" method="POST" class="m-0">
-                            <button type="submit" class="btn dropdown-item rounded-0" name="usuario_alvo" value="<?php echo $usuario["nickname"]; ?>">Excluir</button>
+                            <button type="submit" class="btn dropdown-item rounded-0" name="usuario_alvo" value="<?php echo $usuario["nickname"]; ?>">
+                                Excluir
+                            </button>
                         </form>
                     </li>
                     <li>
-                        <?php if (return_dados("adm", $usuario["nickname"])) : ?>
-                            <form class="m-0">
-                                <button type="submit" class="btn dropdown-item rounded-0">Retirar privilégios</button>
-                            </form>
-                        <?php else : ?>
-                            <form class="m-0">
-                                <button type="submit" class="btn dropdown-item rounded-0">Conceder privilégios</button>
-                            </form>
-                        <?php endif; ?>
+                        <form action="admin_privilegio.php" method="POST" class="m-0">
+                            <button type="submit" class="btn dropdown-item rounded-0" name="usuario_alvo" value="<?php echo $usuario["nickname"]; ?>">
+                                <?php if (return_dados("adm", $usuario["nickname"])) : ?>
+                                    Retirar privilégios
+                                <?php else : ?>
+                                    Conceder privilégios
+                                <?php endif; ?>
+                            </button>
+                        </form>
                     </li>
                 </ul>
             </div>
@@ -31,9 +33,16 @@
     </div>
     <div class="row my-2">
         <?php if (return_dados("adm", $usuario["nickname"])) : ?>
-            <p class="text-success m-0">É administrador</p>
+            <p class="text-success m-0">
+                É administrador
+                <?php if ($usuario["nickname"] == $_SESSION["nickname"]) : ?>
+                    (Você)
+                <?php endif; ?>
+            </p>
         <?php else : ?>
-            <p class="text-danger m-0">Não é administrador</p>
+            <p class="text-danger m-0">
+                Não é administrador
+            </p>
         <?php endif; ?>
     </div>
 </div>
