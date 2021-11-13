@@ -13,5 +13,5 @@ CREATE TABLE usuarios (
  primary key(cod_usuario)
 );
 
-CREATE USER 'person'@'localhost' IDENTIFIED BY '1010';
-GRANT ALL PRIVILEGES ON dipolotcc.* TO 'person'@'localhost';
+CREATE USER 'dipolo'@'localhost' IDENTIFIED BY '1010';
+GRANT ALL PRIVILEGES ON dipolotcc.* TO 'dipolo'@'localhost';
