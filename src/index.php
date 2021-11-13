@@ -86,6 +86,11 @@
                             <a class="text-decoration-none text-dark" href="alteracao.php?cod_usuario=<?php echo return_dados("cod_usuario"); ?>">
                                 <i class="bi bi-gear" role="img" aria-label="Editar dados"></i>
                             </a>
+                            <?php if (return_dados("adm")) : ?>
+                                <a class="text-decoration-none text-dark" href="admin_dashboard.php">
+                                    <i class="bi bi-tools" role="img" aria-label="Ferramentas de administrador"></i>
+                                </a>
+                            <?php endif; ?>
                         </p>
                         <p class="text-center fw-light text-muted"><?php echo return_dados("nome"); ?></p>
                         <p class="">Bio (A ser implementada)</p>
