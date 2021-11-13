@@ -83,12 +83,19 @@ $cod_usuario = $_GET["cod_usuario"];
                                     <input type="text" id="alteracaoInputConfEmail" class="form-control" name="confemail" size="30" maxlength="35" required>
                                 </div>
                             </div>
-                            
+
                             <div class="text-danger mb-3">(*Campos Obrigatórios)</div>
 
-                            <button type="submit" class="btn btn-primary">Confirmar Alterações</button>
-                            <a class="text-decoration-none fw-bold" href="altera_senha.php?cod_usuario=<?php echo return_dados("cod_usuario"); ?>">
-                            &nbsp;&nbsp;&nbsp; <!--Colocar alinhada na direita, no limite das caixas de texto-->(Alterar senha)</a>
+                            <div class="row justify-content-between">
+                                <div class="col-auto">
+                                    <button type="submit" class="btn btn-primary">Confirmar Alterações</button>
+                                </div>
+                                <div class="col-auto">
+                                    <a class="text-decoration-none fw-bold" href="altera_senha.php?cod_usuario=<?php echo return_dados("cod_usuario"); ?>">
+                                        (Alterar senha)
+                                    </a>
+                                </div>
+                            </div>
 
                         </form>
                     </div>
