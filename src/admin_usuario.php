@@ -10,8 +10,8 @@
                 </button>
                 <ul class="dropdown-menu">
                     <li>
-                        <form class="m-0">
-                            <button type="submit" class="btn dropdown-item rounded-0">Excluir</button>
+                        <form action="excluir_conta.php" method="POST" class="m-0">
+                            <button type="submit" class="btn dropdown-item rounded-0" name="usuario_alvo" value="<?php echo $usuario["nickname"]; ?>">Excluir</button>
                         </form>
                     </li>
                     <li>

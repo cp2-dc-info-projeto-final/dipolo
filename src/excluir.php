@@ -17,7 +17,7 @@
     <body>
 
         <p><strong>Confirmar Exclusão?</strong></p>
-        <form action="recebe_dados.php" method="POST">
+        <form action="excluir_conta.php" method="POST">
             <input type="hidden" name="login" value="excluir">
             <input type="hidden" name="cod_usuario" value="<?php echo $cod_usuario?>">
             <p><input type="submit" value="Excluir"></p>
