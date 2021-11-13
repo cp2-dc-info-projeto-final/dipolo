@@ -32,10 +32,11 @@
                     <h1 class="text-center mb-5 fw-bold">Dashboard</h1>
                     <div class="row justify-content-evenly px-4">
                         <div class="col-3 border border-dark rounded p-4">
-                            <div class="border-bottom border-dark mb-2">
+                            <div class="border-bottom border-dark">
                                 <h4>Postagens</h4>
                             </div>
                             <div>
+                                <p class="mt-3">A ser implementada.</p>
                             </div>
                         </div>
                         <div class="col-3 border border-dark rounded p-4">
@@ -43,6 +44,7 @@
                                 <h4>Comentários</h4>
                             </div>
                             <div>
+                                <p class="mt-3">A ser implementada.</p>
                             </div>
                         </div>
                         <div class="col-3 border border-dark rounded p-4">
