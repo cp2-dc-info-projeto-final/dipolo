@@ -156,6 +156,5 @@
         echo "<br><Br><a href='index.php'> Voltar para tela inicial </a>";
     }
 
-    mysqli_close($mysqli);
 
 ?>
