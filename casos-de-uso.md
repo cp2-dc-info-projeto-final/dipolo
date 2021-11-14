@@ -7,11 +7,11 @@
  - [CDU 03](#CDU-03): Editar usuários
  - [CDU 04](#CDU-04): Logout
  - [CDU 05](#CDU-05): Busca de Usuário por Palavra Chave
- - [CDU 05](#CDU-06): Listar Usuários (restrito ao administrador)
- - [CDU 05](#CDU-07): Editar Usuário (restrito ao administrador)
- - [CDU 05](#CDU-08): Excluir Usuário (restrito ao administrador)
- - [CDU 05](#CDU-09): Conceder Privilégios de Administrador
- - [CDU 05](#CDU-10): Retirar Privilégios de Administrador
+ - [CDU 06](#CDU-06): Listar Usuários (restrito ao administrador)
+ - [CDU 07](#CDU-07): Editar Usuário (restrito ao administrador)
+ - [CDU 08](#CDU-08): Excluir Usuário (restrito ao administrador)
+ - [CDU 09](#CDU-09): Conceder Privilégios de Administrador
+ - [CDU 10](#CDU-10): Retirar Privilégios de Administrador
 
 
 ## Lista dos Atores
