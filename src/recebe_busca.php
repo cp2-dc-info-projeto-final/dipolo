@@ -11,8 +11,8 @@
         $erro = 0;
                 
         $sql ="SELECT * FROM usuarios WHERE nickname LIKE '%$nick%';"; 
-        $resposta = mysqli_query($mysqli,$sql);
-        $linhas = mysqli_num_rows($resposta);
+        $resposta_busca = mysqli_query($mysqli,$sql);
+        $linhas = mysqli_num_rows($resposta_busca);
 
         if(empty($nick))
         {
@@ -22,6 +22,8 @@
  
         if($erro == 0)
         {
+            include "pagina_base_inicio.php";
+            echo "<div class=\"row justify-content-center\"><div class=\"col-3\">";
             if($linhas == 0)
             {
                 echo "Nenhum usuário foi encontrado";
@@ -29,15 +31,15 @@
 
             for($i = 0; $i < $linhas; $i++)
             {
-                $usuario = mysqli_fetch_array($resposta);
-                echo $usuario["nickname"]."<br><br>";
+                $usuario = mysqli_fetch_assoc($resposta_busca);
+                include "busca_usuario_template.php";
                 //echo "<a href='#pagina_do_respectivo_usuario'>". $usuario["nickname"] . "</a> <br>";
                 //colocar nickname já como link para a página do usuário buscado?
                 //aparecer as opções de usuários em um dropdown?
             }
+            echo "</div></div>";
+            include "pagina_base_final.php";
         }
-          
-        echo "<br><Br><a href='index.php'> Voltar para tela inicial </a>";
     }
 
 
