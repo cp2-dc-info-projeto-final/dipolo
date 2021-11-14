@@ -7,6 +7,11 @@
  - [CDU 03](#CDU-03): Editar usuários
  - [CDU 04](#CDU-04): Logout
  - [CDU 05](#CDU-05): Busca de Usuário por Palavra Chave
+ - [CDU 05](#CDU-06): Listar Usuários (restrito ao administrador)
+ - [CDU 05](#CDU-07): Editar Usuário (restrito ao administrador)
+ - [CDU 05](#CDU-08): Excluir Usuário (restrito ao administrador)
+ - [CDU 05](#CDU-09): Conceder Privilégios de Administrador
+ - [CDU 05](#CDU-10): Retirar Privilégios de Administrador
 
 
 ## Lista dos Atores
@@ -173,3 +178,63 @@ Busca de Usuário por Palavra Chave
 	4. O usuário insere o nickname que deseja encontrar
 	5. O sistema valida o texto
 	6. O sistema exibe o resultado da busca 
+
+### CDU 06
+
+Listar Usuários (restrito ao administrador)
+
+**Fluxo Principal**
+
+	1. O sistema apresenta (um campo ou uma tabela) "Usuários" e exibe todos os usuários cadastrados em forma de lista
+	
+### CDU 07
+
+Editar Usuário (restrito ao administrador)
+
+**Fluxo Principal**
+
+	1. O sistema apresenta um botão para editar o nickname do usuário
+	2. O usuário clica no botão 
+	3. O sistema exibe um formulário de edição com o campo nickname
+	4. O usuário insere o nickname desejado
+	5. O sistema valida o texto e atualiza a página do administrador
+
+**Fluxo Alternativo A**
+
+	1. O sistema apresenta um botão para editar o nickname do usuário
+	2. O usuário clica no botão 
+	3. O sistema exibe um formulário de edição com o campo nickname
+	4. O usuário insere o nickname desejado
+	5. O sistema informa que o nickname já existe
+	6. O usuário insere outro nickname
+	7. O sistema valida o texto e atualiza a página do administrador
+	
+### CDU 08
+
+Excluir Usuário (restrito ao administrador)
+
+**Fluxo Principal**
+
+	1. O sistema apresenta um menu com um botão "Excluir"
+	2. O usuário clica no botão 
+	3. O sistema exclui o usuário do banco de dados e atualiza a página do administrador
+	
+### CDU 09
+
+Conceder Privilégios de Administrador
+
+**Fluxo Principal**
+
+	1. O sistema apresenta um menu com um botão "Conceder privilégios"
+	2. O usuário clica no botão 
+	3. O sistema altera o campo adm no banco de dados e atualiza a página do administrador
+	
+### CDU 10
+
+Retirar Privilégios de Administrador
+
+**Fluxo Principal**
+
+	1. O sistema apresenta um menu com um botão "Retirar privilégios"
+	2. O usuário clica no botão 
+	3. O sistema altera o campo adm no banco de dados e atualiza a página do administrador
