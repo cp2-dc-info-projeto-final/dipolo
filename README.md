@@ -18,10 +18,10 @@ Projeto Final do Curso Técnico Integrado de Desenvolvimento de Sistemas - Colé
 - [Casos de Uso](casos-de-uso.md)
 - [Apresentação](apresentacao.pdf)
 
-**Diagrama de Classes**
+**Diagrama de Casos de Uso**
 
-![Diagrama de Classes](diagrama-exemplo.png)
+![Diagrama de Casos de Uso](diagrama-de-casos-de-uso.png)
 
 **Modelagem do Banco de Dados**
 
-![Diagrama de Banco de Dados](diagrama-exemplo.png)
+![Diagrama de Banco de Dados](diagrama-de-banco-de-dados.png)
