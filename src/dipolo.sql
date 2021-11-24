@@ -1,3 +1,6 @@
+DROP DATABASE IF EXISTS dipolotcc;
+DROP USER IF EXISTS 'dipolo'@'localhost';
+
 CREATE DATABASE dipolotcc;
 
 USE dipolotcc;
