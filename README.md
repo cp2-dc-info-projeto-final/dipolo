@@ -27,5 +27,5 @@ Projeto Final do Curso Técnico Integrado de Desenvolvimento de Sistemas - Colé
 ![Diagrama de Banco de Dados](diagrama-de-banco-de-dados.jpeg)
 
 **Login do Administrador Principal**
-Nickname: MainADM
-Senha: admmain
+ Nickname: MainADM
+ Senha: admmain
