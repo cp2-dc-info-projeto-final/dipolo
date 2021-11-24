@@ -6,12 +6,7 @@
         <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="index.php">Página principal</a></li>
             <?php if($_SESSION["fez_login"] == false) : ?>
-            <!--<li><a class="dropdown-item" href="index.php">Entrar</a></li>-->
-
-            <li><a href="#" class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#entrarModalNav">Entrar</a>
-            </li>
-
-
+            <li><a href="#" class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#entrarModalNav">Entrar</a></li>
             <li><a class="dropdown-item" href="cadastro.php">Cadastrar</a></li>
             <?php endif; ?>
             <li><a class="dropdown-item disabled" href="#">Ajuda</a></li>
