@@ -73,12 +73,14 @@
                 </div>
             <?php else : ?>
                 <div class="row justify-content-between px-4">
-                    <div class="col-7">
-                        <form action="#" method="POST">
-                            <textarea class="form-control mb-3" rows="5" placeholder="A ser implementada..." disabled></textarea>
-                            <button type="submit" class="btn btn-outline-primary btn-lg" disabled>Criar postagem</button>
-                        </form>
-                    </div>
+                <div class="col-7">
+                    <form action="recebe_postagem.php" method="POST">
+                        <input type="hidden" name="publi" value="post">
+                        <input type="hidden" name="cod_usuario" value="<?php echo return_dados("cod_usuario", ""); ?>">
+                        <textarea class="form-control mb-3" name="texto_post" rows="5" placeholder="Comece seu debate aqui" required></textarea>
+                        <button type="submit" class="btn btn-outline-primary btn-lg">Criar postagem</button>
+                    </form>
+                </div>
                     <div class="col-2">
                         <div class="figure-img img-fluid rounded px-5 py-5 bg-azul text-light">Imagem de perfil (A ser implementada)</div>
                         <p class="text-center fs-4 mb-0">
