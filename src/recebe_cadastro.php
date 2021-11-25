@@ -92,9 +92,6 @@
             //mysqli_query(<conexão>,<comando>);
             mysqli_query($mysqli,$sql);
 
-
-            //como informar ao usuário que o nickname já existe?
-
             echo "Usuário cadastrado com sucesso!"; 
             echo "<br><Br><a href='index.php'> Fazer Login </a>";
         }
