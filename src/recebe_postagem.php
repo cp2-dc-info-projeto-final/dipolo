@@ -19,8 +19,6 @@ if($publi == "post")
     $sql2 .= "VALUES (NULL, '$texto_post', $cod_usuario);";
     mysqli_query($mysqli,$sql2);
     header("Location: index.php");
-
-
 }
 
 ?>
