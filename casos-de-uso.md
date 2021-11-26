@@ -13,7 +13,7 @@
  - [CDU 09](#CDU-09): Conceder Privilégios de Administrador
  - [CDU 10](#CDU-10): Retirar Privilégios de Administrador
  - [CDU 11](#CDU-11): Criar Postagem
-
+ - [CDU 12](#CDU-12): Exibir timeline do usuário
 
 ## Lista dos Atores
 
@@ -250,7 +250,7 @@ Criar Postagem
 	1. O sistema apresenta uma caixa de texto 
 	2. O usuário insere o texto desejado
 	3. O usuário clica no botão "Criar postagem"
-	4. O sistema armazena a postagem e redireciona o usuário para a página inicial
+	4. O sistema armazena a postagem e atualiza a página inicial
 
 **Fluxo Alternativo A**
 
@@ -259,4 +259,15 @@ Criar Postagem
 	3. O sistema informa ao usuário que ele deve inserir um texto
 	4. O usuário insere o texto desejado
 	5. O usuário clica no botão "Criar postagem"
-	6. O sistema armazena a postagem e redireciona o usuário para a página inicial
+	6. O sistema armazena a postagem e atualiza a página inicial
+
+### CDU 12
+
+Exibir timeline do usuário
+
+**Fluxo Principal**
+
+	1. O sistema apresenta um botão "Ver timeline"
+	2. O usuário clica no botão "Ver timeline"
+	3. O sistema encaminha o usuário para a página da timeline
+	4. O sistema lista as postagens do usuário
