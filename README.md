@@ -20,11 +20,11 @@ Projeto Final do Curso Técnico Integrado de Desenvolvimento de Sistemas - Colé
 
 **Diagrama de Casos de Uso**
 
-![Diagrama de Casos de Uso](Diagrama de Casos de Uso.png)
+![Diagrama de Casos de Uso](diagrama-de-casos-de-uso.jpeg)
 
 **Modelagem do Banco de Dados**
 
-![Diagrama de Banco de Dados](Diagrama de Banco de Dados.png)
+![Diagrama de Banco de Dados](diagrama-de-banco-de-dados.jpeg)
 
 ## Login do Administrador Principal
  - Nickname: MainADM
