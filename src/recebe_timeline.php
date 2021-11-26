@@ -18,6 +18,7 @@
         $resposta3 = mysqli_query($mysqli,$sql3);    
         $linhas = mysqli_num_rows($resposta3);
 
+
         $time = mysqli_fetch_array($resposta);
 
         for($i = 0; $i < $linhas; $i++)
