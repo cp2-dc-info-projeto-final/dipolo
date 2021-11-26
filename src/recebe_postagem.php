@@ -18,6 +18,11 @@ if($publi == "post")
     $sql2 ="INSERT INTO postagens (cod_postagem, texto_post, cod_usuario)"; 
     $sql2 .= "VALUES (NULL, '$texto_post', $cod_usuario);";
     mysqli_query($mysqli,$sql2);
+
+    $sql3 = "SELECT nickname, texto_post";
+    $sql3 .= "FROM usuarios, postagens";
+    $sql3 .= "WHERE usuarios.cod_usuario = postagens.cod_usuario;";
+    $post = mysqli_query($mysqli,$sql3);
     header("Location: index.php");
 }
 
