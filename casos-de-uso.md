@@ -12,6 +12,7 @@
  - [CDU 08](#CDU-08): Excluir Usuário (restrito ao administrador)
  - [CDU 09](#CDU-09): Conceder Privilégios de Administrador
  - [CDU 10](#CDU-10): Retirar Privilégios de Administrador
+ - [CDU 11](#CDU-11): Criar Postagem
 
 
 ## Lista dos Atores
@@ -239,3 +240,23 @@ Retirar Privilégios de Administrador
 	1. O sistema apresenta um menu com um botão "Retirar privilégios"
 	2. O usuário clica no botão 
 	3. O sistema altera o campo adm no banco de dados e atualiza a página do administrador
+
+### CDU 11
+
+Criar Postagem
+
+**Fluxo Principal**
+
+	1. O sistema apresenta uma caixa de texto 
+	2. O usuário insere o texto desejado
+	3. O usuário clica no botão "Criar postagem"
+	4. O sistema armazena a postagem e redireciona o usuário para a página inicial
+
+**Fluxo Alternativo A**
+
+	1. O sistema apresenta uma caixa de texto 
+	2. O usuário clica no botão "Criar postagem"
+	3. O sistema informa ao usuário que ele deve inserir um texto
+	4. O usuário insere o texto desejado
+	5. O usuário clica no botão "Criar postagem"
+	6. O sistema armazena a postagem e redireciona o usuário para a página inicial
