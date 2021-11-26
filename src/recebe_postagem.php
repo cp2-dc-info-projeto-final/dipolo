@@ -1,22 +1,22 @@
 <?php
 
-include "conecta_mysql.php";
+    include "conecta_mysql.php";
 
-$publi = $_POST["publi"];
+    $publi = $_POST["publi"];
 
-if($publi == "post")
-{
-    $texto_post = $_POST["texto_post"];
-    $cod_usuario = $_POST["cod_usuario"];
+    if($publi == "post")
+    {
+        $texto_post = $_POST["texto_post"];
+        $cod_usuario = $_POST["cod_usuario"];
 
-    $texto_post = htmlspecialchars($texto_post);
+        $texto_post = htmlspecialchars($texto_post);
 
-    $sql ="INSERT INTO postagens (cod_postagem, texto_post, cod_usuario)"; 
-    $sql .= "VALUES (NULL, '$texto_post', $cod_usuario);";
-    mysqli_query($mysqli,$sql);
+        $sql ="INSERT INTO postagens (cod_postagem, texto_post, cod_usuario)"; 
+        $sql .= "VALUES (NULL, '$texto_post', $cod_usuario);";
+        mysqli_query($mysqli,$sql);
 
-    header("Location: index.php");
-}
+        header("Location: index.php");
+    }
 
     $sql2 = "SELECT * FROM postagens";
     $resposta = mysqli_query($mysqli, $sql2);
@@ -32,5 +32,8 @@ if($publi == "post")
         $sql1 .= "VALUES ($cod_usuario, $cod_postagem);";
         mysqli_query($mysqli,$sql1);
     }
+
+    mysqli_close($mysqli);
+
 
 ?>
