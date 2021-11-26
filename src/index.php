@@ -75,7 +75,6 @@
                 <div class="row justify-content-between px-4">
                 
                 <!-- Criar postagem -->
-
                 <?php include 'postagem.php'; ?>
 
                     <div class="col-2">
