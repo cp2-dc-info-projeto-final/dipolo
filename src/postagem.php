@@ -5,4 +5,7 @@
         <textarea class="form-control mb-3" name="texto_post" rows="5" maxlength="350" placeholder="Comece seu debate aqui" required></textarea>
         <button type="submit" class="btn btn-outline-primary btn-lg">Criar postagem</button>
     </form>
+
+    <?php include 'timeline.php'; ?>
+
 </div>

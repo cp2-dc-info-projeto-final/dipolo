@@ -74,8 +74,8 @@
             <?php else : ?>
                 <div class="row justify-content-between px-4">
                 
-                <!-- Criar postagem -->
-                <?php include 'postagem.php'; ?>
+                    <!-- Criar postagem -->
+                    <?php include 'postagem.php';?>                
 
                     <div class="col-2">
                         <div class="figure-img img-fluid rounded px-5 py-5 bg-azul text-light">Imagem de perfil (A ser implementada)</div>
