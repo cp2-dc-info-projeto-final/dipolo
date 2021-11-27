@@ -32,6 +32,8 @@
             echo "Post do usuario: $text_coment <br><br>";
         }
 
+        echo "<br><Br><a href='index.php'> Voltar para a página inicial </a>";
+
     }
 
     mysqli_close($mysqli);
