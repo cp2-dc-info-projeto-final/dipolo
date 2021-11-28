@@ -27,7 +27,7 @@ function return_dados($dado, $nick)
     }
 }
 
-function return_dados2($dado2, $nick2)
+/*function return_dados2($dado2, $nick2)
 {
     include "conecta_mysql.php";
 
@@ -50,12 +50,6 @@ function return_dados2($dado2, $nick2)
     } elseif ($dado == "cod_comentario"){
         return $postagem["cod_comentario"];
     }
-
-
-
-
-}
-
-
+}*/
 
 ?>
