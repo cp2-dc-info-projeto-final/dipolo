@@ -29,9 +29,9 @@
 
             echo "Nick do usuário: $nick <br>";
             echo "Post do usuario: $text_post <br>";
-            echo "<a class='text-decoration-none text-dark' href='alteracao_postagem.php?cod_postagem=<?php echo return_dados2('cod_postagem', ''); ?>
-            Editar postagem </a> <br><br>";
-            //return_dados tem que retornar dados da postagem
+            echo "<a class='text-decoration-none text-dark' 
+                    href='alteracao_postagem.php?cod_postagem=".$cod_postagem.
+                    "'> Editar postagem </a> <br><br>";
         }
 
         echo "<br><Br><a href='index.php'> Voltar para a página inicial </a>";

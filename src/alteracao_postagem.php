@@ -1,8 +1,15 @@
 <?php
 include "autentica.php";
 include "return_dados.php";
+include "conecta_mysql.php";
 
 $cod_postagem = $_GET["cod_postagem"];
+
+$sql ="SELECT * FROM postagens WHERE cod_postagem = $cod_postagem;"; 
+$resposta = mysqli_query($mysqli,$sql);
+$postagem = mysqli_fetch_array($resposta);
+
+$texto_post = $postagem["texto_post"];
 ?>
 
 <html>
@@ -51,9 +58,10 @@ $cod_postagem = $_GET["cod_postagem"];
                                 <input type="hidden" name="cod_postagem" value="<?php echo $cod_postagem ?>">
 
                                 <div class="mb-3">
+                                    <!--Criar uma label pra editar o texto da postagem-->
                                     <label for="alteracaoInputNickname" class="form-label">
                                         <span class="text-danger">*</span>Editar postagem</label>
-                                    <input type="text" id="alteracaoInputNickname" class="form-control" name="nickname" size="10" maxlength="10" value="<?php echo return_dados("nickname", ""); ?>" required>
+                                    <input type="textarea" id="alteracaoInputNickname" class="form-control" name="texto_post" maxlength="350" value="<?php echo $texto_post ?>" required>
                                 </div>
 
                                 <div class="text-danger mb-3">(*Campos Obrigatórios)</div>
