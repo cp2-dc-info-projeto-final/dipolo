@@ -96,7 +96,7 @@ $cod_usuario = $_GET["cod_usuario"];
                                         </a>
                                     </div>
                                     <div class="col-auto">
-                                        <a href="#" class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#excluirModalConta">Excluir conta</a>
+                                        <button type="button" class="btn btn-outline-primary btn-lg" data-bs-toggle="modal" data-bs-target="#excluirModalConta">Excluir conta</button>       
                                     </div>
                                 </div>
 
