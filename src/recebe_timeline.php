@@ -18,18 +18,17 @@
         $resposta3 = mysqli_query($mysqli,$sql3);    
         $linhas = mysqli_num_rows($resposta3);
 
-
         $time = mysqli_fetch_array($resposta);
+        $nick = $time["nickname"];
 
         for($i = 0; $i < $linhas; $i++)
         {
             $line = mysqli_fetch_array($resposta2);
 
-            $nick = $time["nickname"];
-            $text_coment = $line["texto_post"];
+            $text_post = $line["texto_post"];
 
             echo "Nick do usuário: $nick <br>";
-            echo "Post do usuario: $text_coment <br><br>";
+            echo "Post do usuario: $text_post <br><br>";
         }
 
         echo "<br><Br><a href='index.php'> Voltar para a página inicial </a>";
