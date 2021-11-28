@@ -156,6 +156,11 @@
     }
 
 
+    if($login == "alterar_postagem")
+    {
+        
+    }
+
     
 
     mysqli_close($mysqli);

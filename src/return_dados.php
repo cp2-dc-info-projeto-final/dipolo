@@ -26,4 +26,36 @@ function return_dados($dado, $nick)
         return $usuario["cod_usuario"];
     }
 }
+
+function return_dados2($dado2, $nick2)
+{
+    include "conecta_mysql.php";
+
+    if ($nick2 == "") {
+        $nick2 = $_SESSION["nickname"];
+        $nick2 = htmlspecialchars($nick2);
+    }
+
+    $sql2 = "SELECT cod_usuario FROM usuarios WHERE nickname LIKE '$nick2';";
+    $cod_usuario = mysqli_query($mysqli, $sql2);
+
+    $sql3 = "SELECT * FROM postagens WHERE cod_usuario = $cod_usuario;";
+    $resposta3 = mysqli_query($mysqli, $sql3);
+    $postagem = mysqli_fetch_array($resposta3);
+
+    if($dado == "cod_postagem"){
+        return $postagem["cod_postagem"];
+    } elseif ($dado == "texto_post") {
+        return $postagem["texto_post"];
+    } elseif ($dado == "cod_comentario"){
+        return $postagem["cod_comentario"];
+    }
+
+
+
+
+}
+
+
+
 ?>
