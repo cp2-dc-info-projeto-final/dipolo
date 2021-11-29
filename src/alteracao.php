@@ -87,16 +87,18 @@ $cod_usuario = $_GET["cod_usuario"];
                                 <div class="text-danger mb-3">(*Campos Obrigatórios)</div>
 
                                 <div class="row justify-content-between">
-                                    <div class="col-auto">
+                                    <div class="col-auto me-auto">
                                         <button type="submit" class="btn btn-primary">Confirmar Alterações</button>
                                     </div>
                                     <div class="col-auto">
-                                        <a class="text-decoration-none fw-bold" href="altera_senha.php?cod_usuario=<?php echo return_dados("cod_usuario", ""); ?>">
-                                            (Alterar senha)
+                                        <button type="button" class="btn btn-outline-primary" href="altera_senha.php?cod_usuario=<?php echo return_dados("cod_usuario", ""); ?>">
+                                            Alterar senha
                                         </a>
                                     </div>
                                     <div class="col-auto">
-                                        <button type="button" class="btn btn-outline-primary btn-lg" data-bs-toggle="modal" data-bs-target="#excluirModalConta">Excluir conta</button>       
+                                        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#excluirModalConta">
+                                            Excluir conta
+                                        </button>       
                                     </div>
                                 </div>
 
