@@ -60,8 +60,13 @@ $texto_post = $postagem["texto_post"];
                                 <div class="mb-3">
                                     <!--Criar uma label pra editar o texto da postagem-->
                                     <label for="alteracaoInputNickname" class="form-label">
-                                        <span class="text-danger">*</span>Editar postagem</label>
-                                    <input type="textarea" id="alteracaoInputNickname" class="form-control" name="texto_post" maxlength="350" value="<?php echo $texto_post ?>" required>
+                                        <span class="text-danger">*</span>Postagem</label>
+
+                                    <!--<textarea class="form-control mb-3" name="texto_post" rows="5" 
+                                    maxlength="350" value="<//?php echo $texto_post ?>" required></textarea>-->
+                                    <input type="textarea" id="alteracaoInputNickname" class="form-control mb-3" 
+                                    name="texto_post" maxlength="350" value="<?php echo $texto_post ?>" required>
+
                                 </div>
 
                                 <div class="text-danger mb-3">(*Campos Obrigatórios)</div>
