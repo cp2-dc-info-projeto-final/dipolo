@@ -13,7 +13,9 @@
  - [CDU 09](#CDU-09): Conceder Privilégios de Administrador
  - [CDU 10](#CDU-10): Retirar Privilégios de Administrador
  - [CDU 11](#CDU-11): Criar Postagem
- - [CDU 12](#CDU-12): Exibir timeline do usuário
+ - [CDU 12](#CDU-12): Editar postagem
+ - [CDU 13](#CDU-13): Exibir timeline do usuário
+
 
 ## Lista dos Atores
 
@@ -262,6 +264,32 @@ Criar Postagem
 	6. O sistema armazena a postagem e atualiza a página inicial
 
 ### CDU 12
+
+Editar postagem
+
+**Fluxo Principal**
+
+	1. O sistema apresenta um botão "Editar postagem"
+	2. O usuário clica no botão "Editar postagem"
+	3. O sistema encaminha o usuário pra página de alteração de postagem
+	4. O sistema apresenta uma caixa de texto com a postagem atual do usuário
+	5. O usuário edita o texto da postagem como desejar e clica no botão "Confirmar alterações"
+	6. O sistema valida o texto
+	7. O sistema armazena as alterações e encaminha o usuário pra página inicial
+
+**Fluxo Alternativo A**
+
+	1. O sistema apresenta um botão "Editar postagem"
+	2. O usuário clica no botão "Editar postagem"
+	3. O sistema encaminha o usuário pra página de alteração de postagem
+	4. O sistema apresenta uma caixa de texto com a postagem atual do usuário 
+	5. O usuário apaga o texto da postagem e clica no botão "Confirmar alterações"
+	6. O sistema informa que o campo precisa ser preenchido
+	7. O usuário insere o texto desejado e clica no botão "Confirmar alterações"
+	8. O sistema valida o texto
+	9. O sistema armazena as alterações e encaminha o usuário pra página inicial
+
+### CDU 13
 
 Exibir timeline do usuário
 
