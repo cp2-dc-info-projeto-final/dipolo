@@ -31,7 +31,9 @@
             echo "Post do usuario: $text_post <br>";
             echo "<a class='text-decoration-none text-dark' 
                     href='alteracao_postagem.php?cod_postagem=".$cod_postagem.
-                    "'> Editar postagem </a> <br><br>";
+                    "'> Editar postagem </a> <br>";
+            echo "<a href='excluir_postagem.php?cod_postagem=".$cod_postagem.
+                    "'> Excluir postagem </a> <br><br>";
         }
 
         echo "<br><Br><a href='index.php'> Voltar para a página inicial </a>";
