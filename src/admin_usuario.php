@@ -1,7 +1,7 @@
 <div class="mt-3 p-2 ps-3 border border-dark rounded">
     <div class="row justify-content-between">
         <div class="col-8">
-            <h5><?php echo return_dados("nickname", $usuario["nickname"]); ?></h5>
+            <h5><?php echo $usuario["nickname"]; ?></h5>
         </div>
         <div class="col-1">
             <a class="btn text-decoration-none text-dark" type="button" data-bs-toggle="modal" data-bs-target="#editar<?php echo $usuario['nickname'] ?>Modal">
@@ -24,7 +24,7 @@
                     <li>
                         <form action="admin_privilegio.php" method="POST" class="m-0">
                             <button type="submit" class="btn dropdown-item rounded-0" name="usuario_alvo" value="<?php echo $usuario["nickname"]; ?>">
-                                <?php if (return_dados("adm", $usuario["nickname"])) : ?>
+                                <?php if ($usuario["adm"]) : ?>
                                     Retirar privilégios
                                 <?php else : ?>
                                     Conceder privilégios
@@ -37,7 +37,7 @@
         </div>
     </div>
     <div class="row my-2">
-        <?php if (return_dados("adm", $usuario["nickname"])) : ?>
+        <?php if ($usuario["adm"]) : ?>
             <p class="text-success m-0">
                 É administrador
                 <?php if ($usuario["nickname"] == $_SESSION["nickname"]) : ?>
