@@ -32,7 +32,7 @@
                 <div class="row justify-content-evenly px-4">
                     <h1 class="text-center mb-5 fw-bold">Página do administrador</h1>
                     <div class="row justify-content-evenly px-4">
-                        <div class="col-3 border border-dark rounded p-4">
+                        <div class="col-3 border border-dark rounded p-4 mb-auto">
                             <div class="border-bottom border-dark">
                                 <h4>Postagens</h4>
                             </div>
@@ -40,7 +40,7 @@
                                 <p class="mt-3">A ser implementada.</p>
                             </div>
                         </div>
-                        <div class="col-3 border border-dark rounded p-4">
+                        <div class="col-3 border border-dark rounded p-4 mb-auto">
                             <div class="border-bottom border-dark">
                                 <h4>Comentários</h4>
                             </div>
@@ -48,7 +48,7 @@
                                 <p class="mt-3">A ser implementada.</p>
                             </div>
                         </div>
-                        <div class="col-3 border border-dark rounded p-4">
+                        <div class="col-3 border border-dark rounded p-4 mb-auto">
                             <div class="border-bottom border-dark">
                                 <h4>Usuários</h4>
                             </div>
