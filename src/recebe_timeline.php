@@ -21,6 +21,11 @@
         $time = mysqli_fetch_array($resposta);
         $nick = $time["nickname"];
 
+        if($linhas == 0)
+        {
+            echo "Não existem postagens";
+        }
+
         for($i = 0; $i < $linhas; $i++)
         {
             $line = mysqli_fetch_array($resposta2);
