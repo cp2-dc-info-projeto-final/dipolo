@@ -120,7 +120,7 @@ $cod_usuario = $_GET["cod_usuario"];
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="excluir_conta.php" method="POST">
+                    <form action="excluir_conta_usuario.php" method="POST">
                         <input type="hidden" name="login" value="exclui_conta">
                         <input type="hidden" name="cod_usuario" value="<?php echo $cod_usuario ?>">
                         <button type="submit" class="btn btn-primary">Excluir conta</button>
