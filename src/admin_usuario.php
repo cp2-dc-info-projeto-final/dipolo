@@ -62,8 +62,26 @@
             <div class="modal-body">
                 <form action="admin_editar.php" method="POST">
                     <div class="mb-3">
-                        <label for="editar<?php echo $usuario['nickname'] ?>ModalInputNickname" class="form-label">Nickname</label>
-                        <input type="text" class="form-control" id="editar<?php echo $usuario['nickname'] ?>ModalInputNickname" name="nickname" size="11" maxlength="10" placeholder="<?php echo $usuario['nickname'] ?>">
+                        <div class="mb-3">
+                            <label for="editar<?php echo $usuario['nickname'] ?>ModalInputNickname" class="form-label">Nickname</label>
+                            <input type="text" class="form-control" id="editar<?php echo $usuario['nickname'] ?>ModalInputNickname" name="nickname" size="11" maxlength="10" placeholder="<?php echo $usuario['nickname'] ?>">
+                        </div>
+                        <div class="mb-3">
+                            <label for="editar<?php echo $usuario['nome'] ?>ModalInputNome" class="form-label">Nome Completo</label>
+                            <input type="text" class="form-control" id="editar<?php echo $usuario['nome'] ?>ModalInputNome" name="nome" size="30" maxlength="100" placeholder="<?php echo $usuario['nome'] ?>">
+                        </div>
+                        <div class="mb-3">
+                            <label for="editar<?php echo $usuario['email'] ?>ModalInputEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="editar<?php echo $usuario['email'] ?>ModalInputEmail" name="email" size="30" maxlength="35" placeholder="<?php echo $usuario['email'] ?>">
+                        </div>
+                        <div class="mb-3">
+                            <label for="editar<?php echo $usuario['datanasc'] ?>ModalInputDataNasc" class="form-label">Data de Nascimento</label>
+                            <input type="date" class="form-control" id="editar<?php echo $usuario['datanasc'] ?>ModalInputDataNasc" name="datanasc" size="11" maxlength="10">
+                        </div>
+                        <div class="mb-3">
+                            <label for="editar<?php echo $usuario['senha'] ?>ModalInputSenha" class="form-label">Senha</label>
+                            <input type="password" class="form-control" id="editar<?php echo $usuario['senha'] ?>ModalInputSenha" name="senha" maxlength="12">
+                        </div>
                     </div>
                     <button type="submit" class="btn btn-primary" name="usuario_alvo" value="<?php echo $usuario["nickname"]; ?>">
                         Enviar
