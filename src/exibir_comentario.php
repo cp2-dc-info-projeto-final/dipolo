@@ -22,6 +22,11 @@
     echo "Usuário que fez a postagem: $user_post <br>";
     echo "Postagem: $post <br><br>";*/
 
+    if($linhas == 0)
+    {
+        echo "Não existem comentários";
+    }
+
     for($i = 0; $i < $linhas; $i++)
     {
         $coment = mysqli_fetch_array($resposta);
@@ -40,14 +45,15 @@
         if($_SESSION["nickname"] == $nickname)
         {
             echo "<a href='alteracao_comentario.php?cod_comentario=".$cod_comentario.
-                   "'> Editar comentário </a> <br><br>";
+                   "'> Editar comentário </a> <br>";
+            echo "<a href='excluir_comentario.php?cod_comentario=".$cod_comentario.
+                   "'> Excluir comentário </a> <br><br>";
         }
-        /*echo "<a href='excluir_postagem.php?cod_comentario=".$cod_comentario.
-                "'> Excluir postagem </a> <br>";*/
 
     }
 
     echo "<br><Br><a href='index.php'> Voltar para a página inicial </a>";
 
+    mysqli_close($mysqli);
 
 ?>
