@@ -40,7 +40,7 @@
             echo "<a href='excluir_postagem.php?cod_postagem=".$cod_postagem.
                     "'> Excluir postagem </a> <br>";
             echo "<a href='comentario.php?cod_postagem=".$cod_postagem.
-                    "'> Comentar </a> <br><br>";
+                    "'> Comentar </a> <br>";
             echo "<a href='exibir_comentario.php?cod_postagem=".$cod_postagem.
                     "'> Ver cometários </a> <br><br>";
         }

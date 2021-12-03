@@ -200,6 +200,51 @@
         header("Location: index.php");
     }
 
+
+    if($login == "alterar_comentario")
+    {
+        $texto_coment = $_POST["texto_coment"];
+        $cod_comentario = $_POST["cod_comentario"];
+        $erro = 0;
+        $texto_coment = htmlspecialchars($texto_coment);
+
+        if(empty($texto_coment))
+        {
+            echo "Insira seu argumento <br>";
+            $erro = 1;
+        }
+
+        /*if(trim($texto_post))
+        {
+            echo "Insira seu argumento <br>";
+            $erro = 1;
+        }*/
+
+        if($erro == 0)
+        {
+            $sql ="UPDATE comentarios SET texto_coment = '$texto_coment'"; 
+            $sql .= "WHERE cod_comentario = $cod_comentario;";
+            mysqli_query($mysqli,$sql);
+
+            /*$sql2 = "SELECT * FROM postagens";
+            $resposta = mysqli_query($mysqli, $sql2);
+            $linhas = mysqli_num_rows($resposta);
+
+            for($i = 0; $i < $linhas; $i++)
+            {
+                $post = mysqli_fetch_array($resposta);
+                $cod_postagem = $post["cod_postagem"];
+                $cod_usuario = $post["cod_usuario"];
+
+                $sql1 = "INSERT INTO timeline (cod_usuario, cod_postagem)" ;
+                $sql1 .= "VALUES ($cod_usuario, $cod_postagem);";
+                mysqli_query($mysqli,$sql1);
+            }*/
+        }
+
+        header("Location: index.php");
+    }
+
     
 
     mysqli_close($mysqli);

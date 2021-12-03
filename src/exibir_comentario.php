@@ -27,14 +27,23 @@
         $coment = mysqli_fetch_array($resposta);
         $cod_usuario = $coment["cod_usuario"];
         $text_coment = $coment["texto_coment"];
+        $cod_comentario = $coment["cod_comentario"];
 
         $sql4 = "SELECT * FROM usuarios WHERE cod_usuario = $cod_usuario";
         $resposta4 = mysqli_query($mysqli,$sql4);
         $user = mysqli_fetch_array($resposta4);
         $nickname = $user["nickname"];
 
-        echo "Nick do usuário que comentou: $nickname <br>";
-        echo "Comentário: $text_coment <br><br>";
+        echo "<br>Nick do usuário que comentou: $nickname <br>";
+        echo "Comentário: $text_coment <br>";
+
+        if($_SESSION["nickname"] == $nickname)
+        {
+            echo "<a href='alteracao_comentario.php?cod_comentario=".$cod_comentario.
+                   "'> Editar comentário </a> <br><br>";
+        }
+        /*echo "<a href='excluir_postagem.php?cod_comentario=".$cod_comentario.
+                "'> Excluir postagem </a> <br>";*/
 
     }
 
