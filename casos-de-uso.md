@@ -15,6 +15,14 @@
  - [CDU 11](#CDU-11): Criar Postagem
  - [CDU 12](#CDU-12): Editar postagem
  - [CDU 13](#CDU-13): Exibir timeline do usuário
+ - [CDU 14](#CDU-14): Excluir conta
+ - [CDU 15](#CDU-15): Excluir postagem
+ - [CDU 16](#CDU-16): Criar comentário
+ - [CDU 17](#CDU-17): Editar comentário
+ - [CDU 18](#CDU-18): Excluir comentário
+ - [CDU 19](#CDU-19): Exibir comentário na timeline
+
+
 
 
 ## Lista dos Atores
@@ -299,3 +307,98 @@ Exibir timeline do usuário
 	2. O usuário clica no botão "Ver timeline"
 	3. O sistema encaminha o usuário para a página da timeline
 	4. O sistema lista as postagens do usuário
+
+### CDU 14
+
+Excluir conta
+
+**Fluxo Principal**
+
+	1. O sistema apresenta um botão "Excluir conta"
+	2. O usuário clica no botão "Excluir conta"
+	3. O sistema apresenta uma mensagem de confirmação com o botão "Excluir conta"
+	4. O usuário clica no botão "Excluir conta"
+	5. O sistema apaga os dados da conta do banco de dados e encaminha o usuário para a página principal
+
+### CDU 15
+
+Excluir postagem
+
+**Fluxo Principal**
+
+	1. O sistema apresenta um botão "Excluir postagem"
+	2. O usuário clica no botão "Excluir postagem"
+	3. O sistema apaga os dados da postagem do banco de dados e encaminha o usuário para a página inicial
+
+### CDU 16
+
+Criar comentário
+
+**Fluxo Principal**
+
+	1. O sistema apresenta um botão "Comentar"
+	2. O usuário clica no botão "Comentar"
+	3. O sistema encaminha o usuário para a página de criar comentário
+	4. O sistema apresenta uma caixa de texto 
+	5. O usuário insere o texto desejado e clica no botão "Criar comentário" 
+	6. O sistema valida o texto
+	7. O sistema armazena o comentário e encaminha o usuário para a página inicial
+
+**Fluxo Alternativo A**
+
+	1. O sistema apresenta um botão "Comentar"
+	2. O usuário clica no botão "Comentar"
+	3. O sistema encaminha o usuário para a página de criar comentário
+	4. O sistema apresenta uma caixa de texto
+	5. O usuário clica no botão "Criar comentário"
+	6. O sistema informa ao usuário que ele deve inserir um texto
+	7. O usuário insere o texto desejado e clica no botão "Criar comentário" 
+	8. O sistema valida o texto
+	9. O sistema armazena o comentário e encaminha o usuário para a página inicial
+
+### CDU 17
+
+Editar comentário 
+
+**Fluxo Principal**
+
+	1. O sistema apresenta um botão "Editar comentário"
+	2. O usuário clica no botão "Editar comentário"
+	3. O sistema encaminha o usuário para a página de alteração de comentário
+	4. O sistema apresenta uma caixa de texto com o comentário atual do usuário
+	5. O usuário faz as alterações desejadas e clica no botão "Confirmar alterações"
+	6. O sistema valida o texto
+	7. O sistema armazena as alterações e encaminha o usuário pra página inicial
+
+**Fluxo Alternativo A**
+
+	1. O sistema apresenta um botão "Editar comentário"
+	2. O usuário clica no botão "Editar comentário"
+	3. O sistema encaminha o usuário pra página de alteração de comentário
+	4. O sistema apresenta uma caixa de texto com o comentário atual do usuário 
+	5. O usuário apaga o texto do comentário e clica no botão "Confirmar alterações"
+	6. O sistema informa que o campo precisa ser preenchido
+	7. O usuário insere o texto desejado e clica no botão "Confirmar alterações"
+	8. O sistema valida o texto
+	9. O sistema armazena as alterações e encaminha o usuário pra página inicial
+
+### CDU 18
+
+Excluir comentário 
+
+**Fluxo Principal**
+
+	1. O sistema apresenta um botão "Excluir comentário"
+	2. O usuário clica no botão "Excluir comentário"
+	3. O sistema apaga os dados do comentário do banco de dados e encaminha o usuário para a página inicial
+
+### CDU 19
+
+Exibir comentário na timeline
+
+**Fluxo Principal**
+
+	1. O sistema apresenta um botão "Ver comentários"
+	2. O usuário clica no botão "Ver comentários"
+	3. O sistema encaminha o usuário para a página de comentários
+	4. O sistema exibe todos os comentários
