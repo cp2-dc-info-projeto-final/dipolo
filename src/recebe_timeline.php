@@ -41,6 +41,8 @@
                     "'> Excluir postagem </a> <br>";
             echo "<a href='comentario.php?cod_postagem=".$cod_postagem.
                     "'> Comentar </a> <br><br>";
+            echo "<a href='exibir_comentario.php?cod_postagem=".$cod_postagem.
+                    "'> Ver cometários </a> <br><br>";
         }
 
         echo "<br><Br><a href='index.php'> Voltar para a página inicial </a>";
