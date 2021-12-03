@@ -8,6 +8,7 @@ if($login == "exclui_conta")
     $cod_usuario = $_POST["cod_usuario"];
     $sql ="DELETE FROM usuarios WHERE cod_usuario = $cod_usuario;"; 
     mysqli_query($mysqli,$sql);
+    include "logout.php";
     header("Location: index.php");
 }
 
