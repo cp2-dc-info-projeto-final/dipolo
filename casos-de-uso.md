@@ -21,6 +21,8 @@
  - [CDU 17](#CDU-17): Editar comentário
  - [CDU 18](#CDU-18): Excluir comentário
  - [CDU 19](#CDU-19): Exibir comentário na timeline
+ - [CDU 19](#CDU-20): Curtir postagem/comentário
+ - [CDU 19](#CDU-21): Remover curtida de postagem/comentário (apenas a própria curtida)
 
 
 
@@ -402,3 +404,25 @@ Exibir comentário na timeline
 	2. O usuário clica no botão "Ver comentários"
 	3. O sistema encaminha o usuário para a página de comentários
 	4. O sistema exibe todos os comentários
+
+### CDU 20
+
+Curtir postagem/comentário
+
+**Fluxo Principal**
+
+	1. O sistema apresenta um botão "Like"
+	2. O usuário clica no botão "Like"
+	3. O sistema armazena a curtida no banco de dados e aumenta o contador
+	4. O sistema encaminha o usuário para a página inicial
+
+### CDU 21
+
+Remover curtida de postagem/comentário (apenas a própria curtida)
+
+**Fluxo Principal**
+
+	1. O sistema apresenta um botão "Deslike"
+	2. O usuário clica no botão "Deslike"
+	3. O sistema remove a curtida do banco de dados e diminui o contador
+	4. O sistema encaminha o usuário para a página inicial
