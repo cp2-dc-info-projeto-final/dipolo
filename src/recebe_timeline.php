@@ -1,5 +1,6 @@
 <?php
-
+    include "autentica.php";
+    include "return_dados.php";
     include "conecta_mysql.php";
 
     $publi = $_POST["publi"];
@@ -34,11 +35,16 @@
 
             echo "Nick do usuário: $nick <br>";
             echo "Post do usuario: $text_post <br>";
-            echo "<a class='text-decoration-none text-dark' 
-                    href='alteracao_postagem.php?cod_postagem=".$cod_postagem.
-                    "'> Editar postagem </a> <br>";
-            echo "<a href='excluir_postagem.php?cod_postagem=".$cod_postagem.
-                    "'> Excluir postagem </a> <br>";
+
+            if($_SESSION["nickname"] == $nick)
+            {
+                echo "<a class='text-decoration-none text-dark' 
+                        href='alteracao_postagem.php?cod_postagem=".$cod_postagem.
+                        "'> Editar postagem </a> <br>";
+                echo "<a href='excluir_postagem.php?cod_postagem=".$cod_postagem.
+                        "'> Excluir postagem </a> <br>";
+            }
+
             echo "<a href='comentario.php?cod_postagem=".$cod_postagem.
                     "'> Comentar </a> <br>";
             echo "<a href='exibir_comentario.php?cod_postagem=".$cod_postagem.
