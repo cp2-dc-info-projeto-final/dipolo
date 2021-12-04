@@ -34,6 +34,16 @@
         $text_coment = $coment["texto_coment"];
         $cod_comentario = $coment["cod_comentario"];
 
+        $selectComentarios = "SELECT * FROM curtidas_comentarios WHERE cod_comentario = $cod_comentario";
+        $selecionar_comentarios = mysqli_query($mysqli,$selectComentarios);
+        $conta_curtidas = mysqli_num_rows($selecionar_comentarios);
+
+        if($conta_curtidas == 1){
+            $conta_curtidas = $conta_curtidas." curtiu";
+        } else if($conta_curtidas > 1){
+            $conta_curtidas = $conta_curtidas." curtiram";
+        }
+
         $sql4 = "SELECT * FROM usuarios WHERE cod_usuario = $cod_usuario";
         $resposta4 = mysqli_query($mysqli,$sql4);
         $user = mysqli_fetch_array($resposta4);
@@ -47,8 +57,12 @@
             echo "<a href='alteracao_comentario.php?cod_comentario=".$cod_comentario.
                    "'> Editar comentário </a> <br>";
             echo "<a href='excluir_comentario.php?cod_comentario=".$cod_comentario.
-                   "'> Excluir comentário </a> <br><br>";
+                   "'> Excluir comentário </a> <br>";
         }
+
+        echo "<code><spam>*curtidas* </spam>".$conta_curtidas."</code><br>
+                <a href='curtidas_comentarios.php?cod_comentario=".$cod_comentario.
+                "'> Curtir </a> <br><br>"; 
 
     }
 
