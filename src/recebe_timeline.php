@@ -46,6 +46,10 @@
             echo "Nick do usuário: $nick <br>";
             echo "Post do usuario: $text_post <br>";
 
+            $sql2 = "SELECT * FROM curtidas_postagens WHERE cod_usuario = $cod_usuario AND cod_postagem = $cod_postagem";
+            $resposta2 = mysqli_query($mysqli,$sql2);
+            $linhas = mysqli_num_rows($resposta2);
+
             if($_SESSION["nickname"] == $nick)
             {
                 echo "<a class='text-decoration-none text-dark' 
@@ -60,9 +64,16 @@
             echo "<a href='exibir_comentario.php?cod_postagem=".$cod_postagem.
                     "'> Ver cometários </a> <br>";
 
-            echo "<code><spam>*curtidas* </spam>".$conta_curtidas."</code><br>
-                    <a href='curtidas_postagens.php?cod_postagem=".$cod_postagem.
-                    "'> Curtir </a> <br><br>";                
+            if($linhas != 0){
+                echo "<code><spam>*curtidas* </spam>".$conta_curtidas."</code><br>
+                        <a href='curtidas_postagens.php?cod_postagem=".$cod_postagem.
+                        "'> Deslike </a> <br><br>";   
+            } else {
+                echo "<code><spam>*curtidas* </spam>".$conta_curtidas."</code><br>
+                        <a href='curtidas_postagens.php?cod_postagem=".$cod_postagem.
+                        "'> Like </a> <br><br>"; 
+            }
+        
         }
 
         echo "<br><Br><a href='index.php'> Voltar para a página inicial </a>";

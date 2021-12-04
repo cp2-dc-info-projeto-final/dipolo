@@ -52,6 +52,10 @@
         echo "<br>Nick do usuário que comentou: $nickname <br>";
         echo "Comentário: $text_coment <br>";
 
+        $sql2 = "SELECT * FROM curtidas_comentarios WHERE cod_usuario = $cod_usuario AND cod_comentario = $cod_comentario";
+        $resposta2 = mysqli_query($mysqli,$sql2);
+        $linhas = mysqli_num_rows($resposta2);
+
         if($_SESSION["nickname"] == $nickname)
         {
             echo "<a href='alteracao_comentario.php?cod_comentario=".$cod_comentario.
@@ -60,9 +64,15 @@
                    "'> Excluir comentário </a> <br>";
         }
 
-        echo "<code><spam>*curtidas* </spam>".$conta_curtidas."</code><br>
-                <a href='curtidas_comentarios.php?cod_comentario=".$cod_comentario.
-                "'> Curtir </a> <br><br>"; 
+        if($linhas != 0){
+            echo "<code><spam>*curtidas* </spam>".$conta_curtidas."</code><br>
+                    <a href='curtidas_comentarios.php?cod_comentario=".$cod_comentario.
+                    "'> Deslike </a> <br><br>";   
+        } else {
+            echo "<code><spam>*curtidas* </spam>".$conta_curtidas."</code><br>
+                    <a href='curtidas_comentarios.php?cod_comentario=".$cod_comentario.
+                    "'> Like </a> <br><br>"; 
+        }
 
     }
 
