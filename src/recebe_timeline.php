@@ -33,6 +33,16 @@
             $cod_postagem = $line["cod_postagem"];
             $text_post = $line["texto_post"];
 
+            $selectCurtidas = "SELECT * FROM curtidas_postagens WHERE cod_postagem = $cod_postagem";
+            $selecionar_curtidas = mysqli_query($mysqli,$selectCurtidas);
+            $conta_curtidas = mysqli_num_rows($selecionar_curtidas);
+
+            if($conta_curtidas == 1){
+                $conta_curtidas = $conta_curtidas." curtiu";
+            } else if($conta_curtidas > 1){
+                $conta_curtidas = $conta_curtidas." curtiram";
+            }
+
             echo "Nick do usuário: $nick <br>";
             echo "Post do usuario: $text_post <br>";
 
@@ -48,7 +58,11 @@
             echo "<a href='comentario.php?cod_postagem=".$cod_postagem.
                     "'> Comentar </a> <br>";
             echo "<a href='exibir_comentario.php?cod_postagem=".$cod_postagem.
-                    "'> Ver cometários </a> <br><br>";
+                    "'> Ver cometários </a> <br>";
+
+            echo "<code><spam>*curtidas* </spam>".$conta_curtidas."</code><br>
+                    <a href='curtidas_postagens.php?cod_postagem=".$cod_postagem.
+                    "'> Curtir </a> <br><br>";                
         }
 
         echo "<br><Br><a href='index.php'> Voltar para a página inicial </a>";
