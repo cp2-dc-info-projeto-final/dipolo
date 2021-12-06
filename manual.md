@@ -6,7 +6,7 @@ Nullam vitae velit a eros dignissim bibendum id a enim. Vestibulum hendrerit nis
 
  - [Cadastrar](#Cadastrar)
  - [Entrar](#Entrar)
- - [Menu da página principal](#Menu da página principal)
+ - [Menu-da-página-principal](#Menu-da-página-principal)
 
 ## Cadastrar
 
