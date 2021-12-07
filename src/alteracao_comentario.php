@@ -40,8 +40,9 @@ $texto_coment = $comentario["texto_coment"];
                 <?php if ($_SESSION["fez_login"]) : ?>
                     <div class="row justify-content-evenly px-4">
                         <div class="col-2 py-4">
-                            <div class="figure-img img-fluid rounded px-5 py-5 bg-azul text-light">Imagem de perfil (A ser implementada)</div>
-                            <p class="text-center fs-4 mb-0">
+                            <div class="figure-img img-fluid rounded bg-azul text-light">
+                                <img src="<?php echo $usuario['caminho_img'] ?>" alt="Foto de perfil" width="210" height="160">
+                            </div>                            <p class="text-center fs-4 mb-0">
                                 <?php echo return_dados("nickname", ""); ?>
                             </p>
                             <p class="text-center fw-light text-muted"><?php echo return_dados("nome", ""); ?></p>
