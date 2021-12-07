@@ -93,7 +93,13 @@
                     </div>                
 
                     <div class="col-2">
-                        <div class="figure-img img-fluid rounded px-5 py-5 bg-azul text-light">Imagem de perfil (A ser implementada)</div>
+
+
+                        <div class="figure-img img-fluid rounded bg-azul text-light">
+                            <img src="<?php echo $usuario['caminho_img'] ?>" alt="Foto de perfil" width="220" height="180" >
+                        </div>
+
+                        
                         <p class="text-center fs-4 mb-0">
                             <?php echo return_dados("nickname", ""); ?>
                             <a class="text-decoration-none text-dark" href="alteracao.php?cod_usuario=<?php echo return_dados("cod_usuario", ""); ?>">
