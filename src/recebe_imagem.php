@@ -23,7 +23,7 @@
         }
         // VERIFICA SE NÃO HOUVE ERRO 
         if($erro == 0) {
-            if(!empty($usuario["caminho_img"])) unlink($usuario["caminho_img"]);
+            if(!empty($usuario["caminho_img"]));
             $sql2 = "UPDATE usuarios SET caminho_img = '$caminho_img'";
             $sql2 .= "WHERE cod_usuario = $cod_usuario;";  
             mysqli_query($mysqli,$sql2);  
@@ -33,6 +33,26 @@
         else{
             echo "<p><a href='atualiza_foto.php?cod_usuario=".$cod_usuario."'>Voltar para atualizar foto de perfil</a></p>";
         }
+    }
+
+
+    if($imagem == "remover")
+    {
+        $cod_usuario = $_POST["cod_usuario"];
+
+        $sql = "SELECT * FROM usuarios WHERE cod_usuario = $cod_usuario;";
+        $res = mysqli_query($mysqli,$sql);
+        $usuario = mysqli_fetch_array($res);
+        $caminho_img = $usuario["caminho_img"];
+
+        unlink($caminho_img);
+        
+        $sql2 = "UPDATE usuarios SET caminho_img = NULL WHERE cod_usuario = $cod_usuario";
+        mysqli_query($mysqli,$sql2);   
+
+        echo "<br>A foto do perfil foi removida com sucesso!"; 
+        echo "<br><br><a href='index.php'>Página Inicial</a>"; 
+        
     }
 
     
