@@ -15,7 +15,7 @@ CREATE TABLE usuarios (
  email varchar(35) NOT NULL,
  senha varchar(255) NOT NULL,
  adm boolean NOT NULL,
- caminho_img varchar(256);
+ caminho_img varchar(256),
  primary key(cod_usuario)
 );
 
