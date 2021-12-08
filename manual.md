@@ -8,16 +8,17 @@ Nullam vitae velit a eros dignissim bibendum id a enim. Vestibulum hendrerit nis
  - [Entrar](#Entrar)
  - [Menu da página principal](#Menu-da-página-principal)
  - [Postar](#Postar)
+ - [Procurar](#Procurar)
 
 ## Cadastrar
 
-Ao clicar no botão "Cadastrar" na página principal, o usuário será redirecionado à página que contém o formulário para cadastro. Nele, o usuário deve preencher todos os campos, com exceção do campo "Código de administrador", que só deve ser preenchido por administradores.
+Ao clicar no botão "Cadastrar" na página principal, você será redirecionado à página que contém o formulário para cadastro. Nele, você deve preencher todos os campos, se for um administrador, e enviar. Caso contrário, deixe somente o campo "Código de administrador" em branco e envie.
 
 ![Cadastrar](imagens/cadastrar.jpg)
 
 ## Entrar
 
-Ao clicar no botão "Entrar" na página principal, um modal com o formulário de login a ser preenchido aparecerá na tela. O usuário deve preencher os campos de login corretamente para ser autenticado e, consequentemente, redirecionado à página inicial.
+Ao clicar no botão "Entrar" na página principal, um modal com o formulário de login a ser preenchido aparecerá na tela. Voc~e deve preencher os campos de login corretamente para ser autenticado e, consequentemente, redirecionado à página inicial.
 
 ![Entrar](imagens/entrar.jpg)
 
@@ -35,3 +36,10 @@ Ao clicar no botão existente no canto superior esquerdo da página, 3 opções 
 Criar uma postagem é bem simples: basta inserir seu argumento na caixa de texto da página inicial e clicar no botão "Criar postagem" em seguida.
 
 ![Postar](imagens/postar.jpg)
+
+## Procurar usuários
+
+No canto superior direito da página existe uma barra de pesquisa. Digite o nickname do usuário que deseja encontrar e clique no botão "Pesquisar". Para ver a timeline do usuário desejado, clique no botão "Ver timeline" ao lado do nickname correspondente.
+
+![Procurar](imagens/procurar.jpg)
+![Procurar 2](imagens/procurar2.jpg)
