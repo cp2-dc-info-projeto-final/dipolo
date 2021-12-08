@@ -18,7 +18,7 @@ Ao clicar no botão "Cadastrar" na página principal, você será redirecionado 
 
 ## Entrar
 
-Ao clicar no botão "Entrar" na página principal, um modal com o formulário de login a ser preenchido aparecerá na tela. Voc~e deve preencher os campos de login corretamente para ser autenticado e, consequentemente, redirecionado à página inicial.
+Ao clicar no botão "Entrar" na página principal, um modal com o formulário de login a ser preenchido aparecerá na tela. Você deve preencher os campos de login corretamente para ser autenticado e, consequentemente, redirecionado à página inicial.
 
 ![Entrar](imagens/entrar.jpg)
 
