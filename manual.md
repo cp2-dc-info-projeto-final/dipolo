@@ -6,7 +6,8 @@ Nullam vitae velit a eros dignissim bibendum id a enim. Vestibulum hendrerit nis
 
  - [Cadastrar](#Cadastrar)
  - [Entrar](#Entrar)
- - [Menu-da-página-principal](#Menu-da-página-principal)
+ - [Menu da página principal](#Menu-da-página-principal)
+ - [Postar](#Postar)
 
 ## Cadastrar
 
@@ -28,3 +29,9 @@ Ao clicar no botão existente no canto superior esquerdo da página, 3 opções 
     "Cadastrar" redireciona para a página de cadastro.
 
 ![Menu da página principal](imagens/menu-da-pagina-principal.jpg)
+
+## Postar
+
+Criar uma postagem é bem simples: basta inserir seu argumento na caixa de texto da página inicial e clicar no botão "Criar postagem" em seguida.
+
+![Postar](imagens/postar.jpg)
