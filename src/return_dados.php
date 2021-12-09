@@ -24,6 +24,12 @@ function return_dados($dado, $nick)
         return $usuario["adm"];
     } elseif ($dado == "cod_usuario") {
         return $usuario["cod_usuario"];
+    } elseif ($dado == "caminho_img") {
+        if ($usuario["caminho_img"] == null) {
+            return "../imagens/no-image.svg";
+        } else {
+            return $usuario["caminho_img"];
+        }
     }
 }
 
@@ -51,5 +57,3 @@ function return_dados($dado, $nick)
         return $postagem["cod_comentario"];
     }
 }*/
-
-?>

@@ -48,7 +48,7 @@
 
             $sql2 = "SELECT * FROM curtidas_postagens WHERE cod_usuario = $cod_usuario AND cod_postagem = $cod_postagem";
             $resposta2 = mysqli_query($mysqli,$sql2);
-            $linhas = mysqli_num_rows($resposta2);
+            $linhas2 = mysqli_num_rows($resposta2);
 
             if($_SESSION["nickname"] == $nick)
             {

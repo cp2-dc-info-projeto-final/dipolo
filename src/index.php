@@ -93,8 +93,8 @@
                     </div>                
 
                     <div class="col-2">
-                        <div class="figure-img img-fluid rounded bg-azul text-light">
-                            <img src="<?php echo $usuario['caminho_img'] ?>" alt="Foto de perfil" width="210" height="160">
+                        <div class="w-100">
+                            <img src="<?php echo return_dados("caminho_img", "") ?>" class="img-thumbnail" alt="Foto de perfil">
                         </div>
                         <p class="text-center fs-4 mb-0">
                             <?php echo return_dados("nickname", ""); ?>
