@@ -54,7 +54,7 @@
 
         $sql2 = "SELECT * FROM curtidas_comentarios WHERE cod_usuario = $cod_usuario AND cod_comentario = $cod_comentario";
         $resposta2 = mysqli_query($mysqli,$sql2);
-        $linhas = mysqli_num_rows($resposta2);
+        $linhas2 = mysqli_num_rows($resposta2);
 
         if($_SESSION["nickname"] == $nickname)
         {
@@ -64,7 +64,7 @@
                    "'> Excluir comentário </a> <br>";
         }
 
-        if($linhas != 0){
+        if($linhas2 != 0){
             echo "<code><spam>*curtidas* </spam>".$conta_curtidas."</code><br>
                     <a href='curtidas_comentarios.php?cod_comentario=".$cod_comentario.
                     "'> Deslike </a> <br><br>";   
