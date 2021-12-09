@@ -33,7 +33,9 @@ $cod_usuario = $_GET["cod_usuario"];
             <?php if ($_SESSION["fez_login"]) : ?>
                 <div class="row justify-content-evenly px-4">
                     <div class="col-2 py-4">
-                        <div class="figure-img img-fluid rounded px-5 py-5 bg-azul text-light">Imagem de perfil (A ser implementada)</div>
+                        <div class="w-100">
+                            <img src="<?php echo return_dados("caminho_img", "") ?>" class="img-thumbnail" alt="Foto de perfil">
+                        </div>
                         <p class="text-center fs-4 mb-0">
                             <?php echo return_dados("nickname", ""); ?>
                         </p>
