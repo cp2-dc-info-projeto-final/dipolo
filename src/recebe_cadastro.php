@@ -32,49 +32,57 @@
 
         if($linhas != 0)
         {
-            echo "Nickname já existente.<br>";
+            echo "<script> alert('Nickname já existente.'); 
+                window.location='cadastro.php';</script> <br>";
             $erro = 1;
         }
 
-        if(strlen($nickname) < 3 OR strlen($nickname) > 10)
+        else if(strlen($nickname) < 3 OR strlen($nickname) > 10)
         {
-            echo "O nickname deve possuir no mínimo 3 e no máximo 10 caracteres.<br>";
+            echo "<script> alert('O nickname deve possuir no mínimo 3 e no máximo 10 caracteres.'); 
+                window.location='cadastro.php';</script> <br>";
             $erro = 1;
         }
 
-        if(empty($nome) OR strstr($nome,' ') == FALSE)
+        else if(empty($nome) OR strstr($nome,' ') == FALSE)
         {
-            echo "Favor digitar seu nome corretamente. <br>";
+            echo "<script> alert('Favor digitar seu nome corretamente.'); 
+                window.location='cadastro.php';</script> <br>";
             $erro = 1;
         }
 
-        if(strlen($email) < 8 || strstr($email,'@') == FALSE)
+        else if(strlen($email) < 8 || strstr($email,'@') == FALSE)
         {
-            echo "Favor digitar seu email corretamente. <br>";
+            echo "<script> alert('Favor digitar seu email corretamente.'); 
+                window.location='cadastro.php';</script> <br>";
             $erro = 1;
         }
 
-        if(strlen($email) > 35 || strstr($email,'@') == FALSE)
+        else if(strlen($email) > 35 || strstr($email,'@') == FALSE)
         {
-            echo "Favor digitar outro email. Limite de 35 caracteres atingido. <br>";
+            echo "<script> alert('Favor digitar outro email. Limite de 35 caracteres atingido.'); 
+                window.location='cadastro.php';</script> <br>";
             $erro = 1;
         }
 
-        if($confemail != $email)
+        else if($confemail != $email)
         {
-            echo "Favor digitar um email igual ao anterior. <br>";
+            echo "<script> alert('Favor digitar um email igual ao anterior.'); 
+                window.location='cadastro.php';</script> <br>";
             $erro = 1;
         }
 
-        if(strlen($senha) < 5 OR strlen($senha) > 12)
+        else if(strlen($senha) < 5 OR strlen($senha) > 12)
         {
-            echo "A senha deve possuir no mínimo 5 e no máximo 12 caracteres.<br>";
+            echo "<script> alert('A senha deve possuir no mínimo 5 e no máximo 12 caracteres.'); 
+                window.location='cadastro.php';</script> <br>";
             $erro = 1;
         }
 
-        if($confsenha != $senha)
+        else if($confsenha != $senha)
         {
-            echo "Favor digitar uma senha igual à anterior.<br>";
+            echo "<script> alert('Favor digitar uma senha igual à anterior.'); 
+                window.location='cadastro.php';</script> <br>";
             $erro = 1;
         }
         
@@ -92,8 +100,8 @@
             //mysqli_query(<conexão>,<comando>);
             mysqli_query($mysqli,$sql);
 
-            echo "Usuário cadastrado com sucesso!"; 
-            echo "<br><Br><a href='index.php'> Fazer Login </a>";
+            echo "<script> alert(' Usuário cadastrado com sucesso! \\n Faça login e aproveite!'); 
+                window.location='index.php';</script> <br>";
         }
     }
 

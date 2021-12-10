@@ -31,38 +31,44 @@
         {
             if($linhas != 0)
             {
-                echo "Nickname já existente.<br>";
+                echo "<script> alert('Nickname já existente.'); 
+                    window.location='alteracao.php';</script> <br>";
                 $erro = 1;
             }
         }
 
         if(strlen($nickname) < 3 OR strlen($nickname) > 10)
         {
-            echo "O nickname deve possuir no mínimo 3 e no máximo 10 caracteres.<br>";
+            echo "<script> alert('O nickname deve possuir no mínimo 3 e no máximo 10 caracteres.'); 
+                window.location='alteracao.php';</script> <br>";
             $erro = 1;
         }
 
         if(empty($nome) OR strstr($nome,' ') == FALSE)
         {
-            echo "Favor digitar seu nome corretamente. <br>";
+            echo "<script> alert('Favor digitar seu nome corretamente.'); 
+                window.location='alteracao.php';</script> <br>";
             $erro = 1;
         }
 
         if(strlen($email) < 8 || strstr($email,'@') == FALSE)
         {
-            echo "Favor digitar seu email corretamente. <br>";
+            echo "<script> alert('Favor digitar seu email corretamente.'); 
+                window.location='alteracao.php';</script> <br>";
             $erro = 1;
         }
 
         if(strlen($email) > 35 || strstr($email,'@') == FALSE)
         {
-            echo "Favor digitar outro email. Limite de 35 caracteres atingido. <br>";
+            echo "<script> alert('Favor digitar outro email. Limite de 35 caracteres atingido.'); 
+                window.location='alteracao.php';</script> <br>";
             $erro = 1;
         }
 
         if($confemail != $email)
         {
-            echo "Favor digitar um email igual ao anterior. <br>";
+            echo "<script> alert('Favor digitar um email igual ao anterior.'); 
+                window.location='alteracao.php';</script> <br>";
             $erro = 1;
         }
 
@@ -73,8 +79,8 @@
             //mysqli_query(<conexão>,<comando>);
             mysqli_query($mysqli,$sql);
 
-            echo "Usuário atualizado com sucesso!<br>"; 
-            echo "<br><Br><a href='index.php'> Voltar para a página inicial </a>";
+            echo "<script> alert('Usuário atualizado com sucesso!'); 
+                window.location='index.php';</script> <br>";
         }
     }
 
@@ -97,7 +103,8 @@
     
         if(empty($senha_atual))
         {
-            echo "Insira sua senha atual.<br>";
+            echo "<script> alert('Insira sua senha atual.'); 
+                window.location='altera_senha.php';</script> <br>";
             $erro = 1;
         }
 
@@ -105,7 +112,8 @@
         {
             if(empty($senha_nova))
             {
-                echo "Insira sua nova senha.<br>";
+                echo "<script> alert('Insira sua nova senha.'); 
+                    window.location='altera_senha.php';</script> <br>";
                 $erro = 1;
             }
 
@@ -113,7 +121,8 @@
             {
                 if(empty($conf_senhanova))
                 {
-                    echo "Confirme sua nova senha.<br>";
+                    echo "<script> alert('Confirme sua nova senha.'); 
+                        window.location='altera_senha.php';</script> <br>";
                     $erro = 1;
                 }
 
@@ -121,19 +130,22 @@
                 {
                     if(!password_verify($senha_atual, $usuario["senha"]))
                     {
-                        echo "A senha atual está errada.<br>";
+                        echo "<script> alert('A senha atual está errada.'); 
+                            window.location='altera_senha.php';</script> <br>";
                         $erro = 1;
                     }
 
                     if(strlen($senha_nova) < 5 OR strlen($senha_nova) > 12)
                     {
-                        echo "A nova senha deve possuir no mínimo 5 e no máximo 12 caracteres.<br>";
+                        echo "<script> alert('A nova senha deve possuir no mínimo 5 e no máximo 12 caracteres.'); 
+                            window.location='altera_senha.php';</script> <br>";
                         $erro = 1;
                     }
 
                     if($senha_nova != $conf_senhanova)
                     {
-                        echo "A nova senha não foi repetida corretamente.<br>";
+                        echo "<script> alert('A nova senha não foi repetida corretamente.'); 
+                            window.location='altera_senha.php';</script> <br>";
                         $erro = 1;
                     }
                 }
@@ -148,9 +160,8 @@
             //mysqli_query(<conexão>,<comando>);
             mysqli_query($mysqli,$sql);
 
-            echo "Senha atualizada com sucesso!<br>"; 
-            echo "Faça login novamente.";
-            echo "<br><Br><a href='index.php'> Fazer Login </a>";
+            echo "<script> alert(' Senha atualizada com sucesso! \\n Faça login novamente.'); 
+                window.location='index.php';</script> <br>";
         }
 
     }
@@ -165,7 +176,8 @@
 
         if(empty($texto_post))
         {
-            echo "Insira seu argumento <br>";
+            echo "<script> alert('Insira seu argumento'); 
+                window.location='alteracao_postagem.php';</script> <br>";
             $erro = 1;
         }
 
@@ -195,9 +207,11 @@
                 $sql1 .= "VALUES ($cod_usuario, $cod_postagem);";
                 mysqli_query($mysqli,$sql1);
             }*/
+
+            echo "<script> alert('Postagem atualizada com sucesso!'); 
+                window.location='index.php';</script> <br>";
         }
 
-        header("Location: index.php");
     }
 
 
@@ -210,7 +224,8 @@
 
         if(empty($texto_coment))
         {
-            echo "Insira seu argumento <br>";
+            echo "<script> alert('Insira seu argumento'); 
+                window.location='alteracao_comentario.php';</script> <br>";
             $erro = 1;
         }
 
@@ -240,9 +255,11 @@
                 $sql1 .= "VALUES ($cod_usuario, $cod_postagem);";
                 mysqli_query($mysqli,$sql1);
             }*/
+
+            echo "<script> alert('Comentário atualizado com sucesso!'); 
+                window.location='index.php';</script> <br>";
         }
 
-        header("Location: index.php");
     }
 
     
