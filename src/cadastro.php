@@ -34,11 +34,11 @@
                     <div class="row mb-3">
                         <div class="col-3">
                             <label for="cadastrarInputNickname" class="form-label">Nickname</label>
-                            <input type="text" class="form-control" id="cadastrarInputNickname" name="nickname" size="10" maxlength="10" required>
+                            <input type="text" class="form-control" id="cadastrarInputNickname" name="nickname" size="10" maxlength="10" placeholder="User" required>
                         </div>
                         <div class="col">
                             <label for="cadastrarInputNome" class="form-label">Nome completo</label>
-                            <input type="text" class="form-control" id="cadastrarInputNome" name="nome" size="30" pattern="\D+\s\w+" maxlength="100" required>
+                            <input type="text" class="form-control" id="cadastrarInputNome" name="nome" size="30" pattern="\D+\s\w+" maxlength="100" placeholder="Usuário Teste" required>
                         </div>
                         <div class="col-4">
                             <label for="cadastrarInputDataNasc" class="form-label">Data de nascimento</label>
@@ -48,21 +48,21 @@
                     <div class="row mb-3">
                         <div class="col">
                             <label for="cadastrarInputEmail" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="cadastrarInputEmail" name="email" size="30" maxlength="35" required>
+                            <input type="email" class="form-control" id="cadastrarInputEmail" name="email" size="30" maxlength="35" placeholder="usuario@exemplo.com" required>
                         </div>
                         <div class="col">
                             <label for="cadastrarInputConfEmail" class="form-label">Confirmar email</label>
-                            <input type="email" class="form-control" id="cadastrarInputConfEmail" name="confemail" size="30" maxlength="35" required>
+                            <input type="email" class="form-control" id="cadastrarInputConfEmail" name="confemail" size="30" maxlength="35" placeholder="usuario@exemplo.com" required>
                         </div>
                     </div>
                     <div class="row mb-4">
                         <div class="col">
                             <label for="cadastrarInputSenha" class="form-label">Senha</label>
-                            <input type="password" class="form-control" id="cadastrarInputSenha" name="senha" minlength="5" maxlength="12" required>
+                            <input type="password" class="form-control" id="cadastrarInputSenha" name="senha" minlength="5" maxlength="12" placeholder="******" required>
                         </div>
                         <div class="col">
                             <label for="cadastrarInputConfSenha" class="form-label">Confirmar senha</label>
-                            <input type="password" class="form-control" id="cadastrarInputConfSenha" name="confsenha" minlength="5" maxlength="12" required>
+                            <input type="password" class="form-control" id="cadastrarInputConfSenha" name="confsenha" minlength="5" maxlength="12" placeholder="******" required>
                         </div>
                     </div>
                     <div class="mb-3">
