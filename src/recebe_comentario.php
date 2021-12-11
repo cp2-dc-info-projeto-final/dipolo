@@ -14,7 +14,8 @@
 
         if(empty($texto_coment))
         {
-            echo "Insira seu argumento <br>";
+            echo "<script> alert('Insira seu argumento'); 
+            javascript:history.go(-1);</script> <br>";
             $erro = 1;
         }
 
@@ -32,9 +33,10 @@
             $sql3 .= "FROM usuarios, comentarios";
             $sql3 .= "WHERE usuarios.cod_usuario = comentarios.cod_usuario;";
             $coment = mysqli_query($mysqli,$sql3);*/
+
+            header(sprintf('location: %s', $_SERVER['HTTP_REFERER']));
         }
 
-        header("Location: index.php");
     }
 
     

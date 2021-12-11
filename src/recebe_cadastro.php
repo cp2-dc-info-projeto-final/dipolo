@@ -33,56 +33,56 @@
         if($linhas != 0)
         {
             echo "<script> alert('Nickname já existente.'); 
-                window.location='cadastro.php';</script> <br>";
+                javascript:history.go(-1);</script> <br>";
             $erro = 1;
         }
 
         else if(strlen($nickname) < 3 OR strlen($nickname) > 10)
         {
             echo "<script> alert('O nickname deve possuir no mínimo 3 e no máximo 10 caracteres.'); 
-                window.location='cadastro.php';</script> <br>";
+                javascript:history.go(-1);</script> <br>";
             $erro = 1;
         }
 
         else if(empty($nome) OR strstr($nome,' ') == FALSE)
         {
             echo "<script> alert('Favor digitar seu nome corretamente.'); 
-                window.location='cadastro.php';</script> <br>";
+                javascript:history.go(-1);</script> <br>";
             $erro = 1;
         }
 
         else if(strlen($email) < 8 || strstr($email,'@') == FALSE)
         {
             echo "<script> alert('Favor digitar seu email corretamente.'); 
-                window.location='cadastro.php';</script> <br>";
+                javascript:history.go(-1);</script> <br>";
             $erro = 1;
         }
 
         else if(strlen($email) > 35 || strstr($email,'@') == FALSE)
         {
             echo "<script> alert('Favor digitar outro email. Limite de 35 caracteres atingido.'); 
-                window.location='cadastro.php';</script> <br>";
+                javascript:history.go(-1);</script> <br>";
             $erro = 1;
         }
 
         else if($confemail != $email)
         {
             echo "<script> alert('Favor digitar um email igual ao anterior.'); 
-                window.location='cadastro.php';</script> <br>";
+                javascript:history.go(-1);</script> <br>";
             $erro = 1;
         }
 
         else if(strlen($senha) < 5 OR strlen($senha) > 12)
         {
             echo "<script> alert('A senha deve possuir no mínimo 5 e no máximo 12 caracteres.'); 
-                window.location='cadastro.php';</script> <br>";
+            javascript:history.go(-1);</script> <br>";
             $erro = 1;
         }
 
         else if($confsenha != $senha)
         {
             echo "<script> alert('Favor digitar uma senha igual à anterior.'); 
-                window.location='cadastro.php';</script> <br>";
+                javascript:history.go(-1);</script> <br>";
             $erro = 1;
         }
         

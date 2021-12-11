@@ -16,7 +16,8 @@
 
         if(empty($nick))
         {
-            echo "Insira um nickname válido";
+            echo "<script> alert('Insira um nickname válido'); 
+                javascript:history.go(-1);</script> <br>";
             $erro = 1;
         }
  

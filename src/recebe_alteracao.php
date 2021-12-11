@@ -32,7 +32,7 @@
             if($linhas != 0)
             {
                 echo "<script> alert('Nickname já existente.'); 
-                    window.location='alteracao.php';</script> <br>";
+                javascript:history.go(-1);</script> <br>";
                 $erro = 1;
             }
         }
@@ -40,35 +40,35 @@
         if(strlen($nickname) < 3 OR strlen($nickname) > 10)
         {
             echo "<script> alert('O nickname deve possuir no mínimo 3 e no máximo 10 caracteres.'); 
-                window.location='alteracao.php';</script> <br>";
+                javascript:history.go(-1);</script> <br>";
             $erro = 1;
         }
 
         if(empty($nome) OR strstr($nome,' ') == FALSE)
         {
             echo "<script> alert('Favor digitar seu nome corretamente.'); 
-                window.location='alteracao.php';</script> <br>";
+                javascript:history.go(-1);</script> <br>";
             $erro = 1;
         }
 
         if(strlen($email) < 8 || strstr($email,'@') == FALSE)
         {
             echo "<script> alert('Favor digitar seu email corretamente.'); 
-                window.location='alteracao.php';</script> <br>";
+                javascript:history.go(-1);</script> <br>";
             $erro = 1;
         }
 
         if(strlen($email) > 35 || strstr($email,'@') == FALSE)
         {
             echo "<script> alert('Favor digitar outro email. Limite de 35 caracteres atingido.'); 
-                window.location='alteracao.php';</script> <br>";
+                javascript:history.go(-1);</script> <br>";
             $erro = 1;
         }
 
         if($confemail != $email)
         {
             echo "<script> alert('Favor digitar um email igual ao anterior.'); 
-                window.location='alteracao.php';</script> <br>";
+                javascript:history.go(-1);</script> <br>";
             $erro = 1;
         }
 
@@ -104,7 +104,7 @@
         if(empty($senha_atual))
         {
             echo "<script> alert('Insira sua senha atual.'); 
-                window.location='altera_senha.php';</script> <br>";
+                javascript:history.go(-1);</script> <br>";
             $erro = 1;
         }
 
@@ -113,7 +113,7 @@
             if(empty($senha_nova))
             {
                 echo "<script> alert('Insira sua nova senha.'); 
-                    window.location='altera_senha.php';</script> <br>";
+                    javascript:history.go(-1);</script> <br>";
                 $erro = 1;
             }
 
@@ -122,7 +122,7 @@
                 if(empty($conf_senhanova))
                 {
                     echo "<script> alert('Confirme sua nova senha.'); 
-                        window.location='altera_senha.php';</script> <br>";
+                        javascript:history.go(-1);</script> <br>";
                     $erro = 1;
                 }
 
@@ -131,21 +131,21 @@
                     if(!password_verify($senha_atual, $usuario["senha"]))
                     {
                         echo "<script> alert('A senha atual está errada.'); 
-                            window.location='altera_senha.php';</script> <br>";
+                            javascript:history.go(-1);</script> <br>";
                         $erro = 1;
                     }
 
                     if(strlen($senha_nova) < 5 OR strlen($senha_nova) > 12)
                     {
                         echo "<script> alert('A nova senha deve possuir no mínimo 5 e no máximo 12 caracteres.'); 
-                            window.location='altera_senha.php';</script> <br>";
+                            javascript:history.go(-1);</script> <br>";
                         $erro = 1;
                     }
 
                     if($senha_nova != $conf_senhanova)
                     {
                         echo "<script> alert('A nova senha não foi repetida corretamente.'); 
-                            window.location='altera_senha.php';</script> <br>";
+                            javascript:history.go(-1);</script> <br>";
                         $erro = 1;
                     }
                 }
@@ -177,7 +177,7 @@
         if(empty($texto_post))
         {
             echo "<script> alert('Insira seu argumento'); 
-                window.location='alteracao_postagem.php';</script> <br>";
+            javascript:history.go(-1);</script> <br>";
             $erro = 1;
         }
 
@@ -225,7 +225,7 @@
         if(empty($texto_coment))
         {
             echo "<script> alert('Insira seu argumento'); 
-                window.location='alteracao_comentario.php';</script> <br>";
+            javascript:history.go(-1);</script> <br>";
             $erro = 1;
         }
 
