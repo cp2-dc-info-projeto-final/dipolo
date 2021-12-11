@@ -1,5 +1,6 @@
 <?php include "autentica.php"; ?>
 <?php include "return_dados.php"; ?>
+<?php include "existe.php" ?>
 
 <html>
 
@@ -32,27 +33,31 @@
 
     <div class="container-flex p-5 py-5">
         <div class="container-flex pb-2">
-            <div class="row justify-content-between px-4">
+            <?php if (usuario_existe($_GET["nickname"])) : ?>
+                <div class="row justify-content-between px-4">
 
-                <!-- Criar postagem -->
-                <div class="col-7">
-                    <h4 class="mb-3">Timeline</h4>
-                    <?php
-                    include "listar.php";
-                    listar_postagens(return_dados("cod_usuario", $_GET["nickname"]));
-                    ?>
-                </div>
-
-                <div class="col-2">
-                    <div class="w-100">
-                        <img src="<?php echo return_dados("caminho_img", $_GET['nickname']) ?>" class="img-thumbnail" alt="Foto de perfil">
+                    <!-- Criar postagem -->
+                    <div class="col-7">
+                        <h4 class="mb-3">Timeline</h4>
+                        <?php
+                        include "listar.php";
+                        listar_postagens(return_dados("cod_usuario", $_GET["nickname"]));
+                        ?>
                     </div>
-                    <p class="text-center fs-4 mb-0">
-                        <?php echo $_GET['nickname']; ?>
-                    </p>
-                    <p class="text-center fw-light text-muted"><?php echo return_dados("nome", $_GET['nickname']); ?></p>
+
+                    <div class="col-2">
+                        <div class="w-100">
+                            <img src="<?php echo return_dados("caminho_img", $_GET['nickname']) ?>" class="img-thumbnail" alt="Foto de perfil">
+                        </div>
+                        <p class="text-center fs-4 mb-0">
+                            <?php echo $_GET['nickname']; ?>
+                        </p>
+                        <p class="text-center fw-light text-muted"><?php echo return_dados("nome", $_GET['nickname']); ?></p>
+                    </div>
                 </div>
-            </div>
+            <?php else : ?>
+                <p>Este usuário não existe.</p>
+            <?php endif; ?>
         </div>
     </div>
 
