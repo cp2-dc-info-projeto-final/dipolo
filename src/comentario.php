@@ -1,33 +1,99 @@
-<?php
-include "autentica.php";
-include "return_dados.php";
-include "conecta_mysql.php";
-
-$cod_postagem = $_GET["cod_postagem"];
-
-$sql ="SELECT * FROM postagens WHERE cod_postagem = $cod_postagem;"; 
-$resposta = mysqli_query($mysqli,$sql);
-$postagem = mysqli_fetch_array($resposta);
-
-?>
-<html>
-<head>
-    <title>Página inicial</title>
-    <meta charset="utf-8">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-</head>
-
-<body class="d-flex flex-column min-vh-100">
-    <div class="col-7">
-        <form action="recebe_comentario.php" method="POST">
-            <input type="hidden" name="cod_usuario" value="<?php echo return_dados("cod_usuario", ""); ?>">
-            <input type="hidden" name="cod_postagem" value="<?php echo $cod_postagem ?>">
-            <textarea class="form-control mb-3" name="texto_coment" rows="5" maxlength="350" placeholder="Argumente aqui" required></textarea>
-            <button type="submit" class="btn btn-outline-primary btn-lg">Criar comentário</button>
-        </form>
+<div class="row justify-content-center px-4 align-items-bottom mb-4">
+    <div class="col-2 ps-5">
+        <div class="ps-5">
+            <div class="ps-4">
+                <div class="w-100">
+                    <img src="<?php echo $usuario_comentario["caminho_img"] ?>" class="img-thumbnail" alt="Foto de perfil">
+                </div>
+            </div>
+        </div>
     </div>
-</body>
-</html>
+    <div class="col-7">
+        <div class="row mx-0">
+            <div class="p-3 border border-dark rounded">
+                <div class="row me-0">
+                    <p class="pe-0 text-break">
+                        <?php echo $comentario["texto_coment"]; ?>
+                    </p>
+                </div>
+                <div class="row me-0 align-items-center">
+                    <div class="col-auto me-auto">
+                        <p class="mb-0 text-muted fw-light">
+                            Comentário feito por
+                            <a href="timeline.php?nickname=<?php echo $usuario_comentario["nickname"] ?>" class="fw-bold text-decoration-none text-muted">
+                                <?php echo $usuario_comentario["nickname"]; ?>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-auto px-1">
+                        <a href="curtidas_comentarios.php?cod_comentario=<?php echo $comentario["cod_comentario"]; ?>" class="btn btn-lg px-2" aria-label="Curtir comentario">
+                            <?php if (usuario_curtiu_comentario($comentario["cod_comentario"], $_SESSION["cod_usuario"])) : ?>
+                                <i class="bi bi-hand-thumbs-up-fill text-primary"></i>
+                            <?php else : ?>
+                                <i class="bi bi-hand-thumbs-up"></i>
+                            <?php endif; ?>
+                        </a>
+                        <span><?php echo return_curtidas_comentario($comentario["cod_comentario"]); ?></span>
+                    </div>
+                    <?php if ($usuario_comentario["nickname"] == $_SESSION["nickname"] || $usuario["adm"]) : ?>
+                        <div class="col-auto px-1">
+                            <button class="btn btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#editarComentario<?php echo $comentario['cod_comentario'] ?>Modal">
+                                <i class="bi bi-gear" aria-label="Editar comentário"></i>
+                            </button>
+                        </div>
+                        <div class="col-auto px-1">
+                            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#excluirComentario<?php echo $comentario['cod_comentario']; ?>Modal">
+                                <i class="bi bi-trash-fill" aria-label="Excluir comentário"></i>
+                            </button>
+                        </div>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="editarComentario<?php echo $comentario['cod_comentario'] ?>Modal" tabindex="-1" aria-labelledby="editar<?php echo $comentario['cod_comentario'] ?>ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="editar<?php echo $comentario['cod_comentario'] ?>ModalLabel">Editar comentário</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="recebe_alteracao.php" method="POST">
+                            <input type="hidden" name="login" value="alterar_comentario">
+                            <input type="hidden" name="cod_comentario" value="<?php echo $comentario['cod_comentario'] ?>">
+                            <div class="mb-3">
+                                <div class="mb-3">
+                                    <label for="editar<?php echo $comentario['cod_comentario'] ?>ModalInputTextoComent" class="form-label">Comentário</label>
+                                    <textarea id="editar<?php echo $comentario['cod_comentario'] ?>ModalInputTextoComent" class="form-control mb-3" name="texto_coment" rows="5" maxlength="350"><?php echo $comentario['texto_coment'] ?></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                Editar
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="excluirComentario<?php echo $comentario['cod_comentario']; ?>Modal" tabindex="-1" aria-labelledby="excluirComentario<?php echo $comentario['cod_comentario']; ?>ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="excluirComentario<?php echo $comentario['cod_comentario']; ?>ModalLabel">Excluir comentário</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="excluir_comentario.php" method="POST">
+                            <input type="hidden" name="cod_comentario" value="<?php echo $comentario['cod_comentario'] ?>">
+                            <button type="submit" class="btn btn-primary">
+                                Excluir comentário
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
