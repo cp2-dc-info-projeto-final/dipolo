@@ -1,7 +1,7 @@
 <div class="row mx-0">
     <div class="mt-3 p-2 ps-3 border border-dark rounded">
         <div class="row me-0">
-            <p class="pe-0">
+            <p class="pe-0 text-break">
                 <a href="postagem.php?cod_postagem=<?php echo $postagem["cod_postagem"]; ?>" class="text-decoration-none text-dark">
                     <?php echo $postagem["texto_post"]; ?>
                 </a>
