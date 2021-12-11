@@ -23,6 +23,7 @@
         if(mysqli_num_rows($resposta) != 1){ // testa se não encontrou o username
             unset($_SESSION["nickname"]);
             unset($_SESSION["senha"]);
+            unset($_SESSION["cod_usuario"]);
             // echo "Você não fez o login!";
             // echo "<p><a href='index.php'>Página de login</a></p>";
             $_SESSION["fez_login"] = false;
@@ -33,6 +34,7 @@
             if(!hash_equals($usuario["senha"], $senha)){ // testa se a senha está errada
                 unset($_SESSION["nickname"]);
                 unset($_SESSION["senha"]);
+                unset($_SESSION["cod_usuario"]);
                 // echo "Você não fez o login!";
                 // echo "<p><a href='index.php'>Página de login</a></p>";
                 $_SESSION["fez_login"] = false;
@@ -41,4 +43,3 @@
 
         mysqli_close($mysqli);
     }
-?>

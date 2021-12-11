@@ -10,7 +10,7 @@
         <div class="row me-0 justify-content-end align-items-center">
             <div class="col-auto px-1">
                 <a href="curtidas_postagens.php?cod_postagem=<?php echo $postagem["cod_postagem"]; ?>" class="btn btn-lg px-2" aria-label="Curtir postagem">
-                    <?php if (usuario_curtiu_postagem($postagem["cod_postagem"], return_dados("cod_usuario", ""))) : ?>
+                    <?php if (usuario_curtiu_postagem($postagem["cod_postagem"], $_SESSION["cod_usuario"])) : ?>
                         <i class="bi bi-hand-thumbs-up-fill text-primary"></i>
                     <?php else : ?>
                         <i class="bi bi-hand-thumbs-up"></i>
@@ -18,7 +18,7 @@
                 </a>
                 <span><?php echo return_curtidas($postagem["cod_postagem"]); ?></span>
             </div>
-            <?php if ($usuario["nickname"] == $_SESSION["nickname"] || $usuario["adm"]) : ?>
+            <?php if ($usuario["nickname"] == $_SESSION["nickname"] || $usuario_atual["adm"]) : ?>
                 <div class="col-auto px-1">
                     <button class="btn btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#editar<?php echo $postagem['cod_postagem'] ?>Modal">
                         <i class="bi bi-gear" aria-label="Editar postagem"></i>

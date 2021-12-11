@@ -5,6 +5,8 @@ function listar_postagens($cod_usuario)
     include "conecta_mysql.php";
     include_once "return_dados.php";
     include_once "verificar_curtida.php";
+    include_once "return_usuario.php";
+    $usuario_atual = return_usuario($cod_usuario);
 
     $sql_usuario = "SELECT * FROM usuarios WHERE cod_usuario = $cod_usuario";
     $resposta_usuario = mysqli_query($mysqli, $sql_usuario);
