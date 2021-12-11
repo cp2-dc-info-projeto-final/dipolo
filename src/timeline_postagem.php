@@ -7,7 +7,10 @@
                 </a>
             </p>
         </div>
-        <div class="row me-0 justify-content-end align-items-center">
+        <div class="row me-0 align-items-center">
+            <div class="col-auto me-auto">
+                <p class="mb-0 text-muted fw-light">Clique no texto para ver a discussão</p>
+            </div>
             <div class="col-auto px-1">
                 <a href="curtidas_postagens.php?cod_postagem=<?php echo $postagem["cod_postagem"]; ?>" class="btn btn-lg px-2" aria-label="Curtir postagem">
                     <?php if (usuario_curtiu_postagem($postagem["cod_postagem"], $_SESSION["cod_usuario"])) : ?>
