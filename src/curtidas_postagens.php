@@ -19,12 +19,14 @@
     if($linhas != 0){
         $remove = "DELETE FROM curtidas_postagens WHERE cod_usuario = $cod_usuario AND cod_postagem = $cod_postagem";
         mysqli_query($mysqli,$remove);
-        header("Location: index.php");
+        header(sprintf('location: %s', $_SERVER['HTTP_REFERER']));
+        exit;
     } else {
         $adiciona = "INSERT INTO curtidas_postagens (cod_curtida_postagem,cod_usuario,cod_postagem)";
         $adiciona .= "VALUES (NULL,$cod_usuario,$cod_postagem);";
         mysqli_query($mysqli,$adiciona);
-        header("Location: index.php");
+        header(sprintf('location: %s', $_SERVER['HTTP_REFERER']));
+        exit;
     }
     
     mysqli_close($mysqli);
