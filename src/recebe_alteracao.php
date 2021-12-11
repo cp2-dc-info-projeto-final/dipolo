@@ -80,7 +80,7 @@
             mysqli_query($mysqli,$sql);
 
             echo "<script> alert('Usuário atualizado com sucesso!'); 
-                window.location='index.php';</script> <br>";
+            javascript:history.go(-1);</script> <br>";
         }
     }
 
@@ -209,7 +209,7 @@
             }*/
 
             echo "<script> alert('Postagem atualizada com sucesso!'); 
-                window.location='index.php';</script> <br>";
+                javascript:history.go(-1);</script> <br>";
         }
 
     }
@@ -257,7 +257,7 @@
             }*/
 
             echo "<script> alert('Comentário atualizado com sucesso!'); 
-                window.location='index.php';</script> <br>";
+            javascript:history.go(-1);</script> <br>";
         }
 
     }
