@@ -5,7 +5,7 @@ function return_usuario($cod_usuario)
     include "conecta_mysql.php";
 
     if ($cod_usuario == null) {
-        $cod_usuario = $_SESSION["nickname"];
+        $cod_usuario = $_SESSION["cod_usuario"];
         $cod_usuario = htmlspecialchars($cod_usuario);
     }
 
