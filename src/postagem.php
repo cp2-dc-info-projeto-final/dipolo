@@ -39,8 +39,8 @@ $usuario_postagem = return_usuario($postagem['cod_usuario']);
                 <div class="col-2 ps-5">
                     <div class="ps-5">
                         <div class="ps-4">
-                            <div class="w-100">
-                                <img src="<?php echo $usuario_postagem["caminho_img"] ?>" class="img-thumbnail" alt="Foto de perfil">
+                            <div class="w-100 text-center">
+                                <img src="<?php echo $usuario_postagem["caminho_img"] ?>" class="img-thumbnail w-100" alt="Foto de perfil">
                             </div>
                         </div>
                     </div>
