@@ -4,9 +4,8 @@
             <h5><?php echo $usuario["nickname"]; ?></h5>
         </div>
         <div class="col-auto">
-            <form action="recebe_timeline.php" method="POST">
-                <input type="hidden" name="publi" value="timeline">
-                <input type="hidden" name="cod_usuario" value="<?php echo return_dados("cod_usuario", $usuario["nickname"]); ?>">
+            <form action="timeline.php" method="GET">
+                <input type="hidden" name="nickname" value="<?php echo $usuario["nickname"]; ?>">
                 <button type="submit" class="btn btn-outline-primary">Ver timeline</button>
             </form>
         </div>
