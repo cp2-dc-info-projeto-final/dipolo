@@ -20,12 +20,12 @@
             </div>
             <?php if ($usuario["nickname"] == $_SESSION["nickname"] || $usuario["adm"]) : ?>
                 <div class="col-auto px-1">
-                    <button class="btn btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#editar<?php echo $usuario['nickname'] ?>Modal">
+                    <button class="btn btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#editar<?php echo $postagem['cod_postagem'] ?>Modal">
                         <i class="bi bi-gear" aria-label="Editar postagem"></i>
                     </button>
                 </div>
                 <div class="col-auto px-1">
-                    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#excluirModalPostagem<?php echo $cod_postagem; ?>" aria-label="Excluir postagem">
+                    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#excluirPostagem<?php echo $postagem['cod_postagem']; ?>Modal" aria-label="Excluir postagem">
                         <i class="bi bi-trash-fill"></i>
                     </button>
                 </div>
@@ -48,11 +48,30 @@
                     <div class="mb-3">
                         <div class="mb-3">
                             <label for="editar<?php echo $postagem['cod_postagem'] ?>ModalInputTextoPost" class="form-label">Postagem</label>
-                            <input type="text" class="form-control" id="editar<?php echo $postagem['cod_postagem'] ?>ModalInputTextoPost" name="texto_post" size="11" maxlength="350" placeholder="<?php echo $postagem['texto_post'] ?>">
+                            <input type="text" class="form-control" id="editar<?php echo $postagem['cod_postagem'] ?>ModalInputTextoPost" name="texto_post" size="11" maxlength="350" value="<?php echo $postagem['texto_post'] ?>">
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary">
                         Editar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="excluirPostagem<?php echo $postagem['cod_postagem']; ?>Modal" tabindex="-1" aria-labelledby="excluirPostagem<?php echo $postagem['cod_postagem']; ?>ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="excluirPostagem<?php echo $postagem['cod_postagem']; ?>ModalLabel">Excluir postagem</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+                <form action="excluir_postagem.php" method="POST">
+                    <input type="hidden" name="cod_postagem" value="<?php echo $postagem['cod_postagem'] ?>">
+                    <button type="submit" class="btn btn-primary">
+                        Excluir postagem
                     </button>
                 </form>
             </div>
