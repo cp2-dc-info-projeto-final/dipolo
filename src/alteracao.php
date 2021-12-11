@@ -58,13 +58,13 @@ $cod_usuario = $_GET["cod_usuario"];
                             <input type="hidden" name="imagem" value="adicionar">
                             <input type="hidden" name="cod_usuario" value="<?php echo $cod_usuario ?>">
                             <p>Escolha uma imagem: <input type="file" name="img_perfil" >
-                            <input type="submit" value="Upload"></p>
+                            <input class="btn btn-outline-primary" type="submit" value="Upload"></p>
                         </form>
 
                         <form action="recebe_imagem.php" method="post" enctype="multipart/form-data">
                             <input type="hidden" name="imagem" value="remover">
                             <input type="hidden" name="cod_usuario" value="<?php echo $cod_usuario ?>">
-                            <input type="submit" value="Remover imagem de perfil"></p>
+                            <input class="btn btn-outline-primary" type="submit" value="Remover imagem de perfil"></p>
                         </form>
 
                         <form action="recebe_alteracao.php" method="POST">
