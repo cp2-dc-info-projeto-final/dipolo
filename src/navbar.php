@@ -5,27 +5,29 @@
         </button>
         <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="index.php">Página principal</a></li>
-            <?php if($_SESSION["fez_login"] == false) : ?>
-            <li><a href="#" class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#entrarModalNav">Entrar</a></li>
-            <li><a class="dropdown-item" href="cadastro.php">Cadastrar</a></li>
+            <?php if ($_SESSION["fez_login"] == false) : ?>
+                <li><a href="#" class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#entrarModalNav">Entrar</a></li>
+                <li><a class="dropdown-item" href="cadastro.php">Cadastrar</a></li>
             <?php endif; ?>
             <li><a class="dropdown-item disabled" href="#">Ajuda</a></li>
             <li><a class="dropdown-item disabled" href="#">Enviar feedback</a></li>
-            <?php if($_SESSION["fez_login"]) : ?>
-            <li><a class="dropdown-item" href="logout.php">Sair</a></li>
+            <?php if ($_SESSION["fez_login"]) : ?>
+                <li><a class="dropdown-item" href="logout.php">Sair</a></li>
             <?php endif; ?>
             <li>
                 <hr class="dropdown-divider">
             </li>
             <li><a class="dropdown-item disabled" href="#">Sobre</a></li>
         </ul>
-        <a class="navbar-brand ms-2" style="font-weight: 500;" href="index.php">Dipolo</a>
-        <?php if($_SESSION["fez_login"]) : ?>
-        <form action="recebe_busca.php" method="POST" class="d-flex ms-auto my-2 my-lg-0 me-4">
-            <input type="hidden" name="login" value="buscar_nickname">
-            <input class="form-control me-2" name="nick" type="search" placeholder="Nickname" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-        </form>
+        <a class="navbar-brand ms-2" href="index.php">
+            <img src="../imagens/favicon.svg" alt="Ícone do site" height="32">
+        </a>
+        <?php if ($_SESSION["fez_login"]) : ?>
+            <form action="recebe_busca.php" method="POST" class="d-flex ms-auto my-2 my-lg-0 me-4">
+                <input type="hidden" name="login" value="buscar_nickname">
+                <input class="form-control me-2" name="nick" type="search" placeholder="Nickname" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+            </form>
         <?php endif; ?>
     </div>
 </nav>
