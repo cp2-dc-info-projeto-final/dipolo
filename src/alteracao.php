@@ -54,18 +54,29 @@ $cod_usuario = $_GET["cod_usuario"];
                     <div class="col-6">
                         <h1 class="text-center mb-4">Editar dados da conta</h1>
 
-                        <form action="recebe_imagem.php" method="post" enctype="multipart/form-data">
-                            <input type="hidden" name="imagem" value="adicionar">
-                            <input type="hidden" name="cod_usuario" value="<?php echo $cod_usuario ?>">
-                            <p>Escolha uma imagem: <input type="file" name="img_perfil" >
-                            <input class="btn btn-outline-primary" type="submit" value="Upload"></p>
-                        </form>
+                        <div class="mb-3 border-bottom">
+                            <form action="recebe_imagem.php" id="alteracaoFormImagem" method="post" enctype="multipart/form-data">
+                                <input type="hidden" name="imagem" value="adicionar">
+                                <input type="hidden" name="cod_usuario" value="<?php echo $cod_usuario; ?>">
 
-                        <form action="recebe_imagem.php" method="post" enctype="multipart/form-data">
-                            <input type="hidden" name="imagem" value="remover">
-                            <input type="hidden" name="cod_usuario" value="<?php echo $cod_usuario ?>">
-                            <input class="btn btn-outline-primary" type="submit" value="Remover imagem de perfil"></p>
-                        </form>
+                                <div class="mb-3">
+                                    <label for="alteracaoInputImagem" class="form-label">Escolha uma imagem</label>
+                                    <input type="file" id="alteracaoInputImagem" class="form-control" name="img_perfil" required>
+                                </div>
+                            </form>
+                            <div class="row pb-2">
+                                <div class="col-auto me-auto">
+                                    <button type="submit" class="btn btn-primary" form="alteracaoFormImagem">Enviar</button>
+                                </div>
+                                <div class="col-auto">
+                                    <form action="recebe_imagem.php" method="post" enctype="multipart/form-data">
+                                        <input type="hidden" name="imagem" value="remover">
+                                        <input type="hidden" name="cod_usuario" value="<?php echo $cod_usuario ?>">
+                                        <button type="submit" class="btn btn-danger">Remover imagem de perfil</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
 
                         <form action="recebe_alteracao.php" method="POST">
                             <input type="hidden" name="login" value="alterar">
