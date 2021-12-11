@@ -9,6 +9,7 @@ Nullam vitae velit a eros dignissim bibendum id a enim. Vestibulum hendrerit nis
  - [Menu da página principal](#Menu-da-página-principal)
  - [Postar](#Postar)
  - [Procurar](#Procurar)
+ - [Adicionar/Remover foto de perfil](#Adicionar/Remover-foto-de-perfil)
 
 ## Cadastrar
 
@@ -43,3 +44,11 @@ No canto superior direito da página existe uma barra de pesquisa. Digite o nick
 
 ![Procurar](imagens/procurar.jpg)
 ![Procurar 2](imagens/procurar2.jpg)
+
+## Adicionar/Remover foto de perfil
+
+Na página de edição, o primeiro espaço a aparecer é o de foto de perfil. Para adicionar uma, clique no botão "Escolher arquivo", selecione a foto desejada no seu dispositivo e, por último, clique no botão "Enviar".__
+Para remover sua foto de perfil, clique no botão "Remover imagem de perfil".
+
+![Adicionar foto de perfil](imagens/add-foto-de-perfil.jpg)
+![Remover foto de perfil](imagens/del-foto-de-perfil.jpg)
