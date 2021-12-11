@@ -48,7 +48,7 @@
                     <div class="mb-3">
                         <div class="mb-3">
                             <label for="editar<?php echo $postagem['cod_postagem'] ?>ModalInputTextoPost" class="form-label">Postagem</label>
-                            <textarea class="form-control mb-3" name="texto_post" rows="5" maxlength="350" placeholder="Comece seu debate aqui" required></textarea>
+                            <textarea class="form-control mb-3" name="texto_post" rows="5" maxlength="350"><?php echo $postagem['texto_post'] ?></textarea>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary">
