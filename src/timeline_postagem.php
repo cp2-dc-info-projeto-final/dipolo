@@ -12,9 +12,9 @@
             </div>
             <div class="row me-0 justify-content-end">
                 <div class="col-auto px-1">
-                    <button type="button" class="btn" aria-label="Curtir postagem">
+                    <a href="curtidas_postagens.php?cod_postagem=<?php echo $postagem["cod_postagem"]; ?>" class="btn" aria-label="Curtir postagem">
                         <i class="bi bi-hand-thumbs-up"></i>
-                    </button>
+                    </a>
                 </div>
                 <?php if ($usuario["nickname"] == $_SESSION["nickname"] || $usuario["adm"]) : ?>
                     <div class="col-auto px-1">
