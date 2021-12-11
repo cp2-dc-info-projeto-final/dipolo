@@ -13,5 +13,9 @@ function return_usuario($cod_usuario)
     $resposta = mysqli_query($mysqli, $sql);
     $usuario = mysqli_fetch_array($resposta);
 
+    if ($usuario["caminho_img"] == null) {
+        $usuario["caminho_img"] = "../imagens/no-image.svg";
+    }
+
     return $usuario;
 }
