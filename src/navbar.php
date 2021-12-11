@@ -41,11 +41,11 @@
                 <form action="efetuar_login.php" method="POST">
                     <div class="mb-3">
                         <label for="entrarModalInputNicknameNav" class="form-label">Nickname</label>
-                        <input type="text" class="form-control" id="entrarModalInputNicknameNav" name="nickname" size="11" maxlength="10" required>
+                        <input type="text" class="form-control" id="entrarModalInputNicknameNav" name="nickname" size="11" maxlength="10" placeholder="User" required>
                     </div>
                     <div class="mb-3">
                         <label for="entrarModalInputPasswordNav" class="form-label">Senha</label>
-                        <input type="password" class="form-control" id="entrarModalInputPasswordNav" name="senha" size="15" maxlength="12" required>
+                        <input type="password" class="form-control" id="entrarModalInputPasswordNav" name="senha" size="15" maxlength="12" placeholder="******" required>
                     </div>
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
