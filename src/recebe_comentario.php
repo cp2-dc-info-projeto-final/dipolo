@@ -2,10 +2,6 @@
 
     include "conecta_mysql.php";
 
-    $publi = $_POST["publi"];
-
-    if($publi == "coment")
-    {
         $texto_coment = $_POST["texto_coment"];
         $cod_usuario = $_POST["cod_usuario"];
         $cod_postagem = $_POST["cod_postagem"];
@@ -37,8 +33,6 @@
             header(sprintf('location: %s', $_SERVER['HTTP_REFERER']));
         }
 
-    }
-
-    
+        mysqli_close($mysqli);
 
 ?>
