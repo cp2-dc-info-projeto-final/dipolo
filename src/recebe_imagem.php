@@ -28,7 +28,7 @@
             $sql2 .= "WHERE cod_usuario = $cod_usuario;";  
             mysqli_query($mysqli,$sql2);  
             echo "<script> alert('A foto do perfil foi atualizada com sucesso!'); 
-                window.location='index.php';</script> <br>";
+                javascript:history.go(-1);</script> <br>";
         }
         else{
             echo "<p><a href='atualiza_foto.php?cod_usuario=".$cod_usuario."'>Voltar para atualizar foto de perfil</a></p>";
@@ -51,7 +51,7 @@
         mysqli_query($mysqli,$sql2);   
 
         echo "<script> alert('A foto do perfil foi removida com sucesso!'); 
-                window.location='index.php';</script> <br>";
+                javascript:history.go(-1);</script> <br>";
         
     }
 
