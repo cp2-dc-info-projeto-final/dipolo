@@ -27,8 +27,8 @@
             $sql2 = "UPDATE usuarios SET caminho_img = '$caminho_img'";
             $sql2 .= "WHERE cod_usuario = $cod_usuario;";  
             mysqli_query($mysqli,$sql2);  
-            echo "<br>A foto do perfil foi atualizada com sucesso!"; 
-            echo "<br><br><a href='index.php'>Página Inicial</a>"; 
+            echo "<script> alert('A foto do perfil foi atualizada com sucesso!'); 
+                window.location='index.php';</script> <br>";
         }
         else{
             echo "<p><a href='atualiza_foto.php?cod_usuario=".$cod_usuario."'>Voltar para atualizar foto de perfil</a></p>";
@@ -50,8 +50,8 @@
         $sql2 = "UPDATE usuarios SET caminho_img = NULL WHERE cod_usuario = $cod_usuario";
         mysqli_query($mysqli,$sql2);   
 
-        echo "<br>A foto do perfil foi removida com sucesso!"; 
-        echo "<br><br><a href='index.php'>Página Inicial</a>"; 
+        echo "<script> alert('A foto do perfil foi removida com sucesso!'); 
+                window.location='index.php';</script> <br>";
         
     }
 

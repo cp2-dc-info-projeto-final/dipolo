@@ -13,7 +13,8 @@
 
         if(empty($texto_post))
         {
-            echo "Insira seu argumento <br>";
+            echo "<script> alert('Insira seu argumento'); 
+            javascript:history.go(-1);</script> <br>";
             $erro = 1;
         }
 
@@ -43,9 +44,10 @@
                 $sql1 .= "VALUES ($cod_usuario, $cod_postagem);";
                 mysqli_query($mysqli,$sql1);
             }
+
+            header(sprintf('location: %s', $_SERVER['HTTP_REFERER']));
         }
 
-        header("Location: index.php");
     }
 
     
