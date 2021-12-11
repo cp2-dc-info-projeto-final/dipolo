@@ -111,11 +111,6 @@
                             <?php endif; ?>
                         </p>
                         <p class="text-center fw-light text-muted"><?php echo return_dados("nome", ""); ?></p>
-                        <p class="">Bio (A ser implementada)</p>
-                        <div class="pb-5"></div>
-                        <div class="pb-1 my-3 bg-azul"></div>
-                        <p class="mb-1">Local (WIP)</p>
-                        <p>Interesses (WIP)</p>
                     </div>
                 </div>
             <?php endif; ?>
