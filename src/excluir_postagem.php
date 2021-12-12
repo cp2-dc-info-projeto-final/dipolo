@@ -11,7 +11,7 @@
     mysqli_query($mysqli,$sql);
     $sql_curtidas ="DELETE FROM curtidas_postagens WHERE cod_postagem = $cod_postagem;";
     mysqli_query($mysqli,$sql);
-    header("Location: index.php");
+    header(sprintf('location: %s', $_SERVER['HTTP_REFERER']));
 
     mysqli_close($mysqli);
 
