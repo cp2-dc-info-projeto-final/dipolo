@@ -132,3 +132,19 @@ No modal, altere os campos desejados e clique no botão "Editar".
 
 ![Editar comentário](imagens/editar-comentario.jpg)
 ![Editar comentário 2](imagens/editar-comentario2.jpg)
+
+## Excluir postagem
+
+No index ou na página de discussão, clique no botão de excluir no canto inferior direito da postagem para aparecer o modal de excluir a postagem<br>
+No modal, clique no "x" no canto superior direito para cancelar a ação ou no botão "Excluir postagem" para confirmar.
+
+![Excluir postagem](imagens/excluir-postagem.jpg)
+![Excluir postagem 2](imagens/excluir-postagem2.jpg)
+
+## Excluir comentário
+
+Na página de discussão, clique no botão de excluir no canto inferior direito da postagem para aparecer o modal de excluir o comentário<br>
+No modal, clique no "x" no canto superior direito para cancelar a ação ou no botão "Excluir comentário" para confirmar.
+
+![Excluir comentário](imagens/excluir-comentario.jpg)
+![Excluir comentário 2](imagens/excluir-comentario2.jpg)
