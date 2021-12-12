@@ -19,6 +19,9 @@ Nullam vitae velit a eros dignissim bibendum id a enim. Vestibulum hendrerit nis
  - [Curtir/Descurtir comentário](#Curtir/Descurtir-comentário)
  - [Editar postagem](#Editar-postagem)
  - [Editar comentário](#Editar-comentário)
+ - [Excluir postagem](#Excluir-postagem)
+ - [Excluir comentário](#Excluir-comentário)
+
 
 ## Cadastrar
 
