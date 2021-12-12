@@ -14,8 +14,9 @@ Nullam vitae velit a eros dignissim bibendum id a enim. Vestibulum hendrerit nis
  - [Alterar senha](#Alterar-senha)
  - [Excluir conta](#Excluir-conta)
  - [Ver discussão](#Ver-discussão)
- - [Curtir/Descurtir postagem](#Curtir-postagem)
+ - [Curtir/Descurtir postagem](#Curtir/Descurtir-postagem)
  - [Comentar](#Comentar)
+ - [Curtir/Descurtir comentário](#Curtir/Descurtir-comentário)
 
 ## Cadastrar
 
@@ -106,3 +107,10 @@ A postagem será descurtida ao clicar novamente no botão de curtir (após já t
 Para comentar, é só digitar seu texto na caixa de texto existente na página de discussão e clicar no botão "Criar comentário" em seguida.
 
 ![Comentar](imagens/comentar.jpg)
+
+## Curtir/Descurtir comentário
+
+Você pode curtir ou descurtir um comentário clicando no botão com o polegar para cima no canto inferior direito do comentário.<br>
+A postagem será descurtida ao clicar novamente no botão de curtir (após já ter curtido).
+
+![Curtir/Descurtir](imagens/curtir-comentario.jpg)
