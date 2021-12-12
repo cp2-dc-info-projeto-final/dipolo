@@ -11,6 +11,7 @@ Nullam vitae velit a eros dignissim bibendum id a enim. Vestibulum hendrerit nis
  - [Procurar](#Procurar)
  - [Adicionar/Remover foto de perfil](#Adicionar/Remover-foto-de-perfil)
  - [Editar dados](#Editar-dados)
+ - [Alterar senha](#Alterar-senha)
 
 ## Cadastrar
 
@@ -66,3 +67,10 @@ Na página de editar dados, altere os campos desejados, preencha os campos obria
 ![Botão de editar dados](imagens/botao-editar-dados.jpg)
 ![Editar dados](imagens/editar-dados.jpg)
 
+## Alterar senha
+
+Na página de alteração, clique no botão "Alterar senha" para ser redirecionado para a página de alterar senha.<br>
+Na página de alterar senha, preencha todos os campos, que são obrigatórios, e clique no botão "Confirmar alterações".
+
+![Botão de alterar senha](imagens/botao-alterar-senha.jpg)
+![Alterar senha](imagens/alterar-senha.jpg)
