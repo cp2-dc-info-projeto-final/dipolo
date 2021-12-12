@@ -10,17 +10,24 @@ Nullam vitae velit a eros dignissim bibendum id a enim. Vestibulum hendrerit nis
  - [Postar](#Postar)
  - [Procurar](#Procurar)
  - [Adicionar/Remover foto de perfil](#Adicionar/Remover-foto-de-perfil)
+ - [Editar dados](#Editar-dados)
+ - [Alterar senha](#Alterar-senha)
+ - [Excluir conta](#Excluir-conta)
 
 ## Cadastrar
 
-Ao clicar no botão "Cadastrar" na página principal, você será redirecionado à página que contém o formulário para cadastro. Nele, você deve preencher todos os campos, se for um administrador, e enviar. Caso contrário, deixe somente o campo "Código de administrador" em branco e envie.
+Na página principal, clique no botão "Cadastrar" para ser redirecionado à página que contém o formulário para cadastro. <br>
+Nele, você deve preencher todos os campos, se for um administrador, e enviar. Caso contrário, deixe somente o campo "Código de administrador" em branco e envie.
 
+![Botão de cadastrar](imagens/botao-cadastrar.jpg)
 ![Cadastrar](imagens/cadastrar.jpg)
 
 ## Entrar
 
-Ao clicar no botão "Entrar" na página principal, um modal com o formulário de login a ser preenchido aparecerá na tela. Você deve preencher os campos de login corretamente para ser autenticado e, consequentemente, redirecionado à página inicial.
+Na página principal, clique no botão "Entrar" para aparecer na tela um modal com o formulário de login. <br>
+Você deve preencher os campos de login corretamente para ser autenticado e, consequentemente, redirecionado à página inicial.
 
+![Botão para entrar](imagens/botao-entrar.jpg)
 ![Entrar](imagens/entrar.jpg)
 
 ## Menu da página principal
@@ -47,8 +54,32 @@ No canto superior direito da página existe uma barra de pesquisa. Digite o nick
 
 ## Adicionar/Remover foto de perfil
 
-Na página de edição, o primeiro espaço a aparecer é o de foto de perfil. Para adicionar uma, clique no botão "Escolher arquivo", selecione a foto desejada no seu dispositivo e, por último, clique no botão "Enviar".__
+Na página de edição, o primeiro espaço a aparecer é o de foto de perfil. Para adicionar uma, clique no botão "Escolher arquivo", selecione a foto desejada no seu dispositivo e, por último, clique no botão "Enviar".<br>
 Para remover sua foto de perfil, clique no botão "Remover imagem de perfil".
 
 ![Adicionar foto de perfil](imagens/add-foto-de-perfil.jpg)
 ![Remover foto de perfil](imagens/del-foto-de-perfil.jpg)
+
+## Editar dados
+
+Na página inicial, clique no botão de configurações abaixo da sua foto de perfil para ir para a página de editar dados.<br>
+Na página de editar dados, altere os campos desejados, preencha os campos obriatórios e clique no botão "Confirmar alterações".
+
+![Botão de editar dados](imagens/botao-editar-dados.jpg)
+![Editar dados](imagens/editar-dados.jpg)
+
+## Alterar senha
+
+Na página de alteração, clique no botão "Alterar senha" para ser redirecionado para a página de alterar senha.<br>
+Na página de alterar senha, preencha todos os campos, que são obrigatórios, e clique no botão "Confirmar alterações".
+
+![Botão de alterar senha](imagens/botao-alterar-senha.jpg)
+![Alterar senha](imagens/alterar-senha.jpg)
+
+## Excluir conta
+
+Na página de alteração, clique no botão "Excluir conta" para aparecer na tela um modal de confirmação.<br>
+No modal, clique no "x" no canto superior direito para cancelar a ação ou no botão "Excluir conta" para confirmar.
+
+![Botão de excluir conta](imagens/botao-excluir-conta.jpg)
+![Excluir conta](imagens/excluir-conta.jpg)
