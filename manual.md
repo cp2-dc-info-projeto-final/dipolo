@@ -101,3 +101,8 @@ A postagem será descurtida ao clicar novamente no botão de curtir (após já t
 ![Curtir/Descurtir](imagens/curtir-postagem.jpg)
 ![Curtir/Descurtir 2](imagens/curtir-postagem2.jpg)
 
+## Comentar
+
+Para comentar, é só digitar seu texto na caixa de texto existente na página de discussão e clicar no botão "Criar comentário" em seguida.
+
+![Comentar](imagens/comentar.jpg)
