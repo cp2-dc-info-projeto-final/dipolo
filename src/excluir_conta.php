@@ -7,7 +7,7 @@ if ($_SESSION["fez_login"]) {
     if (!isset($_POST['usuario_alvo'])) {
         $sql = "DELETE FROM usuarios WHERE cod_usuario = $cod_usuario;";
         mysqli_query($mysqli, $sql);
-        header("Location: index.php");
+        header(sprintf('location: %s', $_SERVER['HTTP_REFERER']));
     } else if (return_dados("adm", "")) {
         $sql = "DELETE FROM usuarios WHERE nickname LIKE \"" . $_POST['usuario_alvo'] . "\";";
         mysqli_query($mysqli, $sql);

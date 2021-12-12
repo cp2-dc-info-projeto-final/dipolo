@@ -14,8 +14,14 @@ Nullam vitae velit a eros dignissim bibendum id a enim. Vestibulum hendrerit nis
  - [Alterar senha](#Alterar-senha)
  - [Excluir conta](#Excluir-conta)
  - [Ver discussão](#Ver-discussão)
- - [Curtir/Descurtir postagem](#Curtir-postagem)
+ - [Curtir/Descurtir postagem](#Curtir/Descurtir-postagem)
  - [Comentar](#Comentar)
+ - [Curtir/Descurtir comentário](#Curtir/Descurtir-comentário)
+ - [Editar postagem](#Editar-postagem)
+ - [Editar comentário](#Editar-comentário)
+ - [Excluir postagem](#Excluir-postagem)
+ - [Excluir comentário](#Excluir-comentário)
+
 
 ## Cadastrar
 
@@ -106,3 +112,42 @@ A postagem será descurtida ao clicar novamente no botão de curtir (após já t
 Para comentar, é só digitar seu texto na caixa de texto existente na página de discussão e clicar no botão "Criar comentário" em seguida.
 
 ![Comentar](imagens/comentar.jpg)
+
+## Curtir/Descurtir comentário
+
+Você pode curtir ou descurtir um comentário clicando no botão com o polegar para cima no canto inferior direito do comentário.<br>
+A postagem será descurtida ao clicar novamente no botão de curtir (após já ter curtido).
+
+![Curtir/Descurtir](imagens/curtir-comentario.jpg)
+
+## Editar postagem
+
+No index ou na página de discussão, clique no botão de configurações canto inferior direito da postagem para aparecer o modal de editar a postagem<br>
+No modal, altere os campos desejados e clique no botão "Editar".
+
+![Editar postagem](imagens/editar-postagem.jpg)
+![Editar postagem 2](imagens/editar-postagem2.jpg)
+
+## Editar comentário
+
+Na página de discussão, clique no botão de configurações canto inferior direito da postagem para aparecer o modal de editar o comentário<br>
+No modal, altere os campos desejados e clique no botão "Editar".
+
+![Editar comentário](imagens/editar-comentario.jpg)
+![Editar comentário 2](imagens/editar-comentario2.jpg)
+
+## Excluir postagem
+
+No index ou na página de discussão, clique no botão de excluir no canto inferior direito da postagem para aparecer o modal de excluir a postagem<br>
+No modal, clique no "x" no canto superior direito para cancelar a ação ou no botão "Excluir postagem" para confirmar.
+
+![Excluir postagem](imagens/excluir-postagem.jpg)
+![Excluir postagem 2](imagens/excluir-postagem2.jpg)
+
+## Excluir comentário
+
+Na página de discussão, clique no botão de excluir no canto inferior direito da postagem para aparecer o modal de excluir o comentário<br>
+No modal, clique no "x" no canto superior direito para cancelar a ação ou no botão "Excluir comentário" para confirmar.
+
+![Excluir comentário](imagens/excluir-comentario.jpg)
+![Excluir comentário 2](imagens/excluir-comentario2.jpg)
