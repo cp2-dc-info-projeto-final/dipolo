@@ -1,6 +1,6 @@
 # Manual do Usuário
 
-Nullam vitae velit a eros dignissim bibendum id a enim. Vestibulum hendrerit nisl sed magna gravida, non elementum urna condimentum. Quisque porta tincidunt nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis at varius mauris. Quisque molestie ante imperdiet elit blandit, ac volutpat sem efficitur. Donec nec sem tempus, ullamcorper nisl non, blandit tortor. Etiam suscipit rutrum laoreet. Donec facilisis eros ultrices, venenatis quam nec, feugiat ante. Donec ante eros, consequat nec nibh vitae, porta vehicula orci. Duis nec eros et lorem malesuada sodales. Praesent auctor accumsan ipsum, et volutpat ex porttitor eu. Vestibulum facilisis elementum elit, hendrerit mollis velit pretium in. Curabitur tristique vel augue a sodales. Sed malesuada lacinia porttitor.
+Aqui você encontraá instruções de como usar o site "Dipolo".
 
 **Lista das Funcionalidades:**
 
@@ -21,6 +21,7 @@ Nullam vitae velit a eros dignissim bibendum id a enim. Vestibulum hendrerit nis
  - [Editar comentário](#Editar-comentário)
  - [Excluir postagem](#Excluir-postagem)
  - [Excluir comentário](#Excluir-comentário)
+ - [Página de administrador](#Página-de-administrador)
 
 
 ## Cadastrar
@@ -151,3 +152,9 @@ No modal, clique no "x" no canto superior direito para cancelar a ação ou no b
 
 ![Excluir comentário](imagens/excluir-comentario.jpg)
 ![Excluir comentário 2](imagens/excluir-comentario2.jpg)
+
+## Página de administrador
+
+Se você for um administrador, embaixo da sua foto de perfil aparecerá um botão que te levará para a página do administrador.
+
+![Botão da página do administrador](imagens/botao-pagina-adm.jpg)
