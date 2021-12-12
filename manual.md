@@ -22,6 +22,7 @@ Aqui você encontraá instruções de como usar o site "Dipolo".
  - [Excluir postagem](#Excluir-postagem)
  - [Excluir comentário](#Excluir-comentário)
  - [Página de administrador](#Página-de-administrador)
+ - [ADM excluir postagens/comentários](#ADM-excluir-postagens/comentários)
 
 
 ## Cadastrar
@@ -158,3 +159,9 @@ No modal, clique no "x" no canto superior direito para cancelar a ação ou no b
 Se você for um administrador, embaixo da sua foto de perfil aparecerá um botão que te levará para a página do administrador.
 
 ![Botão da página do administrador](imagens/botao-pagina-adm.jpg)
+
+## ADM excluir postagens/comentários
+
+Para excluir uma postagem ou um comentário, basta clicar no ícone de lixeira no respectivo setor e confirmar a operação.
+
+![ADM excluir postagens/comentários](imagens/adm-excluir-post-coment.jpg)
