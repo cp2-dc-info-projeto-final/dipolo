@@ -1,6 +1,6 @@
 # Manual do Usuário
 
-Aqui você encontraá instruções de como usar o site "Dipolo".
+Aqui você encontrará instruções de como usar o site "Dipolo".
 
 **Lista das Funcionalidades:**
 
