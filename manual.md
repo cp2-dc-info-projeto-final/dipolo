@@ -23,6 +23,7 @@ Aqui você encontrará instruções de como usar o site "Dipolo".
  - [Excluir comentário](#Excluir-comentário)
  - [Página de administrador](#Página-de-administrador)
  - [ADM excluir postagens/comentários](#ADM-excluir-postagens/comentários)
+ - [ADM editar usuários](#ADM-editar-usuarios)
 
 
 ## Cadastrar
@@ -165,3 +166,11 @@ Se você for um administrador, embaixo da sua foto de perfil aparecerá um botã
 Para excluir uma postagem ou um comentário, basta clicar no ícone de lixeira no respectivo setor e confirmar a operação.
 
 ![ADM excluir postagens/comentários](imagens/adm-excluir-post-coment.jpg)
+
+## ADM editar usuários
+
+Para editar um usuário, basta clicar no ícone de configurações para aparecer o modal de edição de dados. <br>
+No modal, altere os campos desejados e clique no botão "confirmar alterações".
+
+![ADM editar usuários](imagens/adm-botao-editar.jpg)
+![ADM editar usuários 2](imagens/adm-editar.jpg)
