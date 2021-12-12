@@ -13,7 +13,9 @@ Nullam vitae velit a eros dignissim bibendum id a enim. Vestibulum hendrerit nis
  - [Editar dados](#Editar-dados)
  - [Alterar senha](#Alterar-senha)
  - [Excluir conta](#Excluir-conta)
- - [Curtir postagem](#Curtir-postagem)
+ - [Ver discussão](#Ver-discussão)
+ - [Curtir/Descurtir postagem](#Curtir-postagem)
+ - [Comentar](#Comentar)
 
 ## Cadastrar
 
@@ -85,10 +87,17 @@ No modal, clique no "x" no canto superior direito para cancelar a ação ou no b
 ![Botão de excluir conta](imagens/botao-excluir-conta.jpg)
 ![Excluir conta](imagens/excluir-conta.jpg)
 
+## Ver discussão
+
+Para ver uma discussão completa, clique no texto da postagem desejada.
+
+![Ver discussão](imagens/ver-discusao.jpg)
+
 ## Curtir/Descurtir postagem
 
-você pode curtir ou descurtirs uma postagem tanto no index como na página da discussão completa. É só clicar no botão com o polegar para cima no canto inferior direito da postagem.<br>
+Você pode curtir ou descurtir uma postagem tanto no index como na página da discussão completa. É só clicar no botão com o polegar para cima no canto inferior direito da postagem.<br>
 A postagem será descurtida ao clicar novamente no botão de curtir (após já ter curtido).
 
 ![Curtir/Descurtir](imagens/curtir-postagem.jpg)
 ![Curtir/Descurtir 2](imagens/curtir-postagem2.jpg)
+
