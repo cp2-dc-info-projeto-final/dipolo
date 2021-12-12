@@ -17,6 +17,7 @@ Nullam vitae velit a eros dignissim bibendum id a enim. Vestibulum hendrerit nis
  - [Curtir/Descurtir postagem](#Curtir/Descurtir-postagem)
  - [Comentar](#Comentar)
  - [Curtir/Descurtir comentário](#Curtir/Descurtir-comentário)
+ - [Editar postagem](#Editar-postagem)
 
 ## Cadastrar
 
@@ -114,3 +115,11 @@ Você pode curtir ou descurtir um comentário clicando no botão com o polegar p
 A postagem será descurtida ao clicar novamente no botão de curtir (após já ter curtido).
 
 ![Curtir/Descurtir](imagens/curtir-comentario.jpg)
+
+## Editar postagem
+
+No index ou na página de postagem, clique no botão de configurações canto inferior direito da postagem para aparecer o modal de editar a postagem<br>
+No modal, altere os campos desejados e clique no botão "Editar".
+
+![Editar postagem](imagens/editar-postagem.jpg)
+![Editar postagem 2](imagens/editar-postagem2.jpg)
