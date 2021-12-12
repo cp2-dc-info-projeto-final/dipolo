@@ -18,6 +18,7 @@ Nullam vitae velit a eros dignissim bibendum id a enim. Vestibulum hendrerit nis
  - [Comentar](#Comentar)
  - [Curtir/Descurtir comentário](#Curtir/Descurtir-comentário)
  - [Editar postagem](#Editar-postagem)
+ - [Editar comentário](#Editar-comentário)
 
 ## Cadastrar
 
@@ -118,8 +119,16 @@ A postagem será descurtida ao clicar novamente no botão de curtir (após já t
 
 ## Editar postagem
 
-No index ou na página de postagem, clique no botão de configurações canto inferior direito da postagem para aparecer o modal de editar a postagem<br>
+No index ou na página de discussão, clique no botão de configurações canto inferior direito da postagem para aparecer o modal de editar a postagem<br>
 No modal, altere os campos desejados e clique no botão "Editar".
 
 ![Editar postagem](imagens/editar-postagem.jpg)
 ![Editar postagem 2](imagens/editar-postagem2.jpg)
+
+## Editar comentário
+
+Na página de discussão, clique no botão de configurações canto inferior direito da postagem para aparecer o modal de editar o comentário<br>
+No modal, altere os campos desejados e clique no botão "Editar".
+
+![Editar comentário](imagens/editar-comentario.jpg)
+![Editar comentário 2](imagens/editar-comentario2.jpg)
