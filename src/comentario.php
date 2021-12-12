@@ -35,12 +35,14 @@
                         </a>
                         <span><?php echo return_curtidas_comentario($comentario["cod_comentario"]); ?></span>
                     </div>
-                    <?php if ($usuario_comentario["nickname"] == $_SESSION["nickname"] || $usuario["adm"]) : ?>
+                    <?php if ($usuario_comentario["nickname"] == $_SESSION["nickname"]) : ?>
                         <div class="col-auto px-1">
                             <button class="btn btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#editarComentario<?php echo $comentario['cod_comentario'] ?>Modal">
                                 <i class="bi bi-gear" aria-label="Editar comentário"></i>
                             </button>
                         </div>
+                    <?php endif; ?>
+                    <?php if ($usuario_postagem["nickname"] == $_SESSION["nickname"] || $usuario["adm"]) : ?>
                         <div class="col-auto px-1">
                             <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#excluirComentario<?php echo $comentario['cod_comentario']; ?>Modal">
                                 <i class="bi bi-trash-fill" aria-label="Excluir comentário"></i>

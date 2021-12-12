@@ -67,12 +67,14 @@ $usuario_postagem = return_usuario($postagem['cod_usuario']);
                                     </a>
                                     <span><?php echo return_curtidas($postagem["cod_postagem"]); ?></span>
                                 </div>
-                                <?php if ($usuario_postagem["nickname"] == $_SESSION["nickname"] || $usuario["adm"]) : ?>
+                                <?php if ($usuario_postagem["nickname"] == $_SESSION["nickname"]) : ?>
                                     <div class="col-auto px-1">
                                         <button class="btn btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#editar<?php echo $postagem['cod_postagem'] ?>Modal">
                                             <i class="bi bi-gear" aria-label="Editar postagem"></i>
                                         </button>
                                     </div>
+                                <?php endif; ?>
+                                <?php if ($usuario_postagem["nickname"] == $_SESSION["nickname"] || $usuario["adm"]) : ?>
                                     <div class="col-auto px-1">
                                         <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#excluirPostagem<?php echo $postagem['cod_postagem']; ?>Modal" aria-label="Excluir postagem">
                                             <i class="bi bi-trash-fill"></i>
