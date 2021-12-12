@@ -38,7 +38,7 @@
                                 <h4>Postagens</h4>
                             </div>
                             <div>
-                                <p class="mt-3">A ser implementada.</p>
+                                <?php admin_listar_postagens() ?>
                             </div>
                         </div>
                         <div class="col-3 border border-dark rounded p-4 mb-auto">
@@ -46,7 +46,7 @@
                                 <h4>Comentários</h4>
                             </div>
                             <div>
-                                <p class="mt-3">A ser implementada.</p>
+                                <?php admin_listar_comentarios(); ?>
                             </div>
                         </div>
                         <div class="col-3 border border-dark rounded p-4 mb-auto">

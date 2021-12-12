@@ -1,7 +1,11 @@
 <div class="mt-3 p-2 ps-3 border border-dark rounded">
     <div class="row justify-content-between">
         <div class="col-8">
-            <h5><?php echo $usuario["nickname"]; ?></h5>
+            <h5>
+                <a href="timeline.php?nickname=<?php echo $usuario["nickname"]; ?>" class="text-decoration-none text-dark">
+                    <?php echo $usuario["nickname"]; ?>
+                </a>
+            </h5>
         </div>
         <div class="col-1">
             <a class="btn text-decoration-none text-dark" type="button" data-bs-toggle="modal" data-bs-target="#editar<?php echo $usuario['nickname'] ?>Modal">
