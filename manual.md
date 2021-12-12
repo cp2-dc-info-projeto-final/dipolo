@@ -14,14 +14,18 @@ Nullam vitae velit a eros dignissim bibendum id a enim. Vestibulum hendrerit nis
 
 ## Cadastrar
 
-Ao clicar no botão "Cadastrar" na página principal, você será redirecionado à página que contém o formulário para cadastro. Nele, você deve preencher todos os campos, se for um administrador, e enviar. Caso contrário, deixe somente o campo "Código de administrador" em branco e envie.
+Na página principal, clique no botão "Cadastrar" para ser redirecionado à página que contém o formulário para cadastro. <br>
+Nele, você deve preencher todos os campos, se for um administrador, e enviar. Caso contrário, deixe somente o campo "Código de administrador" em branco e envie.
 
+![Botão de cadastrar](imagens/botao-cadastrar.jpg)
 ![Cadastrar](imagens/cadastrar.jpg)
 
 ## Entrar
 
-Ao clicar no botão "Entrar" na página principal, um modal com o formulário de login a ser preenchido aparecerá na tela. Você deve preencher os campos de login corretamente para ser autenticado e, consequentemente, redirecionado à página inicial.
+Na página principal, clique no botão "Entrar" para aparecer na tela um modal com o formulário de login. <br>
+Você deve preencher os campos de login corretamente para ser autenticado e, consequentemente, redirecionado à página inicial.
 
+![Botão para entrar](imagens/botao-entrar.jpg)
 ![Entrar](imagens/entrar.jpg)
 
 ## Menu da página principal
