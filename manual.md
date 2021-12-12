@@ -10,6 +10,7 @@ Nullam vitae velit a eros dignissim bibendum id a enim. Vestibulum hendrerit nis
  - [Postar](#Postar)
  - [Procurar](#Procurar)
  - [Adicionar/Remover foto de perfil](#Adicionar/Remover-foto-de-perfil)
+ - [Editar dados](#Editar-dados)
 
 ## Cadastrar
 
@@ -47,8 +48,17 @@ No canto superior direito da página existe uma barra de pesquisa. Digite o nick
 
 ## Adicionar/Remover foto de perfil
 
-Na página de edição, o primeiro espaço a aparecer é o de foto de perfil. Para adicionar uma, clique no botão "Escolher arquivo", selecione a foto desejada no seu dispositivo e, por último, clique no botão "Enviar".__
+Na página de edição, o primeiro espaço a aparecer é o de foto de perfil. Para adicionar uma, clique no botão "Escolher arquivo", selecione a foto desejada no seu dispositivo e, por último, clique no botão "Enviar".<br>
 Para remover sua foto de perfil, clique no botão "Remover imagem de perfil".
 
 ![Adicionar foto de perfil](imagens/add-foto-de-perfil.jpg)
 ![Remover foto de perfil](imagens/del-foto-de-perfil.jpg)
+
+## Editar dados
+
+Na página inicial, clique no botão de configurações abaixo da sua foto de perfil para ir para a página de editar dados.<br>
+Na página de editar dados, altere os campos desejados, preencha os campos obriatórios e clique no botão "Confirmar alterações".
+
+![Botão de editar dados](imagens/botao-editar-dados.jpg)
+![Editar dados](imagens/editar-dados.jpg)
+
