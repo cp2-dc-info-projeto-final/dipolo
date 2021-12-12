@@ -12,6 +12,7 @@ Nullam vitae velit a eros dignissim bibendum id a enim. Vestibulum hendrerit nis
  - [Adicionar/Remover foto de perfil](#Adicionar/Remover-foto-de-perfil)
  - [Editar dados](#Editar-dados)
  - [Alterar senha](#Alterar-senha)
+ - [Excluir conta](#Excluir-conta)
 
 ## Cadastrar
 
@@ -74,3 +75,11 @@ Na página de alterar senha, preencha todos os campos, que são obrigatórios, e
 
 ![Botão de alterar senha](imagens/botao-alterar-senha.jpg)
 ![Alterar senha](imagens/alterar-senha.jpg)
+
+## Excluir conta
+
+Na página de alteração, clique no botão "Excluir conta" para aparecer na tela um modal de confirmação.<br>
+No modal, clique no "x" no canto superior direito para cancelar a ação ou no botão "Excluir conta" para confirmar.
+
+![Botão de excluir conta](imagens/botao-excluir-conta.jpg)
+![Excluir conta](imagens/excluir-conta.jpg)
