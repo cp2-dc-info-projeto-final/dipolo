@@ -7,6 +7,7 @@ Projeto Final do Curso Técnico Integrado de Desenvolvimento de Sistemas - Colé
 - João Pedro Nunes dos Santos
 - Louise Ferreira Costa de Oliveira Silva
 
+Versão do PHP: 7.4
 
  ## Descrição do Projeto
  De Toddy x Nescau à política, o debate está muito presente na nossa vida. Com isso em mente, criamos o Dipolo: um espaço para colocar em prática a atividade de debater livremente sobre assuntos diversos com pessoas que compartilham o mesmo interesse. 
