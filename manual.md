@@ -1,6 +1,6 @@
 # Manual do Usuário
 
-Aqui você encontraá instruções de como usar o site "Dipolo".
+Aqui você encontrará instruções de como usar o site "Dipolo".
 
 **Lista das Funcionalidades:**
 
@@ -99,7 +99,7 @@ No modal, clique no "x" no canto superior direito para cancelar a ação ou no b
 
 Para ver uma discussão completa, clique no texto da postagem desejada.
 
-![Ver discussão](imagens/ver-discusao.jpg)
+![Ver discussão](imagens/ver-discussao.jpg)
 
 ## Curtir/Descurtir postagem
 
