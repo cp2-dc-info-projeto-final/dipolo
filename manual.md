@@ -24,7 +24,8 @@ Aqui você encontrará instruções de como usar o site "Dipolo".
  - [Página de administrador](#Página-de-administrador)
  - [ADM excluir postagens/comentários](#ADM-excluir-postagens/comentários)
  - [ADM editar usuários](#ADM-editar-usuarios)
-
+ - [ADM excluir usuário](#ADM-excluir-usuário)
+ - [ADM editar usuários](#ADM-privilégios)
 
 ## Cadastrar
 
@@ -174,3 +175,15 @@ No modal, altere os campos desejados e clique no botão "confirmar alterações"
 
 ![ADM editar usuários](imagens/adm-botao-editar.jpg)
 ![ADM editar usuários 2](imagens/adm-editar.jpg)
+
+## ADM excluir usuário
+
+Para excluir um usuário, basta clicar no ícone de menu e no botão "Excluir" em seguida. 
+
+![ADM excluir usuários](imagens/adm-excluir.jpg)
+
+## ADM privilégios
+
+Para retirar ou conceder privilégios à um usuário, basta clicar no ícone de menu e no botão "Retirar privilégios" ou "Conceder privilégios" em seguida. 
+
+![ADM privilégios](imagens/adm-privilegios.jpg)
