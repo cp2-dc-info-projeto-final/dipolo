@@ -24,7 +24,7 @@ Aqui você encontrará instruções de como usar o site "Dipolo".
  - [Excluir comentário](#Excluir-comentário)
  - [Página de administrador](#Página-de-administrador)
  - [ADM excluir postagens/comentários](#ADM-excluir-postagens/comentários)
- - [ADM editar usuários](#ADM-editar-usuarios)
+ - [ADM editar usuários](#ADM-editar-usuários)
  - [ADM excluir usuário](#ADM-excluir-usuário)
  - [ADM editar usuários](#ADM-privilégios)
  - [Sair](#Sair)
@@ -40,7 +40,7 @@ Nele, você deve preencher todos os campos, se for um administrador, e enviar. C
 ## Entrar
 
 Na página principal, clique no botão "Entrar" para aparecer na tela um modal com o formulário de login. <br>
-Você deve preencher os campos de login corretamente para ser autenticado e, consequentemente, redirecionado à página inicial.
+Você deve preencher os campos de login corretamente e enviar para ser autenticado e, consequentemente, redirecionado à página inicial.
 
 ![Botão para entrar](imagens/botao-entrar.jpg)
 ![Entrar](imagens/entrar.jpg)
@@ -136,8 +136,8 @@ A postagem será descurtida ao clicar novamente no botão de curtir (após já t
 
 ## Editar postagem
 
-No index ou na página de discussão, clique no botão de configurações canto inferior direito da postagem para aparecer o modal de editar a postagem<br>
-No modal, altere os campos desejados e clique no botão "Editar".
+No index ou na página de discussão, clique no botão de configurações canto inferior direito da postagem para aparecer o modal de editar a postagem.<br>
+No modal, altere os campos desejados e clique no botão "Editar". Caso queira cancelar a operação, clique no "X" no canto superior direito do modal.
 
 ![Editar postagem](imagens/editar-postagem.jpg)
 ![Editar postagem 2](imagens/editar-postagem2.jpg)
@@ -145,7 +145,7 @@ No modal, altere os campos desejados e clique no botão "Editar".
 ## Editar comentário
 
 Na página de discussão, clique no botão de configurações canto inferior direito da postagem para aparecer o modal de editar o comentário<br>
-No modal, altere os campos desejados e clique no botão "Editar".
+No modal, altere os campos desejados e clique no botão "Editar". Caso queira cancelar a operação, clique no "X" no canto superior direito do modal.
 
 ![Editar comentário](imagens/editar-comentario.jpg)
 ![Editar comentário 2](imagens/editar-comentario2.jpg)
@@ -153,7 +153,7 @@ No modal, altere os campos desejados e clique no botão "Editar".
 ## Excluir postagem
 
 No index ou na página de discussão, clique no botão de excluir no canto inferior direito da postagem para aparecer o modal de excluir a postagem<br>
-No modal, clique no "x" no canto superior direito para cancelar a ação ou no botão "Excluir postagem" para confirmar.
+No modal, clique no "X" no canto superior direito para cancelar a ação ou no botão "Excluir postagem" para confirmar.
 
 ![Excluir postagem](imagens/excluir-postagem.jpg)
 ![Excluir postagem 2](imagens/excluir-postagem2.jpg)
@@ -181,7 +181,7 @@ Para excluir uma postagem ou um comentário, basta clicar no ícone de lixeira n
 ## ADM editar usuários
 
 Para editar um usuário, basta clicar no ícone de configurações para aparecer o modal de edição de dados. <br>
-No modal, altere os campos desejados e clique no botão "confirmar alterações".
+No modal, altere os campos desejados e clique no botão "Enviar". Caso queira cancelar a operação, clique no "X" no canto superior direito do modal.
 
 ![ADM editar usuários](imagens/adm-botao-editar.jpg)
 ![ADM editar usuários 2](imagens/adm-editar.jpg)
