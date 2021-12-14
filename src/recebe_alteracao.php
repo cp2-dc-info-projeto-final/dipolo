@@ -46,14 +46,14 @@
 
         if(empty($nome) OR strstr($nome,' ') == FALSE)
         {
-            echo "<script> alert('Favor digitar seu nome corretamente.'); 
+            echo "<script> alert('Favor digitar seu nome e sobrenome.'); 
                 javascript:history.go(-1);</script> <br>";
             $erro = 1;
         }
 
         if(strlen($email) < 8 || strstr($email,'@') == FALSE)
         {
-            echo "<script> alert('Favor digitar seu email corretamente.'); 
+            echo "<script> alert('Favor digitar um email válido.'); 
                 javascript:history.go(-1);</script> <br>";
             $erro = 1;
         }
@@ -79,8 +79,13 @@
             //mysqli_query(<conexão>,<comando>);
             mysqli_query($mysqli,$sql);
 
-            echo "<script> alert('Usuário atualizado com sucesso!'); 
-            javascript:history.go(-1);</script> <br>";
+            if($nickname != $usuario["nickname"]){
+                echo "<script> alert(' Usuário atualizado com sucesso! \\n Como seu nickname foi alterado, faça login novamente.'); 
+                window.location='index.php';</script> <br>";
+            } else {
+                echo "<script> alert('Usuário atualizado com sucesso!'); 
+                javascript:history.go(-1);</script> <br>";
+            }
         }
     }
 
