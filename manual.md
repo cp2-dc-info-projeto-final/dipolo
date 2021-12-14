@@ -7,6 +7,7 @@ Aqui você encontrará instruções de como usar o site "Dipolo".
  - [Cadastrar](#Cadastrar)
  - [Entrar](#Entrar)
  - [Menu da página principal](#Menu-da-página-principal)
+ - [Menu da página inicial](#Menu-da-página-inicial)
  - [Postar](#Postar)
  - [Procurar](#Procurar)
  - [Adicionar/Remover foto de perfil](#Adicionar/Remover-foto-de-perfil)
@@ -26,6 +27,7 @@ Aqui você encontrará instruções de como usar o site "Dipolo".
  - [ADM editar usuários](#ADM-editar-usuarios)
  - [ADM excluir usuário](#ADM-excluir-usuário)
  - [ADM editar usuários](#ADM-privilégios)
+ - [Sair](#Sair)
 
 ## Cadastrar
 
@@ -51,6 +53,14 @@ Ao clicar no botão existente no canto superior esquerdo da página, 3 opções 
     "Cadastrar" redireciona para a página de cadastro.
 
 ![Menu da página principal](imagens/menu-da-pagina-principal.jpg)
+
+## Menu da página inicial
+
+Ao clicar no botão existente no canto superior esquerdo da página, 2 opções estarão disponíveis para acesso:
+    "Página inicial" redireciona para a página inicial;
+    "Sair" faz o logout e redireciona pra página principal;
+
+![Menu da página inicial](imagens/menu-da-pagina-inicial.jpg)
 
 ## Postar
 
@@ -187,3 +197,9 @@ Para excluir um usuário, basta clicar no ícone de menu e no botão "Excluir" e
 Para retirar ou conceder privilégios à um usuário, basta clicar no ícone de menu e no botão "Retirar privilégios" ou "Conceder privilégios" em seguida. 
 
 ![ADM privilégios](imagens/adm-privilegios.jpg)
+
+## Sair
+
+No menu da página inicial, clique no botão "Sair" para efetuar o logout.
+
+![Botão para sair](imagens/botao-sair.jpg)
