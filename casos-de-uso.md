@@ -133,8 +133,8 @@ Editar Dados
 	6. O usuário preenche o campo obrigatório e clica no botão "Confirmar alterações"
 	7. O sistema valida os campos
 	8. O sistema armazena as alterações e informa ao usuário que a operação foi concluída com sucesso
-	8. O sistema informa ao usuário que o nickname foi alterado e o pede que faça login novamente
-	9. O sistema encaminha o usuário para a página principal 
+	9. O sistema informa ao usuário que o nickname foi alterado e o pede que faça login novamente
+	10. O sistema encaminha o usuário para a página principal 
 
 **Fluxo Alternativo B**
 
@@ -146,9 +146,9 @@ Editar Dados
 	6. O usuário preenche o campo obrigatório e clica no botão "Confirmar alterações"
 	7. O sistema informa que existem campos inválidos
 	8. O usuário corrige os campos inválidos e clica no botão "Confirmar alterações"
-	10. O sistema valida os campos
-	11. O sistema armazena as alterações e informa ao usuário que a operação foi concluída com sucesso
-	12. O sistema atualiza a página
+	9. O sistema valida os campos
+	10. O sistema armazena as alterações e informa ao usuário que a operação foi concluída com sucesso
+	11. O sistema atualiza a página
 
 ### CDU 04
 
@@ -176,9 +176,9 @@ Alterar senha
 	6. O usuário preenche os campos e clica no botão "Confirmar alterações"
 	7. O sistema informa que existem campos inválidos
 	8. O usuário corrige os campos inválidos e clica no botão "Confirmar alterações"
-	8. O sistema valida os campos
-	9. O sistema armazena as alterações e informa ao usuário que a operação foi concluída com sucesso
-	10. O sistema pede ao usuário que faça login novamente e o encaminha para a página principal 
+	9. O sistema valida os campos
+	10. O sistema armazena as alterações e informa ao usuário que a operação foi concluída com sucesso
+	11. O sistema pede ao usuário que faça login novamente e o encaminha para a página principal 
 
 ### CDU 05
 
