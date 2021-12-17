@@ -19,11 +19,9 @@
                 </button>
                 <ul class="dropdown-menu">
                     <li>
-                        <form action="excluir_conta.php" method="POST" class="m-0">
-                            <button type="submit" class="btn dropdown-item rounded-0" name="usuario_alvo" value="<?php echo $usuario["nickname"]; ?>">
-                                Excluir
-                            </button>
-                        </form>
+                        <button type="button" class="btn dropdown-item rounded-0" data-bs-toggle="modal" data-bs-target="#excluir<?php echo $usuario['nickname'] ?>Modal">
+                            Excluir
+                        </button>
                     </li>
                     <li>
                         <form action="admin_privilegio.php" method="POST" class="m-0">
@@ -95,3 +93,21 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="excluir<?php echo $usuario['nickname'] ?>Modal" tabindex="-1" aria-labelledby="excluirConta<?php echo $usuario['nickname']; ?>ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="excluirConta<?php echo $usuario['nickname']; ?>ModalLabel">Excluir usuário</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="excluir_conta.php" method="POST" class="m-0">
+                        <button type="submit" class="btn btn-primary" name="usuario_alvo" value="<?php echo $usuario["nickname"]; ?>">
+                            Excluir
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
