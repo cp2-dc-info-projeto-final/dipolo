@@ -52,7 +52,7 @@ $cod_usuario = $_GET["cod_usuario"];
                         -->
                     </div>
                     <div class="col-6">
-                        <h1 class="text-center mb-4">Editar dados da conta</h1>
+                        <h1 class="text-center mb-4">Alterar senha</h1>
                         <form action="recebe_alteracao.php" method="POST">
                             <input type="hidden" name="login" value="alterar_senha">
                             <input type="hidden" name="cod_usuario" value="<?php echo $cod_usuario ?>">
