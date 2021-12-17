@@ -46,14 +46,14 @@
 
         else if(empty($nome) OR strstr($nome,' ') == FALSE)
         {
-            echo "<script> alert('Favor digitar seu nome corretamente.'); 
+            echo "<script> alert('Favor digitar seu nome e no mínimo 1 sobrenome.'); 
                 javascript:history.go(-1);</script> <br>";
             $erro = 1;
         }
 
         else if(strlen($email) < 8 || strstr($email,'@') == FALSE)
         {
-            echo "<script> alert('Favor digitar seu email corretamente.'); 
+            echo "<script> alert('Favor digitar um email válido.'); 
                 javascript:history.go(-1);</script> <br>";
             $erro = 1;
         }

@@ -46,7 +46,7 @@
 
         if(empty($nome) OR strstr($nome,' ') == FALSE)
         {
-            echo "<script> alert('Favor digitar seu nome e sobrenome.'); 
+            echo "<script> alert('Favor digitar seu nome e no mínimo 1 sobrenome.'); 
                 javascript:history.go(-1);</script> <br>";
             $erro = 1;
         }
