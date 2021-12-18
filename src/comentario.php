@@ -26,26 +26,28 @@
                         </p>
                     </div>
                     <div class="col-auto px-1">
-                        <a href="curtidas_comentarios.php?cod_comentario=<?php echo $comentario["cod_comentario"]; ?>" class="btn btn-lg px-2" aria-label="Curtir comentario">
+                        <a href="curtidas_comentarios.php?cod_comentario=<?php echo $comentario["cod_comentario"]; ?>" class="btn btn-lg px-2"
                             <?php if (usuario_curtiu_comentario($comentario["cod_comentario"], $_SESSION["cod_usuario"], $mysqli)) : ?>
-                                <i class="bi bi-hand-thumbs-up-fill text-primary"></i>
+                                aria-label="Descurtir comentário">
+                                <i aria-hidden="true" class="bi bi-hand-thumbs-up-fill text-primary" title="Descurtir comentário"></i>
                             <?php else : ?>
-                                <i class="bi bi-hand-thumbs-up"></i>
+                                aria-label="Curtir comentário">
+                                <i aria-hidden="true" class="bi bi-hand-thumbs-up" title="Curtir comentário"></i>
                             <?php endif; ?>
                         </a>
                         <span><?php echo return_curtidas_comentario($comentario["cod_comentario"], $mysqli); ?></span>
                     </div>
                     <?php if ($usuario_comentario["nickname"] == $_SESSION["nickname"]) : ?>
                         <div class="col-auto px-1">
-                            <button class="btn btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#editarComentario<?php echo $comentario['cod_comentario'] ?>Modal">
-                                <i class="bi bi-gear" aria-label="Editar comentário"></i>
+                            <button class="btn btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#editarComentario<?php echo $comentario['cod_comentario'] ?>Modal" aria-label="Editar comentário">
+                                <i aria-hidden="true" class="bi bi-gear" title="Editar comentário"></i>
                             </button>
                         </div>
                     <?php endif; ?>
                     <?php if ($usuario_comentario["nickname"] == $_SESSION["nickname"] || $usuario["adm"]) : ?>
                         <div class="col-auto px-1">
-                            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#excluirComentario<?php echo $comentario['cod_comentario']; ?>Modal">
-                                <i class="bi bi-trash-fill" aria-label="Excluir comentário"></i>
+                            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#excluirComentario<?php echo $comentario['cod_comentario']; ?>Modal" aria-label="Excluir comentário">
+                                <i aria-hidden="true" class="bi bi-trash-fill" title="Excluir comentário"></i>
                             </button>
                         </div>
                     <?php endif; ?>

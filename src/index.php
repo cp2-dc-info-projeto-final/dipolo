@@ -102,12 +102,12 @@
                         </div>
                         <p class="text-center fs-4 mb-0">
                             <?php echo return_dados("nickname", "", $mysqli); ?>
-                            <a class="text-decoration-none text-dark" href="alteracao.php?cod_usuario=<?php echo return_dados("cod_usuario", "", $mysqli); ?>">
-                                <i class="bi bi-gear" role="img" aria-label="Editar dados"></i>
+                            <a class="text-decoration-none text-dark" href="alteracao.php?cod_usuario=<?php echo return_dados("cod_usuario", "", $mysqli); ?>" aria-label="Editar dados">
+                                <i aria-hidden="true" class="bi bi-gear" role="img" title="Editar dados"></i>
                             </a>
                             <?php if (return_dados("adm", "", $mysqli)) : ?>
-                                <a class="text-decoration-none text-dark" href="admin_dashboard.php">
-                                    <i class="bi bi-tools" role="img" aria-label="Ferramentas de administrador"></i>
+                                <a class="text-decoration-none text-dark" href="admin_dashboard.php" aria-label="Ferramentas de administrador">
+                                    <i aria-hidden="true" class="bi bi-tools" role="img" title="Ferramentas de administrador"></i>
                                 </a>
                             <?php endif; ?>
                         </p>

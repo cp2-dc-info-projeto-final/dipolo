@@ -8,8 +8,8 @@
             </h5>
         </div>
         <div class="col-1">
-            <a class="btn text-decoration-none text-dark" type="button" data-bs-toggle="modal" data-bs-target="#editar<?php echo $usuario['nickname'] ?>Modal">
-                <i class="bi bi-gear" role="img" aria-label="Editar dados"></i>
+            <a class="btn text-decoration-none text-dark" type="button" data-bs-toggle="modal" data-bs-target="#editar<?php echo $usuario['nickname'] ?>Modal" aria-label="Editar dados">
+                <i aria-hidden="true" class="bi bi-gear" role="img" title="Editar dados"></i>
             </a>
         </div>
         <div class="col-2">

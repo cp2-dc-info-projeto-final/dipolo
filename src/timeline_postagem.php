@@ -12,26 +12,28 @@
                 <p class="mb-0 text-muted fw-light">Clique no texto para ver a discussão</p>
             </div>
             <div class="col-auto px-1">
-                <a href="curtidas_postagens.php?cod_postagem=<?php echo $postagem["cod_postagem"]; ?>" class="btn btn-lg px-2" aria-label="Curtir postagem">
+                <a href="curtidas_postagens.php?cod_postagem=<?php echo $postagem["cod_postagem"]; ?>" class="btn btn-lg px-2"
                     <?php if (usuario_curtiu_postagem($postagem["cod_postagem"], $_SESSION["cod_usuario"], $mysqli)) : ?>
-                        <i class="bi bi-hand-thumbs-up-fill text-primary"></i>
+                        aria-label="Descurtir postagem">
+                        <i aria-hidden="true" class="bi bi-hand-thumbs-up-fill text-primary" title="Descurtir postagem"></i>
                     <?php else : ?>
-                        <i class="bi bi-hand-thumbs-up"></i>
+                        aria-label="Curtir postagem">
+                        <i aria-hidden="true" class="bi bi-hand-thumbs-up" title="Curtir postagem"></i>
                     <?php endif; ?>
                 </a>
                 <span><?php echo return_curtidas($postagem["cod_postagem"], $mysqli); ?></span>
             </div>
             <?php if ($usuario["nickname"] == $_SESSION["nickname"]) : ?>
                 <div class="col-auto px-1">
-                    <button class="btn btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#editar<?php echo $postagem['cod_postagem'] ?>Modal">
-                        <i class="bi bi-gear" aria-label="Editar postagem"></i>
+                    <button class="btn btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#editar<?php echo $postagem['cod_postagem'] ?>Modal" aria-label="Editar postagem">
+                        <i aria-hidden="true" class="bi bi-gear" title="Editar postagem"></i>
                     </button>
                 </div>
             <?php endif; ?>
             <?php if ($usuario["nickname"] == $_SESSION["nickname"] || $usuario_atual["adm"]) : ?>
                 <div class="col-auto px-1">
                     <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#excluirPostagem<?php echo $postagem['cod_postagem']; ?>Modal" aria-label="Excluir postagem">
-                        <i class="bi bi-trash-fill"></i>
+                        <i aria-hidden="true" class="bi bi-trash-fill" title="Excluir postagem"></i>
                     </button>
                 </div>
             <?php endif; ?>
