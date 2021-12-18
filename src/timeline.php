@@ -35,7 +35,7 @@
 
     <div class="container-flex p-5 py-5">
         <div class="container-flex pb-2">
-            <?php if (usuario_existe($_GET["nickname"])) : ?>
+            <?php if (usuario_existe($_GET["nickname"], $mysqli)) : ?>
                 <div class="row justify-content-between px-4">
 
                     <!-- Criar postagem -->

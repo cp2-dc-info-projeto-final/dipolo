@@ -1,9 +1,7 @@
 <?php
 
-function usuario_existe($nickname)
+function usuario_existe($nickname, $mysqli)
 {
-    include "conecta_mysql.php";
-
     $sql_usuario = "SELECT * FROM usuarios WHERE nickname LIKE \"$nickname\"";
     $resposta_usuario = mysqli_query($mysqli, $sql_usuario);
     $linhas_usuario = mysqli_num_rows($resposta_usuario);
