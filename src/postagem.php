@@ -3,10 +3,10 @@
 <?php include "conecta_mysql.php"; ?>
 <?php
 include "return_postagem.php";
-$postagem = return_postagem($_GET['cod_postagem']);
+$postagem = return_postagem($_GET['cod_postagem'], $mysqli);
 
 include "return_usuario.php";
-$usuario_postagem = return_usuario($postagem['cod_usuario']);
+$usuario_postagem = return_usuario($postagem['cod_usuario'], $mysqli);
 ?>
 <?php include "verificar_curtida.php"; ?>
 <?php include "existe.php"; ?>
@@ -62,13 +62,13 @@ $usuario_postagem = return_usuario($postagem['cod_usuario']);
                                     </div>
                                     <div class="col-auto px-1">
                                         <a href="curtidas_postagens.php?cod_postagem=<?php echo $_GET["cod_postagem"]; ?>" class="btn btn-lg px-2" aria-label="Curtir postagem">
-                                            <?php if (usuario_curtiu_postagem($postagem["cod_postagem"], $_SESSION["cod_usuario"])) : ?>
+                                            <?php if (usuario_curtiu_postagem($postagem["cod_postagem"], $_SESSION["cod_usuario"], $mysqli)) : ?>
                                                 <i class="bi bi-hand-thumbs-up-fill text-primary"></i>
                                             <?php else : ?>
                                                 <i class="bi bi-hand-thumbs-up"></i>
                                             <?php endif; ?>
                                         </a>
-                                        <span><?php echo return_curtidas($postagem["cod_postagem"]); ?></span>
+                                        <span><?php echo return_curtidas($postagem["cod_postagem"], $mysqli); ?></span>
                                     </div>
                                     <?php if ($usuario_postagem["nickname"] == $_SESSION["nickname"]) : ?>
                                         <div class="col-auto px-1">
@@ -143,7 +143,7 @@ $usuario_postagem = return_usuario($postagem['cod_usuario']);
 
                 <?php
                 include "listar.php";
-                listar_comentarios($postagem["cod_postagem"]);
+                listar_comentarios($postagem["cod_postagem"], $mysqli);
                 ?>
 
                 <div class="row justify-content-center px-4 align-items-bottom mt-3 border-top mx-auto pt-4">
@@ -172,7 +172,7 @@ $usuario_postagem = return_usuario($postagem['cod_usuario']);
                     </div>
                 </div>
             <?php else : ?>
-                <p>Essa postagem não existe.</p>
+                <p>Essa postagem não existe (ou não existe mais...)</p>
             <?php endif; ?>
         </div>
     </div>

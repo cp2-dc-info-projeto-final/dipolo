@@ -1,9 +1,7 @@
 <?php
 
-function return_usuario($cod_usuario)
+function return_usuario($cod_usuario, $mysqli)
 {
-    include "conecta_mysql.php";
-
     if ($cod_usuario == null) {
         $cod_usuario = $_SESSION["cod_usuario"];
         $cod_usuario = htmlspecialchars($cod_usuario);

@@ -1,12 +1,11 @@
 <?php
 
-function listar_postagens($cod_usuario)
+function listar_postagens($cod_usuario, $mysqli)
 {
-    include "conecta_mysql.php";
     include_once "return_dados.php";
     include_once "verificar_curtida.php";
     include_once "return_usuario.php";
-    $usuario_atual = return_usuario(null);
+    $usuario_atual = return_usuario(null, $mysqli);
 
     $sql_usuario = "SELECT * FROM usuarios WHERE cod_usuario = $cod_usuario";
     $resposta_usuario = mysqli_query($mysqli, $sql_usuario);
@@ -29,15 +28,14 @@ function listar_postagens($cod_usuario)
     }
 }
 
-function listar_comentarios($cod_postagem)
+function listar_comentarios($cod_postagem, $mysqli)
 {
-    include "conecta_mysql.php";
     include_once "return_usuario.php";
     include_once "return_postagem.php";
     include_once "verificar_curtida.php";
 
-    $postagem = return_postagem($cod_postagem);
-    $usuario = return_usuario(null);
+    $postagem = return_postagem($cod_postagem, $mysqli);
+    $usuario = return_usuario(null, $mysqli);
 
     $sql_comentarios = "SELECT * FROM comentarios WHERE cod_postagem = $cod_postagem";
     $resposta_comentarios = mysqli_query($mysqli, $sql_comentarios);
@@ -55,7 +53,7 @@ function listar_comentarios($cod_postagem)
     } else {
         for ($i = 0; $i < $linhas_comentarios; $i++) {
             $comentario = mysqli_fetch_array($resposta_comentarios);
-            $usuario_comentario = return_usuario($comentario["cod_usuario"]);
+            $usuario_comentario = return_usuario($comentario["cod_usuario"], $mysqli);
 
             include "comentario.php";
         }

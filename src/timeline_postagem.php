@@ -13,13 +13,13 @@
             </div>
             <div class="col-auto px-1">
                 <a href="curtidas_postagens.php?cod_postagem=<?php echo $postagem["cod_postagem"]; ?>" class="btn btn-lg px-2" aria-label="Curtir postagem">
-                    <?php if (usuario_curtiu_postagem($postagem["cod_postagem"], $_SESSION["cod_usuario"])) : ?>
+                    <?php if (usuario_curtiu_postagem($postagem["cod_postagem"], $_SESSION["cod_usuario"], $mysqli)) : ?>
                         <i class="bi bi-hand-thumbs-up-fill text-primary"></i>
                     <?php else : ?>
                         <i class="bi bi-hand-thumbs-up"></i>
                     <?php endif; ?>
                 </a>
-                <span><?php echo return_curtidas($postagem["cod_postagem"]); ?></span>
+                <span><?php echo return_curtidas($postagem["cod_postagem"], $mysqli); ?></span>
             </div>
             <?php if ($usuario["nickname"] == $_SESSION["nickname"]) : ?>
                 <div class="col-auto px-1">
