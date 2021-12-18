@@ -107,6 +107,8 @@ No modal, clique no "x" no canto superior direito para cancelar a ação ou no b
 Para ver uma discussão completa, clique no texto da postagem desejada.
 
 ![Ver discussão](imagens/ver-discussao.jpg)
+![Ver discussão 2](imagens/ver-discussao2.jpg)
+
 
 ## Curtir/Descurtir postagem
 
