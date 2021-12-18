@@ -47,12 +47,12 @@ Você deve preencher os campos de login corretamente e enviar para ser autentica
 ## Menu da página principal
 
 Ao clicar no botão existente no canto superior esquerdo da página, 3 opções estarão disponíveis para acesso, caso você ainda não esteja logado:<br>
-    - "Página principal" redireciona para a página principal;<br>
-    - "Entrar" abre o modal de login;<br>
-    - "Cadastrar" redireciona para a página de cadastro.<br>
+    <br>- "Página principal" redireciona para a página principal;<br>
+    <br>- "Entrar" abre o modal de login;<br>
+    <br>- "Cadastrar" redireciona para a página de cadastro.<br>
 Uma vez logado, ao clicar no mesmo botão, 2 opções estarão disponíveis para acesso:<br>
-    - "Página inicial" redireciona para a página inicial;<br>
-    - "Sair" faz o logout e redireciona pra página principal;
+    <br>- "Página inicial" redireciona para a página inicial;<br>
+    <br>- "Sair" faz o logout e redireciona pra página principal;
 
 ![Menu da página principal](imagens/menu-da-pagina-principal.jpg)
 ![Menu da página inicial](imagens/menu-da-pagina-inicial.jpg)
