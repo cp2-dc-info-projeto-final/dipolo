@@ -90,7 +90,7 @@
                             <h4 class="mb-3">Timeline</h4>
                             <?php
                             include "listar.php";
-                            listar_postagens(return_dados("cod_usuario", "", $mysqli));
+                            listar_postagens(return_dados("cod_usuario", "", $mysqli), $mysqli);
                             ?>
                         </div>
 

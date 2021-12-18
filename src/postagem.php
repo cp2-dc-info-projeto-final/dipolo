@@ -143,7 +143,7 @@ $usuario_postagem = return_usuario($postagem['cod_usuario']);
 
                 <?php
                 include "listar.php";
-                listar_comentarios($postagem["cod_postagem"]);
+                listar_comentarios($postagem["cod_postagem"], $mysqli);
                 ?>
 
                 <div class="row justify-content-center px-4 align-items-bottom mt-3 border-top mx-auto pt-4">

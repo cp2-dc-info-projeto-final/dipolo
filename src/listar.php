@@ -1,8 +1,7 @@
 <?php
 
-function listar_postagens($cod_usuario)
+function listar_postagens($cod_usuario, $mysqli)
 {
-    include "conecta_mysql.php";
     include_once "return_dados.php";
     include_once "verificar_curtida.php";
     include_once "return_usuario.php";
@@ -29,9 +28,8 @@ function listar_postagens($cod_usuario)
     }
 }
 
-function listar_comentarios($cod_postagem)
+function listar_comentarios($cod_postagem, $mysqli)
 {
-    include "conecta_mysql.php";
     include_once "return_usuario.php";
     include_once "return_postagem.php";
     include_once "verificar_curtida.php";
