@@ -62,30 +62,38 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
             </div>
             <div class="modal-body">
-                <form action="admin_editar.php" method="POST">
+                <form action="recebe_alteracao.php" method="POST">
+                    <input type="hidden" name="login" value="alterar">
+                    <input type="hidden" name="cod_usuario" value="<?php echo $usuario['cod_usuario'] ?>">
+                    <input type="hidden" name="adm" value="true">
                     <div class="mb-3">
                         <div class="mb-3">
                             <label for="editar<?php echo $usuario['nickname'] ?>ModalInputNickname" class="form-label">Nickname</label>
-                            <input type="text" class="form-control" id="editar<?php echo $usuario['nickname'] ?>ModalInputNickname" name="nickname" size="11" maxlength="10" value="<?php echo $usuario['nickname'] ?>">
+                            <input type="text" class="form-control" id="editar<?php echo $usuario['nickname'] ?>ModalInputNickname" name="nickname" size="10" maxlength="10" value="<?php echo $usuario['nickname'] ?>">
                         </div>
                         <div class="mb-3">
-                            <label for="editar<?php echo $usuario['nome'] ?>ModalInputNome" class="form-label">Nome Completo</label>
-                            <input type="text" class="form-control" id="editar<?php echo $usuario['nome'] ?>ModalInputNome" name="nome" size="30" maxlength="100" value="<?php echo $usuario['nome'] ?>">
+                            <label for="editar<?php echo $usuario['nickname'] ?>ModalInputNome" class="form-label">Nome Completo</label>
+                            <input type="text" class="form-control" id="editar<?php echo $usuario['nickname'] ?>ModalInputNome" name="nome" size="30" maxlength="100" value="<?php echo $usuario['nome'] ?>">
                         </div>
                         <div class="mb-3">
-                            <label for="editar<?php echo $usuario['email'] ?>ModalInputEmail" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="editar<?php echo $usuario['email'] ?>ModalInputEmail" name="email" size="30" maxlength="35" value="<?php echo $usuario['email'] ?>">
+                            <label for="editar<?php echo $usuario['nickname'] ?>ModalInputDataNasc" class="form-label">Data de Nascimento</label>
+                            <input type="date" class="form-control" id="editar<?php echo $usuario['nickname'] ?>ModalInputDataNasc" name="datanasc" size="11" maxlength="10" value="<?php echo $usuario['datanasc'] ?>">
                         </div>
                         <div class="mb-3">
-                            <label for="editar<?php echo $usuario['datanasc'] ?>ModalInputDataNasc" class="form-label">Data de Nascimento</label>
-                            <input type="date" class="form-control" id="editar<?php echo $usuario['datanasc'] ?>ModalInputDataNasc" name="datanasc" size="11" maxlength="10" value="<?php echo $usuario['datanasc'] ?>">
+                            <label for="editar<?php echo $usuario['nickname'] ?>ModalInputEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="editar<?php echo $usuario['nickname'] ?>ModalInputEmail" name="email" size="30" maxlength="35" value="<?php echo $usuario['email'] ?>">
                         </div>
                         <div class="mb-3">
-                            <label for="editar<?php echo $usuario['senha'] ?>ModalInputSenha" class="form-label">Senha</label>
-                            <input type="password" class="form-control" id="editar<?php echo $usuario['senha'] ?>ModalInputSenha" name="senha" maxlength="12">
+                            <label for="editar<?php echo $usuario['nickname'] ?>ModalInputConfEmail" class="form-label">
+                                <span class="text-danger">*</span>Confirmar Email
+                            </label>
+                            <input type="text" class="form-control" id="editar<?php echo $usuario['nickname'] ?>ModalInputConfEmail" name="confemail" size="30" maxlength="35" required>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary" name="usuario_alvo" value="<?php echo $usuario["nickname"]; ?>">
+
+                    <div class="text-danger mb-3">(*Campos Obrigatórios)</div>
+
+                    <button type="submit" class="btn btn-primary">
                         Enviar
                     </button>
                 </form>
@@ -95,19 +103,19 @@
 </div>
 
 <div class="modal fade" id="excluir<?php echo $usuario['nickname'] ?>Modal" tabindex="-1" aria-labelledby="excluirConta<?php echo $usuario['nickname']; ?>ModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="excluirConta<?php echo $usuario['nickname']; ?>ModalLabel">Excluir usuário</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="excluir_conta_usuario.php" method="POST" class="m-0">
-                        <button type="submit" class="btn btn-primary" name="cod_usuario" value="<?php echo $usuario["cod_usuario"]; ?>">
-                            Excluir
-                        </button>
-                    </form>
-                </div>
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="excluirConta<?php echo $usuario['nickname']; ?>ModalLabel">Excluir usuário</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+                <form action="excluir_conta_usuario.php" method="POST" class="m-0">
+                    <button type="submit" class="btn btn-primary" name="cod_usuario" value="<?php echo $usuario["cod_usuario"]; ?>">
+                        Excluir
+                    </button>
+                </form>
             </div>
         </div>
     </div>
+</div>

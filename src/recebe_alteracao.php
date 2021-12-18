@@ -12,6 +12,7 @@
         $datanasc = $_POST["datanasc"];
         $email = $_POST["email"];
         $confemail = $_POST["confemail"];
+        $adm = $_POST["adm"];
         $erro = 0;
 
         $nickname = htmlspecialchars($nickname);
@@ -79,7 +80,7 @@
             //mysqli_query(<conexão>,<comando>);
             mysqli_query($mysqli,$sql);
 
-            if($nickname != $usuario["nickname"]){
+            if($nickname != $usuario["nickname"] && $adm == "false"){
                 echo "<script> alert(' Usuário atualizado com sucesso! \\n Como seu nickname foi alterado, faça login novamente.'); 
                 window.location='index.php';</script> <br>";
             } else {

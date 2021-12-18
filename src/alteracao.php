@@ -82,6 +82,7 @@ $cod_usuario = $_GET["cod_usuario"];
                         <form action="recebe_alteracao.php" method="POST">
                             <input type="hidden" name="login" value="alterar">
                             <input type="hidden" name="cod_usuario" value="<?php echo $cod_usuario ?>">
+                            <input type="hidden" name="adm" value="false">
 
                             <div class="mb-3">
                                 <label for="alteracaoInputNickname" class="form-label">Nickname</label>
