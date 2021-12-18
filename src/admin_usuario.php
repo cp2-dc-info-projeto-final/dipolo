@@ -102,8 +102,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="excluir_conta.php" method="POST" class="m-0">
-                        <button type="submit" class="btn btn-primary" name="usuario_alvo" value="<?php echo $usuario["nickname"]; ?>">
+                    <form action="excluir_conta_usuario.php" method="POST" class="m-0">
+                        <button type="submit" class="btn btn-primary" name="cod_usuario" value="<?php echo $usuario["cod_usuario"]; ?>">
                             Excluir
                         </button>
                     </form>
