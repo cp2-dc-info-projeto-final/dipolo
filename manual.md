@@ -52,7 +52,7 @@ Ao clicar no botão existente no canto superior esquerdo da página, 3 opções 
     - "Cadastrar" redireciona para a página de cadastro.<br><br>
 Uma vez logado, ao clicar no mesmo botão, 2 opções estarão disponíveis para acesso:<br><br>
     - "Página principal" redireciona para a página principal;<br>
-    - "Sair" faz o logout e redireciona pra página principal;
+    - "Sair" faz o logout e redireciona pra página principal antes do login;
 
 ![Menu da página principal](imagens/menu-da-pagina-principal.jpg)
 ![Menu da página inicial](imagens/menu-da-pagina-inicial.jpg)
