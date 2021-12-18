@@ -6,7 +6,7 @@ include "return_postagem.php";
 $postagem = return_postagem($_GET['cod_postagem'], $mysqli);
 
 include "return_usuario.php";
-$usuario_postagem = return_usuario($postagem['cod_usuario']);
+$usuario_postagem = return_usuario($postagem['cod_usuario'], $mysqli);
 ?>
 <?php include "verificar_curtida.php"; ?>
 <?php include "existe.php"; ?>

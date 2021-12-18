@@ -16,7 +16,7 @@ function admin_listar_comentarios($mysqli)
     include_once "return_usuario.php";
     include_once "return_postagem.php";
 
-    $usuario = return_usuario(null);
+    $usuario = return_usuario(null, $mysqli);
 
     $sql_comentarios = "SELECT * FROM comentarios";
     $resposta_comentarios = mysqli_query($mysqli, $sql_comentarios);
@@ -32,7 +32,7 @@ function admin_listar_comentarios($mysqli)
         for ($i = 0; $i < $linhas_comentarios; $i++) {
             $comentario = mysqli_fetch_array($resposta_comentarios);
             $postagem = return_postagem($comentario["cod_postagem"], $mysqli);
-            $usuario_comentario = return_usuario($comentario["cod_usuario"]);
+            $usuario_comentario = return_usuario($comentario["cod_usuario"], $mysqli);
 
             include "admin_comentario.php";
         }
@@ -45,7 +45,7 @@ function admin_listar_postagens($mysqli)
     include_once "verificar_curtida.php";
     include_once "return_usuario.php";
 
-    $usuario = return_usuario(null);
+    $usuario = return_usuario(null, $mysqli);
 
     $sql_postagens = "SELECT * FROM postagens";
     $resposta_postagens = mysqli_query($mysqli, $sql_postagens);
