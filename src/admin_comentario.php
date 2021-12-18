@@ -9,7 +9,7 @@
             </a>
         </div>
     </div>
-    <div class="row pt-2 mb-4">
+    <div class="row pt-2 mb-3">
         <div class="col-auto me-auto">
             <div class="row me-0">
                 <p class="pe-0 text-break">
@@ -25,12 +25,14 @@
                         </a>
                     </p>
                 </div>
-                <div class="col-auto px-1">
-                    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#excluirComentario<?php echo $comentario['cod_comentario']; ?>Modal">
-                        <i class="bi bi-trash-fill" aria-label="Excluir comentário"></i>
-                    </button>
-                </div>
             </div>
+        </div>
+    </div>
+    <div class="row me-0 justify-content-center my-2">
+        <div class="col-auto px-1">
+            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#excluirComentario<?php echo $comentario['cod_comentario']; ?>Modal" aria-label="Excluir comentário">
+                <i aria-hidden="true" class="bi bi-trash-fill" title="Excluir comentário"></i>
+            </button>
         </div>
     </div>
 

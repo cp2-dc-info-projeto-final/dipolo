@@ -7,13 +7,15 @@
                 </a>
             </p>
         </div>
-        <div class="row me-0 align-items-center">
+        <div class="row me-0 align-items-center mb-3">
             <div class="col-auto me-auto">
                 <p class="mb-0 text-muted fw-light">Clique no texto para ver a discussão</p>
             </div>
+        </div>
+        <div class="row me-0 justify-content-center my-2">
             <div class="col-auto px-1">
                 <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#excluirPostagem<?php echo $postagem['cod_postagem']; ?>Modal" aria-label="Excluir postagem">
-                    <i class="bi bi-trash-fill"></i>
+                    <i aria-hidden="true" class="bi bi-trash-fill" title="Excluir postagem"></i>
                 </button>
             </div>
         </div>
