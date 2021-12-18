@@ -1,9 +1,7 @@
 <?php
 
-function admin_listar_usuarios()
+function admin_listar_usuarios($mysqli)
 {
-    include "conecta_mysql.php";
-
     $sql = "SELECT * FROM usuarios";
     $resposta = mysqli_query($mysqli, $sql);
     $numero_rows = mysqli_num_rows($resposta);
@@ -13,9 +11,8 @@ function admin_listar_usuarios()
     }
 }
 
-function admin_listar_comentarios()
+function admin_listar_comentarios($mysqli)
 {
-    include "conecta_mysql.php";
     include_once "return_usuario.php";
     include_once "return_postagem.php";
 
@@ -42,9 +39,8 @@ function admin_listar_comentarios()
     }
 }
 
-function admin_listar_postagens()
+function admin_listar_postagens($mysqli)
 {
-    include "conecta_mysql.php";
     include_once "return_dados.php";
     include_once "verificar_curtida.php";
     include_once "return_usuario.php";

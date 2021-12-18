@@ -39,7 +39,7 @@
                                 <h4>Postagens</h4>
                             </div>
                             <div>
-                                <?php admin_listar_postagens() ?>
+                                <?php admin_listar_postagens($mysqli) ?>
                             </div>
                         </div>
                         <div class="col-3 border border-dark rounded p-4 mb-auto">
@@ -47,7 +47,7 @@
                                 <h4>Comentários</h4>
                             </div>
                             <div>
-                                <?php admin_listar_comentarios(); ?>
+                                <?php admin_listar_comentarios($mysqli); ?>
                             </div>
                         </div>
                         <div class="col-3 border border-dark rounded p-4 mb-auto">
@@ -55,7 +55,7 @@
                                 <h4>Usuários</h4>
                             </div>
                             <div>
-                                <?php admin_listar_usuarios(); ?>
+                                <?php admin_listar_usuarios($mysqli); ?>
                             </div>
                         </div>
                     </div>
