@@ -172,7 +172,7 @@ $usuario_postagem = return_usuario($postagem['cod_usuario']);
                     </div>
                 </div>
             <?php else : ?>
-                <p>Essa postagem não existe.</p>
+                <p>Essa postagem não existe (ou não existe mais...)</p>
             <?php endif; ?>
         </div>
     </div>
