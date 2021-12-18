@@ -1,6 +1,7 @@
 <?php include "autentica.php"; ?>
 <?php include "return_dados.php"; ?>
 <?php include "existe.php" ?>
+<?php include "conecta_mysql.php"; ?>
 
 <html>
 
@@ -42,18 +43,18 @@
                         <h4 class="mb-3">Timeline</h4>
                         <?php
                         include "listar.php";
-                        listar_postagens(return_dados("cod_usuario", $_GET["nickname"]));
+                        listar_postagens(return_dados("cod_usuario", $_GET["nickname"], $mysqli));
                         ?>
                     </div>
 
                     <div class="col-2">
                         <div class="w-100 text-center">
-                            <img src="<?php echo return_dados("caminho_img", $_GET['nickname']) ?>" class="img-thumbnail w-75" alt="Foto de perfil">
+                            <img src="<?php echo return_dados("caminho_img", $_GET['nickname'], $mysqli) ?>" class="img-thumbnail w-75" alt="Foto de perfil">
                         </div>
                         <p class="text-center fs-4 mb-0">
                             <?php echo $_GET['nickname']; ?>
                         </p>
-                        <p class="text-center fw-light text-muted"><?php echo return_dados("nome", $_GET['nickname']); ?></p>
+                        <p class="text-center fw-light text-muted"><?php echo return_dados("nome", $_GET['nickname'], $mysqli); ?></p>
                     </div>
                 </div>
             <?php else : ?>
@@ -61,6 +62,8 @@
             <?php endif; ?>
         </div>
     </div>
+
+    <?php mysqli_close($mysqli); ?>
 
     <!-- Footer -->
 

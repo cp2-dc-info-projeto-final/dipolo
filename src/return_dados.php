@@ -1,8 +1,6 @@
 <?php
-function return_dados($dado, $nick)
+function return_dados($dado, $nick, $mysqli)
 {
-    include "conecta_mysql.php";
-
     if ($nick == "") {
         $nick = $_SESSION["nickname"];
         $nick = htmlspecialchars($nick);

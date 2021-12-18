@@ -44,9 +44,9 @@ $texto_post = $postagem["texto_post"];
                                 <img src="<?php echo $usuario['caminho_img'] ?>" alt="Foto de perfil" width="210" height="160">
                             </div>                            
                             <p class="text-center fs-4 mb-0">
-                                <?php echo return_dados("nickname", ""); ?>
+                                <?php echo return_dados("nickname", "", $mysqli); ?>
                             </p>
-                            <p class="text-center fw-light text-muted"><?php echo return_dados("nome", ""); ?></p>
+                            <p class="text-center fw-light text-muted"><?php echo return_dados("nome", "", $mysqli); ?></p>
                         </div>
                         <div class="col-6">
                             <h1 class="text-center mb-4">Editar postagem</h1>
@@ -82,6 +82,8 @@ $texto_post = $postagem["texto_post"];
                 ?>
             </div>
         </div>
+
+        <?php mysqli_close($mysqli); ?>
 
         <!-- Footer -->
         <?php include 'footer.html'; ?>

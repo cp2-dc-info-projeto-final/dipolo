@@ -1,6 +1,7 @@
 <?php
 include "autentica.php";
 include "return_dados.php";
+include "conecta_mysql.php";
 
 $cod_usuario = $_GET["cod_usuario"];
 ?>
@@ -35,12 +36,12 @@ $cod_usuario = $_GET["cod_usuario"];
                 <div class="row justify-content-evenly px-4">
                     <div class="col-2 py-4">
                         <div class="w-100 text-center">
-                            <img src="<?php echo return_dados("caminho_img", "") ?>" class="img-thumbnail w-75" alt="Foto de perfil">
+                            <img src="<?php echo return_dados("caminho_img", "", $mysqli) ?>" class="img-thumbnail w-75" alt="Foto de perfil">
                         </div>
                         <p class="text-center fs-4 mb-0">
-                            <?php echo return_dados("nickname", ""); ?>
+                            <?php echo return_dados("nickname", "", $mysqli); ?>
                         </p>
-                        <p class="text-center fw-light text-muted"><?php echo return_dados("nome", ""); ?></p>
+                        <p class="text-center fw-light text-muted"><?php echo return_dados("nome", "", $mysqli); ?></p>
                         <!--
                             <form action="recebe_dados.php" method="POST">
                                 <input type="hidden" name="login" value="exibir">
@@ -84,20 +85,20 @@ $cod_usuario = $_GET["cod_usuario"];
 
                             <div class="mb-3">
                                 <label for="alteracaoInputNickname" class="form-label">Nickname</label>
-                                <input type="text" id="alteracaoInputNickname" class="form-control" name="nickname" size="10" maxlength="10" value="<?php echo return_dados("nickname", ""); ?>" required>
+                                <input type="text" id="alteracaoInputNickname" class="form-control" name="nickname" size="10" maxlength="10" value="<?php echo return_dados("nickname", "", $mysqli); ?>" required>
                             </div>
                             <div class="mb-3">
                                 <label for="alteracaoInputNome" class="form-label">Nome Completo</label>
-                                <input type="text" class="form-control" id="alteracaoInputNome" name="nome" size="30" maxlength="100" value="<?php echo return_dados("nome", ""); ?>" required>
+                                <input type="text" class="form-control" id="alteracaoInputNome" name="nome" size="30" maxlength="100" value="<?php echo return_dados("nome", "", $mysqli); ?>" required>
                             </div>
                             <div class="mb-3">
                                 <label for="alteracaoInputDataNasc" class="form-label">Data de Nascimento</label>
-                                <input type="date" id="alteracaoInputDataNasc" class="form-control" name="datanasc" value="<?php echo return_dados("datanasc", ""); ?>" required>
+                                <input type="date" id="alteracaoInputDataNasc" class="form-control" name="datanasc" value="<?php echo return_dados("datanasc", "", $mysqli); ?>" required>
                             </div>
                             <div class="row mb-3">
                                 <div class="col">
                                     <label for="alteracaoInputEmail" class="form-label">Email</label>
-                                    <input type="text" id="alteracaoInputEmail" class="form-control" name="email" size="30" maxlength="35" value="<?php echo return_dados("email", ""); ?>" required>
+                                    <input type="text" id="alteracaoInputEmail" class="form-control" name="email" size="30" maxlength="35" value="<?php echo return_dados("email", "", $mysqli); ?>" required>
                                 </div>
                                 <div class="col">
                                     <label for="alteracaoInputConfEmail" class="form-label">
@@ -114,7 +115,7 @@ $cod_usuario = $_GET["cod_usuario"];
                                     <button type="submit" class="btn btn-primary">Confirmar Alterações</button>
                                 </div>
                                 <div class="col-auto">
-                                    <a class="btn btn-outline-primary" href="altera_senha.php?cod_usuario=<?php echo return_dados("cod_usuario", ""); ?>">
+                                    <a class="btn btn-outline-primary" href="altera_senha.php?cod_usuario=<?php echo return_dados("cod_usuario", "", $mysqli); ?>">
                                         Alterar senha
                                     </a>
                                 </div>
@@ -151,6 +152,8 @@ $cod_usuario = $_GET["cod_usuario"];
             </div>
         </div>
     </div>
+
+    <?php mysqli_close($mysqli); ?>
 
     <!-- Footer -->
 

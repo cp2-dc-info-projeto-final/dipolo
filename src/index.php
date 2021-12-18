@@ -1,5 +1,6 @@
 <?php include "autentica.php"; ?>
 <?php include "return_dados.php"; ?>
+<?php include "conecta_mysql.php"; ?>
 
 <html>
 
@@ -79,7 +80,7 @@
                     <div class="col-7">
                         <div class="border-bottom rounded border-dark pb-1">
                             <form action="recebe_postagem.php" method="POST">
-                                <input type="hidden" name="cod_usuario" value="<?php echo return_dados("cod_usuario", ""); ?>">
+                                <input type="hidden" name="cod_usuario" value="<?php echo return_dados("cod_usuario", "", $mysqli); ?>">
                                 <textarea class="form-control mb-3" name="texto_post" rows="5" maxlength="350" placeholder="Comece seu debate aqui" required></textarea>
                                 <button type="submit" class="btn btn-outline-primary btn-lg">Criar postagem</button>
                             </form>
@@ -89,7 +90,7 @@
                             <h4 class="mb-3">Timeline</h4>
                             <?php
                             include "listar.php";
-                            listar_postagens(return_dados("cod_usuario", ""));
+                            listar_postagens(return_dados("cod_usuario", "", $mysqli));
                             ?>
                         </div>
 
@@ -97,25 +98,27 @@
 
                     <div class="col-2">
                         <div class="text-center">
-                            <img src="<?php echo return_dados("caminho_img", "") ?>" class="img-thumbnail w-75" alt="Foto de perfil">
+                            <img src="<?php echo return_dados("caminho_img", "", $mysqli) ?>" class="img-thumbnail w-75" alt="Foto de perfil">
                         </div>
                         <p class="text-center fs-4 mb-0">
-                            <?php echo return_dados("nickname", ""); ?>
-                            <a class="text-decoration-none text-dark" href="alteracao.php?cod_usuario=<?php echo return_dados("cod_usuario", ""); ?>">
+                            <?php echo return_dados("nickname", "", $mysqli); ?>
+                            <a class="text-decoration-none text-dark" href="alteracao.php?cod_usuario=<?php echo return_dados("cod_usuario", "", $mysqli); ?>">
                                 <i class="bi bi-gear" role="img" aria-label="Editar dados"></i>
                             </a>
-                            <?php if (return_dados("adm", "")) : ?>
+                            <?php if (return_dados("adm", "", $mysqli)) : ?>
                                 <a class="text-decoration-none text-dark" href="admin_dashboard.php">
                                     <i class="bi bi-tools" role="img" aria-label="Ferramentas de administrador"></i>
                                 </a>
                             <?php endif; ?>
                         </p>
-                        <p class="text-center fw-light text-muted"><?php echo return_dados("nome", ""); ?></p>
+                        <p class="text-center fw-light text-muted"><?php echo return_dados("nome", "", $mysqli); ?></p>
                     </div>
                 </div>
             <?php endif; ?>
         </div>
     </div>
+
+    <?php mysqli_close($mysqli); ?>
 
     <!-- Footer -->
 

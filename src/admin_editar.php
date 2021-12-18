@@ -3,7 +3,7 @@ include "autentica.php";
 include "conecta_mysql.php";
 include "return_dados.php";
 
-if ($_SESSION['fez_login'] && return_dados("adm", "")) {
+if ($_SESSION['fez_login'] && return_dados("adm", "", $mysqli)) {
     if (isset($_POST['usuario_alvo'])) {
         $sql = "SELECT * FROM usuarios WHERE nickname LIKE \"" . $_POST['usuario_alvo'] . "\";";
         $resposta = mysqli_query($mysqli, $sql);
@@ -50,3 +50,5 @@ if ($_SESSION['fez_login'] && return_dados("adm", "")) {
 } else {
     header("Location: index.php");
 }
+
+mysqli_close($mysqli);
