@@ -7,7 +7,6 @@ Aqui você encontrará instruções de como usar o site "Dipolo".
  - [Cadastrar](#Cadastrar)
  - [Entrar](#Entrar)
  - [Menu da página principal](#Menu-da-página-principal)
- - [Menu da página inicial](#Menu-da-página-inicial)
  - [Postar](#Postar)
  - [Procurar](#Procurar)
  - [Adicionar/Remover foto de perfil](#Adicionar/Remover-foto-de-perfil)
@@ -47,12 +46,16 @@ Você deve preencher os campos de login corretamente e enviar para ser autentica
 
 ## Menu da página principal
 
-Ao clicar no botão existente no canto superior esquerdo da página, 3 opções estarão disponíveis para acesso:
-    "Página principal" redireciona para a página principal;
-    "Entrar" abre o modal de login;
-    "Cadastrar" redireciona para a página de cadastro.
+Ao clicar no botão existente no canto superior esquerdo da página, 3 opções estarão disponíveis para acesso, caso você ainda não esteja logado:<br>
+    "Página principal" redireciona para a página principal;<br>
+    "Entrar" abre o modal de login;<br>
+    "Cadastrar" redireciona para a página de cadastro.<br>
+Uma vez logado, ao clicar no mesmo botão, 2 opções estarão disponíveis para acesso:<br>
+    "Página inicial" redireciona para a página inicial;<br>
+    "Sair" faz o logout e redireciona pra página principal;
 
 ![Menu da página principal](imagens/menu-da-pagina-principal.jpg)
+![Menu da página inicial](imagens/menu-da-pagina-inicial.jpg)
 
 ## Menu da página inicial
 
