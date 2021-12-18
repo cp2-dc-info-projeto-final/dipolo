@@ -82,7 +82,7 @@ $cod_usuario = $_GET["cod_usuario"];
                     </div>
                 </div>
             <?php
-            else : header("Location: login_cadastro.php");
+            else : header("Location: index.php");
             endif;
             ?>
         </div>
