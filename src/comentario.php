@@ -27,13 +27,13 @@
                     </div>
                     <div class="col-auto px-1">
                         <a href="curtidas_comentarios.php?cod_comentario=<?php echo $comentario["cod_comentario"]; ?>" class="btn btn-lg px-2" aria-label="Curtir comentario">
-                            <?php if (usuario_curtiu_comentario($comentario["cod_comentario"], $_SESSION["cod_usuario"])) : ?>
+                            <?php if (usuario_curtiu_comentario($comentario["cod_comentario"], $_SESSION["cod_usuario"], $mysqli)) : ?>
                                 <i class="bi bi-hand-thumbs-up-fill text-primary"></i>
                             <?php else : ?>
                                 <i class="bi bi-hand-thumbs-up"></i>
                             <?php endif; ?>
                         </a>
-                        <span><?php echo return_curtidas_comentario($comentario["cod_comentario"]); ?></span>
+                        <span><?php echo return_curtidas_comentario($comentario["cod_comentario"], $mysqli); ?></span>
                     </div>
                     <?php if ($usuario_comentario["nickname"] == $_SESSION["nickname"]) : ?>
                         <div class="col-auto px-1">

@@ -1,9 +1,7 @@
 <?php
 
-function usuario_curtiu_postagem($cod_postagem, $cod_usuario)
+function usuario_curtiu_postagem($cod_postagem, $cod_usuario, $mysqli)
 {
-    include "conecta_mysql.php";
-
     $sql = "SELECT * FROM curtidas_postagens WHERE cod_postagem = $cod_postagem AND cod_usuario = $cod_usuario;";
     $resposta = mysqli_query($mysqli, $sql);
     $curtida = mysqli_num_rows($resposta);
@@ -15,10 +13,8 @@ function usuario_curtiu_postagem($cod_postagem, $cod_usuario)
     }
 }
 
-function return_curtidas($cod_postagem)
+function return_curtidas($cod_postagem, $mysqli)
 {
-    include "conecta_mysql.php";
-
     $sql = "SELECT * FROM curtidas_postagens WHERE cod_postagem = $cod_postagem;";
     $resposta = mysqli_query($mysqli, $sql);
     $curtidas = mysqli_num_rows($resposta);
@@ -26,10 +22,8 @@ function return_curtidas($cod_postagem)
     return $curtidas;
 }
 
-function usuario_curtiu_comentario($cod_comentario, $cod_usuario)
+function usuario_curtiu_comentario($cod_comentario, $cod_usuario, $mysqli)
 {
-    include "conecta_mysql.php";
-
     $sql = "SELECT * FROM curtidas_comentarios WHERE cod_comentario = $cod_comentario AND cod_usuario = $cod_usuario";
     $resposta = mysqli_query($mysqli, $sql);
     $curtida = mysqli_num_rows($resposta);
@@ -41,10 +35,8 @@ function usuario_curtiu_comentario($cod_comentario, $cod_usuario)
     }
 }
 
-function return_curtidas_comentario($cod_comentario)
+function return_curtidas_comentario($cod_comentario, $mysqli)
 {
-    include "conecta_mysql.php";
-
     $sql = "SELECT * FROM curtidas_comentarios WHERE cod_comentario = $cod_comentario";
     $resposta = mysqli_query($mysqli, $sql);
     $curtidas = mysqli_num_rows($resposta);
