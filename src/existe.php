@@ -15,7 +15,7 @@ function usuario_existe($nickname, $mysqli)
 
 function postagem_existe($cod_postagem, $mysqli)
 {
-    $sql_postagens = "SELECT * FROM postagens WHERE cod_usuario = $cod_postagem";
+    $sql_postagens = "SELECT * FROM postagens WHERE cod_postagem = $cod_postagem";
     $resposta_postagens = mysqli_query($mysqli, $sql_postagens);
     $linhas_postagens = mysqli_num_rows($resposta_postagens);
 
