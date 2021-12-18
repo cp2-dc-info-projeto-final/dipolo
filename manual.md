@@ -59,7 +59,7 @@ Uma vez logado, ao clicar no mesmo botão, 2 opções estarão disponíveis para
 
 ## Postar
 
-Criar uma postagem é bem simples: basta inserir seu argumento na caixa de texto da página inicial e clicar no botão "Criar postagem" em seguida.
+Criar uma postagem é bem simples: basta inserir seu argumento na caixa de texto da página inicial e clicar no botão "Criar postagem" em seguida. Após ser salva, a postagem aparece automaticamente na sua timeline.
 
 ![Postar](imagens/postar.jpg)
 
@@ -81,7 +81,7 @@ Para remover sua foto de perfil, clique no botão "Remover imagem de perfil".
 ## Editar dados
 
 Na página inicial, clique no botão de configurações abaixo da sua foto de perfil para ir para a página de editar dados.<br>
-Na página de editar dados, altere os campos desejados, preencha os campos obriatórios e clique no botão "Confirmar alterações".
+Na página de editar dados, altere os campos desejados, preencha o campo obrigatório e clique no botão "Confirmar alterações".
 
 ![Botão de editar dados](imagens/botao-editar-dados.jpg)
 ![Editar dados](imagens/editar-dados.jpg)
@@ -111,21 +111,21 @@ Para ver uma discussão completa, clique no texto da postagem desejada.
 ## Curtir/Descurtir postagem
 
 Você pode curtir ou descurtir uma postagem tanto no index como na página da discussão completa. É só clicar no botão com o polegar para cima no canto inferior direito da postagem.<br>
-A postagem será descurtida ao clicar novamente no botão de curtir (após já ter curtido).
+A postagem será descurtida ao clicar novamente no botão (após já ter curtido).
 
 ![Curtir/Descurtir](imagens/curtir-postagem.jpg)
 ![Curtir/Descurtir 2](imagens/curtir-postagem2.jpg)
 
 ## Comentar
 
-Para comentar, é só digitar seu texto na caixa de texto existente na página de discussão e clicar no botão "Criar comentário" em seguida.
+Para comentar, é só digitar seu argumento na caixa de texto existente na página de discussão e clicar no botão "Criar comentário" em seguida.
 
 ![Comentar](imagens/comentar.jpg)
 
 ## Curtir/Descurtir comentário
 
 Você pode curtir ou descurtir um comentário clicando no botão com o polegar para cima no canto inferior direito do comentário.<br>
-A postagem será descurtida ao clicar novamente no botão de curtir (após já ter curtido).
+O comentário será descurtido ao clicar novamente no botão (após já ter curtido).
 
 ![Curtir/Descurtir](imagens/curtir-comentario.jpg)
 
@@ -139,7 +139,7 @@ No modal, altere os campos desejados e clique no botão "Editar". Caso queira ca
 
 ## Editar comentário
 
-Na página de discussão, clique no botão de configurações canto inferior direito da postagem para aparecer o modal de editar o comentário<br>
+Na página de discussão, clique no botão de configurações canto inferior direito da postagem para aparecer o modal de editar o comentário.<br>
 No modal, altere os campos desejados e clique no botão "Editar". Caso queira cancelar a operação, clique no "X" no canto superior direito do modal.
 
 ![Editar comentário](imagens/editar-comentario.jpg)
@@ -147,7 +147,7 @@ No modal, altere os campos desejados e clique no botão "Editar". Caso queira ca
 
 ## Excluir postagem
 
-No index ou na página de discussão, clique no botão de excluir no canto inferior direito da postagem para aparecer o modal de excluir a postagem<br>
+No index ou na página de discussão, clique no botão de excluir no canto inferior direito da postagem para aparecer o modal de excluir a postagem.<br>
 No modal, clique no "X" no canto superior direito para cancelar a ação ou no botão "Excluir postagem" para confirmar.
 
 ![Excluir postagem](imagens/excluir-postagem.jpg)
@@ -155,7 +155,7 @@ No modal, clique no "X" no canto superior direito para cancelar a ação ou no b
 
 ## Excluir comentário
 
-Na página de discussão, clique no botão de excluir no canto inferior direito da postagem para aparecer o modal de excluir o comentário<br>
+Na página de discussão, clique no botão de excluir no canto inferior direito da postagem para aparecer o modal de excluir o comentário.<br>
 No modal, clique no "x" no canto superior direito para cancelar a ação ou no botão "Excluir comentário" para confirmar.
 
 ![Excluir comentário](imagens/excluir-comentario.jpg)
@@ -183,7 +183,7 @@ No modal, altere os campos desejados e clique no botão "Enviar". Caso queira ca
 
 ## ADM excluir usuário
 
-Para excluir um usuário, basta clicar no ícone de menu e no botão "Excluir" em seguida. 
+Para excluir um usuário, clique no ícone de menu, no botão "Excluir" e, em seguida, confirme a operação. 
 
 ![ADM excluir usuários](imagens/adm-excluir.jpg)
 
@@ -195,6 +195,6 @@ Para retirar ou conceder privilégios à um usuário, basta clicar no ícone de 
 
 ## Sair
 
-No menu da página inicial, clique no botão "Sair" para efetuar o logout.
+No menu da página principal, clique no botão "Sair" para efetuar o logout.
 
 ![Botão para sair](imagens/botao-sair.jpg)
