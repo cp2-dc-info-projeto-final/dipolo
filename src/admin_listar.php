@@ -31,7 +31,7 @@ function admin_listar_comentarios($mysqli)
     } else {
         for ($i = 0; $i < $linhas_comentarios; $i++) {
             $comentario = mysqli_fetch_array($resposta_comentarios);
-            $postagem = return_postagem($comentario["cod_postagem"]);
+            $postagem = return_postagem($comentario["cod_postagem"], $mysqli);
             $usuario_comentario = return_usuario($comentario["cod_usuario"]);
 
             include "admin_comentario.php";

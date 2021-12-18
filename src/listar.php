@@ -34,7 +34,7 @@ function listar_comentarios($cod_postagem, $mysqli)
     include_once "return_postagem.php";
     include_once "verificar_curtida.php";
 
-    $postagem = return_postagem($cod_postagem);
+    $postagem = return_postagem($cod_postagem, $mysqli);
     $usuario = return_usuario(null);
 
     $sql_comentarios = "SELECT * FROM comentarios WHERE cod_postagem = $cod_postagem";
